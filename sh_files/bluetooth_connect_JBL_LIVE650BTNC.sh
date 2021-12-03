@@ -1,0 +1,1 @@
+echo 'connect 88:D0:39:99:79:89 \nquit\n' | bluetoothctl
