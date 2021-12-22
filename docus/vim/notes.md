@@ -30,7 +30,13 @@ In .vimrc => K above a command => open help for that command
 :e path/to/file => open file
 :gf [while overing a path to a file] => open file
 
-xp swap the characte under the cursor to the following one
+# tabs
+:tabedit path/to/file => open file in a new tab
+gt => next tab
+gT => previous tab
+[number]gt => go to tab number [number]
+
+xp swap the characte under the cursor with the following one
 
 <c-o> <c-i> moving backward and forward in modification history
 
@@ -64,3 +70,5 @@ V => visual mode, selection by lines
 <c-v> => visual mode, selection by columns
 vi( => visual mode, selection inside parenthesis
 vip => visual mode, selection by paragraphs
+
+
