@@ -36,6 +36,14 @@ gt => next tab
 gT => previous tab
 [number]gt => go to tab number [number]
 
+from the command line => nvim -p file file file => open multiple files in tabs
+
+#sessions
+:mksession sessionName.vim => save the current session
+$ vim -S sessionName.vim => open saved session
+
+______
+
 xp swap the characte under the cursor with the following one
 
 <c-o> <c-i> moving backward and forward in modification history
