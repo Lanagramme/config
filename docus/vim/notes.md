@@ -3,6 +3,9 @@ d => delete
 :dw => delete word
 :dd => delete line
 
+d$ || <shift-d> delete from cursor to end of line
+d^ => delete from beginning of line to cursor
+
 c => change
 
 :cw => change word
@@ -30,7 +33,7 @@ In .vimrc => K above a command => open help for that command
 :e path/to/file => open file
 :gf [while overing a path to a file] => open file
 
-# tabs
+#tabs
 :tabedit path/to/file => open file in a new tab
 gt => next tab
 gT => previous tab
@@ -65,7 +68,7 @@ xp swap the characte under the cursor with the following one
 :noh => remove search highlights
 N in search mode => go backward
 /Export\+ PATH => search for all occurences of Export PATH
-* while overing a word => search for all occurences of that word in the file and select the next one
+"*" while overing a word => search for all occurences of that word in the file and select the next one
 # while overing a word => search for all occurences of that word in the file and select the previous one
 
 % while overing a parenthesis, bracket, etc => go to the corresponding closing character
@@ -79,4 +82,31 @@ V => visual mode, selection by lines
 vi( => visual mode, selection inside parenthesis
 vip => visual mode, selection by paragraphs
 
+# indentation (tabulations)
+in normal mode => >> indent
+	<< unindent
+ex: >5j => indent the next five lines
 
+in insert mode => <c-T> => indent
+	<c-D> => un indent
+
+magic idk ??? => gg=G => something, somehow, magik. dont ask me
+
+# autocompletion
+in insert mode => <c-p> while writing a word
+	p => previous maching word
+	n => next maching word
+
+# scroll
+In normal mode
+<c-d> scroll down half page
+<c-f> scroll down full page
+<c-u> scroll up half page
+<c-b> scroll up full page
+
+
+
+
+
+
+in insert mode <c-u> => undo changes
