@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Options :
+	# lancer le programme en passant le nom du window manager 
+	# lancer le programme sans argument et sélectionner le window manager dans une liste
 declare -a window_managers=('awesome' 'openbox-lxde')
 
 # check for default default
@@ -22,7 +25,9 @@ function switch_wm () {
 	reboot
 }
 
+# en cas de variable passée a l'exécution
 if (( $default ));then
+	# exception openbox
 	if [[ "$1" == "openbox" ]] ; then
 		$1 = "openbox-lxde"
 	fi
@@ -37,12 +42,13 @@ if (( $default ));then
 	echo $1 "n'est pas installée"
 fi
 
-# user input
+# si aucune variable n'est passée
 while (true)
 do
 	index=0
 	echo "Préciser le window manager"
 
+	#user input
 	for i in "${window_managers[@]}"
 	do
 		echo $index : $i
