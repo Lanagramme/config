@@ -23,6 +23,10 @@ function switch_wm () {
 }
 
 if (( $default ));then
+	if [[ "$1" == "openbox" ]] ; then
+		$1 = "openbox-lxde"
+	fi
+
 	for i in "${window_managers[@]}"
 	do
 		if [[ "$i" == "$1" ]] ; then
