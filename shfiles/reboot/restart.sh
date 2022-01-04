@@ -29,7 +29,7 @@ function switch_wm () {
 if (( $default ));then
 	# exception openbox
 	if [[ "$1" == "openbox" ]] ; then
-		$1 = "openbox-lxde"
+		switch_wm "openbox-lxde"	
 	fi
 
 	for i in "${window_managers[@]}"
