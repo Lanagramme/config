@@ -67,6 +67,10 @@ zstyle ':omz:update' frequency 1 			# look for updates every 1 days
 # ====== Aliasses ======
 # For a full list of active aliases, run `alias`.
 
+# Reload configurations
+alias sz="source ~/.zshrc"
+alias sb="source ~/.bashrc"
+
 # console commands
 alias cl="clear"
 alias Xreset="xrdb ~/.Xresources"
@@ -83,9 +87,20 @@ alias web="chromium-browser"
 alias aw="v ~/.config/awesome/rc.lua"
 alias vimrc="v -S ~/.config/nvim/neovim-config.vim"
 alias zshrc="v ~/.zshrc"
+alias bashrc="v ~/.bashrc"
 alias ohmyrc="v ~/.oh-my-zsh"
 alias xrc="v ~/.Xresources"
 
+# Suffixes aliasses
+alias -s md=mdless
+alias -s {js,ts,html,css,sass,scss,php}=nvim
+
+# Os dependant alias
+# if [[ $OSTYPE == linux* ]]; then
+# fi
+
+# Source config gile
+# for f in ~/.config/shellconfig/*; do source "$f";done
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -95,3 +110,6 @@ if [ -d "$HOME/.bookmarks" ]; then
 fi
 
 export VISUAL="nvim"
+export PATH=$PATH':/path/to/add'
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
