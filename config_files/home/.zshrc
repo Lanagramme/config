@@ -69,9 +69,11 @@ zstyle ':omz:update' frequency 1 			# look for updates every 1 days
 
 # console commands
 alias cl="clear"
+alias Xreset="xrdb ~/.Xresources"
 
 # run sh files
 alias wifi="~/connect_wifi_GalaxyTabS2.sh"
+alias sign_git="~/Documents/code/git/config/shfiles/git_connect.sh"
 
 # run programs
 alias v="nvim"
@@ -82,6 +84,14 @@ alias aw="v ~/.config/awesome/rc.lua"
 alias vimrc="v -S ~/.config/nvim/neovim-config.vim"
 alias zshrc="v ~/.zshrc"
 alias ohmyrc="v ~/.oh-my-zsh"
+alias xrc="v ~/.Xresources"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [ -d "$HOME/.bookmarks" ]; then
+    export CDPATH=".:$HOME/.bookmarks:/"
+    alias goto="cd -P"
+fi
+
+export VISUAL="nvim"
