@@ -95,6 +95,10 @@ alias xrc="v ~/.Xresources"
 alias -s md=mdless
 alias -s {js,ts,html,css,sass,scss,php}=nvim
 
+# ssh connexions
+alias gozaimass="ssh ludji@gozaimass.io"
+alias noumenm="ssh ludji@noumenm.org"
+
 # Os dependant alias
 # if [[ $OSTYPE == linux* ]]; then
 # fi

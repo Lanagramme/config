@@ -45,6 +45,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
+-- /usr/share/awesome/theme
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
@@ -311,11 +312,17 @@ globalkeys = gears.table.join(
               end,
               {description = "restore minimized", group = "client"}),
 
+
     -- Prompt
     awful.key({ modkey },            "d",     function () 
 			awful.util.spawn("rofi -show run") end,
 			{description = "run rofi", group = "launcher"}),
 			
+		-- Files
+		awful.key({ modkey },            "f",     function () 
+			awful.util.spawn("nautilus") end,
+			{description = "Open file explorer", group = "applications"}),
+
 		-- Firefox
     awful.key({ modkey },            "b",     function () 
 			awful.util.spawn("firefox") end,
@@ -337,7 +344,7 @@ globalkeys = gears.table.join(
 )
 
 clientkeys = gears.table.join(
-    awful.key({ modkey,           }, "f",
+    awful.key({ modkey, "Shift"   }, "f",
         function (c)
             c.fullscreen = not c.fullscreen
             c:raise()
