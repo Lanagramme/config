@@ -6,28 +6,28 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.config/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Keep this line under the ZSH_THEME declaration
-source $ZSH/oh-my-zsh.sh
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Uncomment the following line to change how often to auto-update (in days).
+zstyle ':omz:update' frequency 13
+
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
 COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -38,75 +38,32 @@ COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # History time stamp
 HIST_STAMPS="mm/dd/yyyy"
 
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# You may need to manually set your language environment
 export LANG=fr_FR.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
+else
+  export EDITOR='vim'
 fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ====== Updates ======
-# zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
-zstyle ':omz:update' mode reminder  	# just remind me to update when it's time
-zstyle ':omz:update' frequency 1 			# look for updates every 1 days
-
-# ====== Aliasses ======
-# For a full list of active aliases, run `alias`.
-
-# Reload configurations
-alias sz="source ~/.zshrc"
-alias sb="source ~/.bashrc"
-
-# console commands
-alias cl="clear"
-alias Xreset="xrdb ~/.Xresources"
-
-# run sh files
-alias wifi="~/connect_wifi_GalaxyTabS2.sh"
-alias sign_git="~/Documents/code/git/config/shfiles/git_connect.sh"
-
-# run programs
-alias v="nvim"
-alias web="chromium-browser"
-
-# open config files
-alias aw="v ~/.config/awesome/rc.lua"
-alias vimrc="v -S ~/.config/nvim/neovim-config.vim"
-alias zshrc="v ~/.zshrc"
-alias bashrc="v ~/.bashrc"
-alias ohmyrc="v ~/.oh-my-zsh"
-alias xrc="v ~/.Xresources"
-
-# Suffixes aliasses
-alias -s md=mdless
-alias -s {js,ts,html,css,sass,scss,php}=nvim
-
-# ssh connexions
-alias gozaimass="ssh ludji@gozaimass.io"
-alias noumenm="ssh ludji@noumenm.org"
-
-# Os dependant alias
-# if [[ $OSTYPE == linux* ]]; then
-# fi
-
-# Source config gile
-# for f in ~/.config/shellconfig/*; do source "$f";done
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 if [ -d "$HOME/.bookmarks" ]; then
     export CDPATH=".:$HOME/.bookmarks:/"
@@ -114,6 +71,20 @@ if [ -d "$HOME/.bookmarks" ]; then
 fi
 
 export VISUAL="nvim"
-export PATH=$PATH':/path/to/add'
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
+
+# ====== Aliases ======
+source ~/.bash_aliases
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -4,11 +4,12 @@ d => delete
 :dd => delete line
 
 d$ || <shift-d> delete from cursor to end of line
-d^ => delete from beginning of line to cursor
+d^^ => delete from beginning of line to cursor
 
 c => change
 
-:cw => change word
+:cw => change from cursor to end of word
+:ciw => change word
 :cl => change letter
 
 ZQ => quit without saving

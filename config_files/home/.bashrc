@@ -2,7 +2,7 @@
 # ~/.bashrc
 #
 
-shopt -S autocd #Allows you to cd into directory merly by typing the directory name.
+shopt -s autocd #Allows you to cd into directory merly by typing the directory name.
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
