@@ -26,4 +26,4 @@ su => connect as root user [do not !]
 su - => connect as root user and go to their home directory
 users => list connected users
 id => print infos about the connected user
-
+lscpu => better neofetch

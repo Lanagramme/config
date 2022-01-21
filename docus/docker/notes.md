@@ -57,4 +57,9 @@ docker run -p 8080:80 --name container_name -d image_name
 Show in real time the logs for the container hello_world
 docker logs -f hello_world
 
+# ====== ====== ====== ======
+
+*connect to a container in the terminal* 
+docker exec -ti container_id /bin/bash
+
 
