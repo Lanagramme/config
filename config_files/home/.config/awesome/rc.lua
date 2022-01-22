@@ -97,7 +97,7 @@ local themes = {
     "vertex"           -- 10
 }
 
-local chosen_theme = themes[10]
+local chosen_theme = themes[2]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "sakura"
@@ -126,8 +126,8 @@ awful.layout.layouts = {
     --awful.layout.suit.corner.se,
     --lain.layout.cascade,
     --lain.layout.cascade.tile,
-    --lain.layout.centerwork,
-    lain.layout.centerwork.horizontal,
+    lain.layout.centerwork,
+    -- lain.layout.centerwork.horizontal,
     --lain.layout.termfair,
     --lain.layout.termfair.center
     awful.layout.suit.floating,

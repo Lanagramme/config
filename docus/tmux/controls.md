@@ -77,4 +77,6 @@ $ brew install tmux
 | Function | Command |
 | --- | --- |
 | show time | c-b t |
+| Enter scroll mode | c-b [ |
+| Quit scroll mode | q |
  or c-b x
