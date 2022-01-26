@@ -21,6 +21,9 @@ Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 " Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 " Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'mhinz/vim-startify' 
+Plug 'vimwiki/vimwiki'
+Plug 'https://github.com/junegunn/limelight.vim'
+Plug 'https://github.com/junegunn/goyo.vim'
 
 call plug#end()
 
@@ -45,3 +48,16 @@ let g:airline_symbols.dirty='⚡'
 
 " vim-devicons airline and nerdtree both need a nerdfont installed on the system
 " vim-devicons needs 
+
+
+" use markdown with vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+
+
+" Start limeligt when entering goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
+" Dimmed text color in limelight
+let g:limelight_conceal_ctermfg = 240
+

@@ -31,6 +31,10 @@ set number
 :set clipboard=unnamedplus " use system clipboard
 set noswapfile        " disable creating swap file
 
+
+set scrolloff=8
+set sidescrolloff=8
+
 syntax on
 
 " color schemes
@@ -50,4 +54,6 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+
+
 

@@ -37,3 +37,12 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+let mapleader = "\<space>"
+
+" Start goyo
+nnoremap <Leader>gy :Goyo<CR>
+
+" move by one line
+nnoremap j gj
+nnoremap k gk
