@@ -105,8 +105,17 @@ In normal mode
 <c-u> scroll up half page
 <c-b> scroll up full page
 
+# Vim surround
 
+ys you surround
+cs change surounnd
+ds delete surround
 
+yS surround and create its own line
+ySS surround line and create own line
+
+S in visual mode surround highlighted section
+gS in visual mode surround highlighted section and delete auto indent
 
 
 
