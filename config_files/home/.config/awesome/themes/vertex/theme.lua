@@ -81,8 +81,8 @@ theme.layout_cornernw                           = theme.default_dir.."/layouts/c
 theme.layout_cornerne                           = theme.default_dir.."/layouts/cornernew.png"
 theme.layout_cornersw                           = theme.default_dir.."/layouts/cornersww.png"
 theme.layout_cornerse                           = theme.default_dir.."/layouts/cornersew.png"
-theme.tasklist_plain_task_name                  = true
-theme.tasklist_disable_icon                     = true
+theme.tasklist_plain_task_name                  = false
+theme.tasklist_disable_icon                     = false
 theme.useless_gap                               = dpi(10)
 theme.titlebar_close_button_normal              = theme.default_dir.."/titlebar/close_normal.png"
 theme.titlebar_close_button_focus               = theme.default_dir.."/titlebar/close_focus.png"
@@ -328,9 +328,24 @@ end
 
 function theme.vertical_wibox(s)
     -- Create the vertical wibox
-    s.dockheight = (35 *  s.workarea.height)/100
+    s.dockwidth = (50 *  s.workarea.width)/100
 
-    s.myleftwibox = wibox({ screen = s, x=0, y=s.workarea.height/2 - s.dockheight/2, width = dpi(6), height = s.dockheight, fg = theme.fg_normal, bg = barcolor2, ontop = true, visible = true, type = "dock" })
+		hidden = s.workarea.height + dpi(15)
+		shown = s.workarea.height - dpi(20)
+
+    s.myleftwibox = wibox({ 
+			screen = s, 
+			x=s.workarea.width/2 - s.dockwidth/2, 
+			y=s.workarea.height + dpi(16), 
+			width = s.dockwidth, 
+			height = dpi(20), 
+			fg = theme.fg_normal, 
+			bg = barcolor2, 
+			ontop = true, 
+			visible = true, 
+			type = "dock", 
+			opacity = 0.8 
+		})
 
     if s.index > 1 and s.myleftwibox.y == 0 then
         s.myleftwibox.y = screen[1].myleftwibox.y
@@ -338,22 +353,20 @@ function theme.vertical_wibox(s)
 
     -- Add widgets to the vertical wibox
     s.myleftwibox:setup {
-        layout = wibox.layout.align.vertical,
+        layout = wibox.layout.align.horizontal,
         {
-            layout = wibox.layout.fixed.vertical,
-            lspace1,
-            s.mytaglist,
-            lspace2,
+            layout = wibox.layout.fixed.horizontal,
             s.layoutb,
-            wibox.container.margin(mylauncher, dpi(5), dpi(8), dpi(13), dpi(0)),
         },
+				s.mytasklist,
     }
 
     -- Add toggling functionalities
     s.docktimer = gears.timer{ timeout = 2 }
     s.docktimer:connect_signal("timeout", function()
         local s = awful.screen.focused()
-        s.myleftwibox.width = dpi(9)
+        s.myleftwibox.height = dpi(10)
+        s.myleftwibox.y = hidden
         s.layoutb.visible = false
         mylauncher.visible = false
         if s.docktimer.started then
@@ -362,7 +375,8 @@ function theme.vertical_wibox(s)
     end)
     tag.connect_signal("property::selected", function(t)
         local s = t.screen or awful.screen.focused()
-        s.myleftwibox.width = dpi(38)
+        s.myleftwibox.height = dpi(45)
+        s.myleftwibox.y = shown
         s.layoutb.visible = true
         mylauncher.visible = true
         gears.surface.apply_shape_bounding(s.myleftwibox, dockshape)
@@ -373,20 +387,21 @@ function theme.vertical_wibox(s)
 
     s.myleftwibox:connect_signal("mouse::leave", function()
         local s = awful.screen.focused()
-        s.myleftwibox.width = dpi(9)
+        s.myleftwibox.height = dpi(10)
+        s.myleftwibox.y = hidden
         s.layoutb.visible = false
         mylauncher.visible = false
     end)
 
     s.myleftwibox:connect_signal("mouse::enter", function()
         local s = awful.screen.focused()
-        s.myleftwibox.width = dpi(38)
+        s.myleftwibox.height = dpi(45)
+        s.myleftwibox.y = shown
         s.layoutb.visible = true
         mylauncher.visible = true
         gears.surface.apply_shape_bounding(s.myleftwibox, dockshape)
     end)
 end
-
 
 function theme.at_screen_connect(s)
     -- Quake application
@@ -427,8 +442,53 @@ function theme.at_screen_connect(s)
     }, nil, wibox.layout.fixed.vertical())
 
     -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.focused, awful.util.tasklist_buttons, { bg_focus = "#00000000" })
-
+    -- s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.focused, awful.util.tasklist_buttons, { bg_focus = "#00000000" })
+    -- s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons)
+    -- s.mytasklist = awful.widget.tasklist(s, awful.widget.tasklist.filter.currenttags, awful.util.tasklist_buttons, { bg_focus = theme.bg_focus, shape = gears.shape.rectangle, shape_border_width = 5, shape_border_color = theme.tasklist_bg_normal, align = "center" })
+s.mytasklist = awful.widget.tasklist {
+    screen   = s,
+    filter   = awful.widget.tasklist.filter.currenttags,
+    buttons  = tasklist_buttons,
+    layout   = {
+        spacing_widget = {
+            {
+                forced_width  = 5,
+                forced_height = 24,
+                thickness     = 1,
+                color         = '#777777',
+                widget        = wibox.widget.separator
+            },
+            valign = 'center',
+            halign = 'center',
+            widget = wibox.container.place,
+        },
+        spacing = 1,
+        layout  = wibox.layout.fixed.horizontal
+    },
+    -- Notice that there is *NO* wibox.wibox prefix, it is a template,
+    -- not a widget instance.
+    widget_template = {
+        {
+            wibox.widget.base.make_widget(),
+            forced_height = 5,
+            id            = 'background_role',
+            widget        = wibox.container.background,
+        },
+        {
+            {
+                id     = 'clienticon',
+                widget = awful.widget.clienticon,
+            },
+            margins = 5,
+            widget  = wibox.container.margin
+        },
+        nil,
+        create_callback = function(self, c, index, objects) --luacheck: no unused args
+            self:get_children_by_id('clienticon')[1].client = c
+        end,
+        layout = wibox.layout.align.vertical,
+    },
+}
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s, height = dpi(25), bg = gears.color.create_png_pattern(theme.panelbg) })
 

@@ -97,7 +97,7 @@ local themes = {
     "vertex"           -- 10
 }
 
-local chosen_theme = themes[2]
+local chosen_theme = themes[10]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "sakura"
