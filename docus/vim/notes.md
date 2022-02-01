@@ -8,9 +8,12 @@ d^^ => delete from beginning of line to cursor
 
 c => change
 
-:cw => change from cursor to end of word
-:ciw => change word
-:cl => change letter
+cw => change from cursor to end of word
+ciw => change word
+cl => change letter
+
+s => delete character and enter insert mode 
+x => delete chracter
 
 ZQ => quit without saving
 ZZ => quit and save
