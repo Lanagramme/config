@@ -63,6 +63,8 @@ autocmd! User GoyoLeave Limelight!
 let g:limelight_conceal_ctermfg = 240
 
 " use template file to generate diary page
+au BufNewFile ~/vimwiki/diary/*.md :silent 0r !~/.config/nvim/templates/generate-vimwiki-diary-template '%'
+
 
 set nocompatible
 filetype plugin on
