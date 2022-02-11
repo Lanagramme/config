@@ -24,6 +24,7 @@ Plug 'mhinz/vim-startify'
 Plug 'vimwiki/vimwiki'
 Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/junegunn/goyo.vim'
+Plug 'https://github.com/mattn/calendar-vim'
 
 call plug#end()
 
@@ -61,3 +62,8 @@ autocmd! User GoyoLeave Limelight!
 " Dimmed text color in limelight
 let g:limelight_conceal_ctermfg = 240
 
+" use template file to generate diary page
+
+set nocompatible
+filetype plugin on
+syntax on
