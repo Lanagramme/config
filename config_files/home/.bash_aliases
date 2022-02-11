@@ -15,7 +15,6 @@ alias sign_git="~/Documents/code/git/config/shfiles/git_connect.sh"
 # run programs
 alias v="nvim"
 alias web="chromium-browser"
-alias tmux="tmux new-session /bin/zsh \; set default-shell /bin/zsh"
 
 # open config files
 alias aw="v ~/.config/awesome/rc.lua"
