@@ -1,5 +1,9 @@
 # Index
 
+[PressStart](PressStart)
+
+=====================================================
+
 [[Free writing]]
 [[To do list]]
 
@@ -18,4 +22,3 @@
 
 
 [Keybindings](Keybindings)
-

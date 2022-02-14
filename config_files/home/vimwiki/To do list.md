@@ -1,3 +1,10 @@
+# Daily
+
+* [ ] Search tuto startify vim
+* [ ] Make the s7 a viable vim alternative
+
+======================================================================
+
 # FRAMEWORK
 
 ## Config
@@ -11,6 +18,9 @@
 	- [ ] no frame
 
 ### Vim
+* [ ] add a language server
+* [ ] Carnet d'adresse et de restaurants
+
 #### Vimwiki
 - [X] search vimdiary
 - [.] https://mkaz.blog/working-with-vim/
