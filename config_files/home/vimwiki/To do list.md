@@ -1,18 +1,7 @@
 # Daily
 
 * [ ] Search tuto startify vim
-* [ ] clean desk
-* [ ] continue matrix 20m
-* [ ] range clothes
-* [ ] cntinue matrix 20m
-* [ ] drawing warmup 10m
-* [ ] continue matrix 20m
-* [ ] make bag
-* [ ] continue matrix 20m
-* [ ] config wm 20m
-* [ ] continue matrix 20m
 * [ ] Make the s7 a viable vim alternative
-* [ ] 
 
 ======================================================================
 
