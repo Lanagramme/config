@@ -19,7 +19,7 @@ alias web="chromium-browser"
 
 # open config files
 alias aw="v ~/.config/awesome/rc.lua"
-alias vimrc="v -S ~/.config/nvim/neovim-config.vim"
+alias vimrc="nvim -p ~/.config/nvim/general/general.vim ~/.config/nvim/keybindings/keybindings.vim ~/.config/nvim/pluggins"
 alias zshrc="v ~/.zshrc"
 alias bashrc="v ~/.bashrc"
 alias bashalias="v ~/.bash_aliases"
