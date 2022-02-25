@@ -25,6 +25,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'https://github.com/junegunn/limelight.vim'
 Plug 'https://github.com/junegunn/goyo.vim'
 Plug 'https://github.com/mattn/calendar-vim'
+Plug 'https://github.com/jiangmiao/auto-pairs'
 
 call plug#end()
 
