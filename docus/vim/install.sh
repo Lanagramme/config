@@ -1,0 +1,7 @@
+#! /bin/sh
+
+mkdir ~/.config/nvim
+cp -r ../../config_files/home/.config/nvim/* ~/.config/nvim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo 'launch neovim and run :PlugInstall to install the config'
