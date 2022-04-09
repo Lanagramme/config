@@ -1,0 +1,6 @@
+there is two component used to handle autio on linux, alsamixer and pulseaudio.
+
+alsamixer is a basic cli tool to control the volume for audio input and output.
+pulseaudio is a gui tool for more fine tuning of audio sources, and also allow to define an audio output or source for each program
+
+If the raspberry pi does not emit audio, launch pulseaudio controller (the packet is named pavuctrl) and check the default output method. The raspberry default autput is hdmi, you can change it for the application, or define your favorite card ad default for the sistem. You can also turn off audio via hdmi, making any controller you plug the default for the machine.
