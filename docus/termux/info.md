@@ -1,0 +1,4 @@
+Termux desktop
+
+startdesktop
+stopdesktop
