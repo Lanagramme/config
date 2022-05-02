@@ -1,8 +1,21 @@
-const express = require('express')  
-const app = express()
+/*
+	Basic middleware configuration
+
+	app.METHODS(PATH, HANDLER)
+
+	app :: get, post, put, delete
+	PATH :: route
+	HANDLER :: callback
+
+	app.get('/', ( req, res ) => {
+		res.json('this message will appear on the browser')
+	})
+
+*/
+const app = require('express')()
 const path = require('path')
 
-app.get('/', (res,res) => {
+app.get('/', (req,res) => {
 	res.sendFile(path.join(__dirname, './index.html'))
 })
 
