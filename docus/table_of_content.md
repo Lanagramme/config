@@ -1,6 +1,5 @@
 #Table of Contents
 
-## Linux
 ### Bash Terminal
 - [Bulk Renaming](./bash_terminal/linux__bulk_rename.md)
 - [Groups](./bash_terminal/linux__groups.md)
@@ -12,8 +11,8 @@
 ###Bash Code
 - [Notes](./bash_script/notes_bash_scripting.md)
 
-###Github
-- [Notes](./github/github.md)
+###Git
+- [Cli git](./git/git.md)
 
 ###Pureref
 - [Pureref Controls](./pureref/pureref_controls.md)
