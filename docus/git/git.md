@@ -6,13 +6,11 @@
 	-	[Branches](#Branches)
 	-	[Remote](#Remote)
 	-	[Conflicts](#Conflicts)
-	- [set up git ssh connexion](#set up git ssh connexion)
 	- [Github](#Github)
+	- [Set up git ssh connexion](# Set up git ssh connexion)
 
 [retour](#Documentation du CLI github)
 ## Basics
-```bash
-```
 **Create a new git project**
 ```bash
 git init
@@ -92,7 +90,9 @@ git push -u origin master
 Si un conflit est détecté, ouvir le fichier en question et supprimer les parties non désirées puis puis add le fichier et commit.
 
 [retour](#Documentation du CLI github)
-## Set up git ssh connexion
+# Github
+
+# Set up git ssh connexion
 
 **Create the ssh key**
 ```
@@ -118,8 +118,6 @@ git-config --global.email "github_email"
 
 ```
 
-[retour](#Documentation du CLI github)
-## Github
 **Connect to github with ssh**
 ```
 ssh -T git@github.com
@@ -135,3 +133,5 @@ git clone https://github.com/<user>/<repository>
 git clone git@github.com:<user>/<repository>
 ```
 
+```bash
+```
