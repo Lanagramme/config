@@ -78,7 +78,7 @@ git push branch_name origin
 **Envoyer un projet git sur un serveur remote.**
 Une fois le projet vide créé sur le serveur.
 ```bash
-git remote add origin url
+git remote add origin git@github.com:<user>/<repo>.git
 ```
 Premier commit.
 ```bash
