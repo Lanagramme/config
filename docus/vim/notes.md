@@ -1,3 +1,14 @@
+[Table des matière](../table_of_content.md)
+
+## Movements
+**Scroll**
+In normal mode
+<c-d> scroll down half page
+<c-f> scroll down full page
+<c-u> scroll up half page
+<c-b> scroll up full page
+
+## Actions
 d => delete
 
 :dw => delete word
@@ -15,6 +26,12 @@ cl => change letter
 s => delete character and enter insert mode 
 x => delete chracter
 
+:yy => copy line
+:yw => copy word
+:yl => copy letter
+
+:p => paste
+
 ZQ => quit without saving
 ZZ => quit and save
 
@@ -22,12 +39,6 @@ ZZ => quit and save
 100j => go up 100 line (works in visual mode also)
 
 In .vimrc => K above a command => open help for that command
-
-:yy => copy line
-:yw => copy word
-:yl => copy letter
-
-:p => paste
 
 :%s => substitution
 :%s/wordToSubstitute/wordToPlace/ => substitute for the line 
@@ -94,19 +105,11 @@ ex: >5j => indent the next five lines
 in insert mode => <c-T> => indent
 	<c-D> => un indent
 
-magic idk ??? => gg=G => something, somehow, magik. dont ask me
-
 # autocompletion
 in insert mode => <c-p> while writing a word
 	p => previous maching word
 	n => next maching word
 
-# scroll
-In normal mode
-<c-d> scroll down half page
-<c-f> scroll down full page
-<c-u> scroll up half page
-<c-b> scroll up full page
 
 # Vim surround
 
@@ -119,7 +122,3 @@ ySS surround line and create own line
 
 S in visual mode surround highlighted section
 gS in visual mode surround highlighted section and delete auto indent
-
-
-
-in insert mode <c-u> => undo changes
