@@ -26,3 +26,5 @@
 ###Vim
 - [Notes](./vim/notes.md)
 - [Find/Replace](./vim/vim_find_replace.md)
+- [Sessions](Sessions)
+- 
