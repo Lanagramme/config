@@ -27,4 +27,19 @@
 - [Notes](./vim/notes.md)
 - [Find/Replace](./vim/vim_find_replace.md)
 - [Sessions](Sessions)
-- 
+
+###SCSS
+	```
+	sass source/index.scss css/index.css
+	```
+	
+#entr
+	```
+# rebuild preject if cources change
+$ ls | entre make
+
+# rebuild project and run test if build was successfull
+$ ls | entr -s 'make && make test'
+
+$ ls source/*.scss | sass source/index.scss css/index.css
+	```
