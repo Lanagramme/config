@@ -10,9 +10,9 @@
 :s/foo/bar/g
 ```
 
-**Replace all occurences of foo in document with bar**
+**Substitute all occurences of foo in the curent line by bar and confirm each change**
 ```
-:%s/foo/bar/g
+:s/foo/bar/gc
 ```
 
 **Delete all instances of foo in the document**

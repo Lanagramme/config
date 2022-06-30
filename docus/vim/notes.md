@@ -105,11 +105,13 @@ ex: >5j => indent the next five lines
 in insert mode => <c-T> => indent
 	<c-D> => un indent
 
+in visual block mode
+<C-v> + select lines + >
+
 # autocompletion
 in insert mode => <c-p> while writing a word
 	p => previous maching word
 	n => next maching word
-
 
 # Vim surround
 
@@ -122,3 +124,10 @@ ySS surround line and create own line
 
 S in visual mode surround highlighted section
 gS in visual mode surround highlighted section and delete auto indent
+
+# Add something in the beggining of each line
+
+C-v + select the lines + s-i + esc
+
+# open file which path is under the cursor
+gf

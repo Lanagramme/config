@@ -54,6 +54,7 @@ Elle ne recevra pas les modifications ajoutées à la branche principale, et ses
 
 ```bash
 git checkout -b new_branch_name
+git push --set-upstream origin/new_branch_name
 ```
 
 **Changer de branche**
