@@ -7,6 +7,7 @@
 - [Permissions](./bash_terminal/linux__permission.md)
 - [Tar Archives](./bash_terminal/linux__tar_archives.md)
 - [Cat](./bash_terminal/cat.md)
+- [Find](Find)
 
 ###Bash Code
 - [Notes](./bash_script/notes_bash_scripting.md)
