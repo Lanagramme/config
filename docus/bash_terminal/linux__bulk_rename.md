@@ -1,6 +1,6 @@
 # Bulk rename in bash
 
-rename many files with one command
+Replace a string
 
 ```
 for i in *-doc-*.txt; do mv "$i" "${i/*-doc-/doc-}"; done
@@ -11,6 +11,14 @@ for i in *-doc-*.txt; do mv "$i" "${i/*-doc-/doc-}"; done
 ```
 for f in *;do mv -v "$f" "string${f}";done
 ```
+# Add string before the extension
+
+```
+for f in *;do mv -v "$f" "${f%.*}hallo.${f##*.}";done
+```
+
+* ${f%.*} returns everithing before the first dot
+* ${f##*.} returns everithing after the last dot
 
 # Bulk rename with util-linux
 
