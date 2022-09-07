@@ -8,7 +8,7 @@
 - [Tar Archives](./bash_terminal/linux__tar_archives.md)
 - [Cat](./bash_terminal/cat.md)
 - [Find](Find)
-- [[Kill task by port number]]
+- [[Kill_task]]
 - [ssh](ssh)
 
 ###Bash Code
