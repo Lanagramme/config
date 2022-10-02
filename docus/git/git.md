@@ -114,8 +114,8 @@ paste the output
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/id_rsa
 
-git-config --global.name "github_username"
-git-config --global.email "github_email"
+git config --global user.name "github_username"
+git config --global user.email github_email
 
 ```
 
