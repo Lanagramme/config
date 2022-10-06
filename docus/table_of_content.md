@@ -10,6 +10,7 @@
 - [Find](Find)
 - [[Kill_task]]
 - [ssh](ssh)
+- [[Mound disk]]
 
 ###Bash Code
 - [Notes](./bash_script/notes_bash_scripting.md)
@@ -39,7 +40,7 @@
 	
 #entr
 	```
-# rebuild preject if cources change
+# rebuild project if sources change
 $ ls | entre make
 
 # rebuild project and run test if build was successfull
