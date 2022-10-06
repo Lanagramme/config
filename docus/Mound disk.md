@@ -1,4 +1,7 @@
 
+more info ::
+https://developerinsider.co/auto-mount-drive-in-ubuntu-server-22-04-at-startup/
+
 1. Get device info
 Find the id of the disk in the /dev directory
 ```bash
@@ -38,11 +41,10 @@ You will need the device id(step 1) and it's UUID (as shown bellow)
 #replace sdXX with the device id
 blkid /dev/skXX
 ```
-UUID will look like this "40e554eb-6421-4813-88ea-3882a3a7a153"
 now open this file /etc/fstab
 add this line to the end, changing the UUID to yours and /mnd/Disk by your mount location
 ```bash
-UUID=40e554eb-6421-4813-88ea-3882a3a7a153 /mnt/Disk auto nosuid,nodev,nofail,x-gvfs-show 0 0
+UUID=<UUID> <PATH_TO_MOUNT> auto nosuid,nodev,nofail,x-gvfs-show 0 0
 ```
 ```bash
 
