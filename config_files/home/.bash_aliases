@@ -3,6 +3,9 @@
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
+alias p='sudo pacman'
+alias mkd="mkdir pv" # crete directory --create parentt --give visual feedback
+alias l="ls -la -color=auto"
 
 # console commands
 alias cl="clear"
