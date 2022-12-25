@@ -3,22 +3,17 @@
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
-alias p='sudo pacman'
-alias mkd="mkdir pv" # crete directory --create parentt --give visual feedback
-alias l="ls -la -color=auto"
 
 # console commands
 alias cl="clear"
 alias Xreset="xrdb ~/.Xresources"
 
 # run sh files
-alias wifi="~/connect_wifi_GalaxyTabS2.sh"
 alias sign_git="~/Documents/code/git/config/shfiles/git_connect.sh"
 
 # run programs
 alias v="nvim"
 alias web="chromium-browser"
-# alias tmux="tmux new-session /bin/zsh \; set default-shell /bin/zsh"
 
 # open config files
 alias aw="v ~/.config/awesome/rc.lua"

@@ -23,7 +23,6 @@ set number
 :set tabstop=2				" tabs size
 :set shiftwidth=2			" autoindent size
 :set smarttab
-set foldmethod=indent
 
 :set cursorline
 :set cc=80						" set 80 char column 
