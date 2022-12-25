@@ -13,6 +13,7 @@ ln -s Documents/code/git/config/config_files/home/.tmux.conf ~/
 ln -s Documents/code/git/config/config_files/home/.zshrc ~/
 
 ln -s Documents/code/git/config/config_files/home/vimwiki ~/
+ln -s Documents/code/git/config/config_files/home/.bookmarks ~/
 
 
 #config
