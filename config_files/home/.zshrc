@@ -75,7 +75,6 @@ if [ -d "$HOME/.bookmarks" ]; then
 fi
 
 export VISUAL="nvim"
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 export PATH="$PATH:$GEM_HOME/bin"
 
 # ====== Aliases ======
