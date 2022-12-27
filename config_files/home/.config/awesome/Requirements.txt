@@ -5,3 +5,4 @@
 - nvim
 - feh
 - compton
+- nm-applet
