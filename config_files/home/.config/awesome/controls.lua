@@ -53,7 +53,8 @@ local function Controls(gears, awful, hotkeys_popup, menubar)
 
 			-- Standard program
 			awful.key({ modkey },            "b",     function () 
-				awful.util.spawn("firefox-esr") end,
+				-- awful.util.spawn("firefox-esr") end,
+				awful.util.spawn("firefox") end,
 				{description = "Launch firefox", group = "applications"}),
 			awful.key({ modkey,					  }, "w", function ()
 								os.execute(string.format("feh --bg-fill -r -z ~/Images/Wallpapers/Landscape/"))		        end,

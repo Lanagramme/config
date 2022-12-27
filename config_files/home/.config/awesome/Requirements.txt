@@ -1,6 +1,6 @@
 - tilix
 - polybar
-- firefox
+- firefox / firefox-esr
 - rofi
 - nvim
 - feh
