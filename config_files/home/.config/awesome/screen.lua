@@ -1,3 +1,11 @@
+-- Content
+--
+-- * Layouts
+-- * Menu
+-- * Wibar
+-- * Wallpaper ??
+
+
 local function Screen(awful, beautiful, gears, hotkeys_popup, wibox,menubar)
 
 	-- Table of layouts to cover with awful.layout.inc, order matters.
@@ -23,7 +31,7 @@ local function Screen(awful, beautiful, gears, hotkeys_popup, wibox,menubar)
 
 	-- {{{ Menu
 	-- Create a launcher widget and a main menu
-	myawesomemenu = {
+	myawesomemenu = { 
 		{ "hotkeys", function() hotkeys_popup.show_help(nil, awful.screen.focused()) end },
 		{ "manual", terminal .. " -e man awesome" },
 		{ "edit config", editor_cmd .. " " .. awesome.conffile },
@@ -67,7 +75,7 @@ local function Screen(awful, beautiful, gears, hotkeys_popup, wibox,menubar)
 		awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
 	)
 
-	local tasklist_buttons = gears.table.join(
+	local tasklist_buttons = gears.table.join( 
 		awful.button({ }, 1, function (c)
 			if c == client.focus then
 				c.minimized = true
@@ -118,10 +126,12 @@ local function Screen(awful, beautiful, gears, hotkeys_popup, wibox,menubar)
 		-- We need one layoutbox per screen.
 		s.mylayoutbox = awful.widget.layoutbox(s)
 		s.mylayoutbox:buttons(gears.table.join(
-													 awful.button({ }, 1, function () awful.layout.inc( 1) end),
-													 awful.button({ }, 3, function () awful.layout.inc(-1) end),
-													 awful.button({ }, 4, function () awful.layout.inc( 1) end),
-													 awful.button({ }, 5, function () awful.layout.inc(-1) end)))
+			awful.button({ }, 1, function () awful.layout.inc( 1) end),
+			awful.button({ }, 3, function () awful.layout.inc(-1) end),
+			awful.button({ }, 4, function () awful.layout.inc( 1) end),
+			awful.button({ }, 5, function () awful.layout.inc(-1) end)
+		))
+
 		-- Create a taglist widget
 		s.mytaglist = awful.widget.taglist {
 				screen  = s,
@@ -136,7 +146,7 @@ local function Screen(awful, beautiful, gears, hotkeys_popup, wibox,menubar)
 				buttons = tasklist_buttons
 		}
 
-		-- Uncomment for taskbar
+		-- Uncomment for wibar
 		
 		-- Create the wibox
 		-- s.mywibox = awful.wibar({ position = "top", screen = s })
