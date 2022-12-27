@@ -1,0 +1,7 @@
+- tilix
+- polybar
+- firefox
+- rofi
+- nvim
+- feh
+- compton
