@@ -1,8 +1,8 @@
-- tilix
-- polybar
-- firefox / firefox-esr
-- rofi
 - nvim
+- rofi
+- tilix
+- nm-applet
+- firefox / firefox-esr
 - feh
 - compton
-- nm-applet
+- polybar
