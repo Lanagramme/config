@@ -15,7 +15,7 @@ d => delete
 :dd => delete line
 
 d$ || <shift-d> delete from cursor to end of line
-d^^ => delete from beginning of line to cursor
+d0 => delete from beginning of line to cursor
 
 c => change
 
@@ -26,11 +26,11 @@ cl => change letter
 s => delete character and enter insert mode 
 x => delete chracter
 
-:yy => copy line
-:yw => copy word
-:yl => copy letter
+yy => copy line
+yw => copy word
+yl => copy letter
 
-:p => paste
+p => paste
 
 ZQ => quit without saving
 ZZ => quit and save
@@ -67,7 +67,7 @@ xp swap the characte under the cursor with the following one
 <c-o> <c-i> moving backward and forward in modification history
 
 :r![command] paste the output of the terminal command in the current file
-:!!date paste the current date and time
+:r!date paste the current date and time
 !!sh with the cursor overing a terminal command => paste the output of the command in the current file
 
 :sp path/to/file => open file in a horizontal split
