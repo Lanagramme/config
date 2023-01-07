@@ -71,14 +71,13 @@ fi
 
 if [ -d "$HOME/.bookmarks" ]; then
     export CDPATH=".:$HOME/.bookmarks:/"
-    alias goto="cd -P"
 fi
 
 export VISUAL="nvim"
-export PATH="$PATH:$GEM_HOME/bin"
 
 # ====== Aliases ======
 source ~/.bash_aliases
+source ~/.paths
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
