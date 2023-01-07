@@ -122,9 +122,15 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 # configure silver command prompt
 export SILVER_ICONS=nerd
 
+#add bookmarks
 if [ -d "$HOME/.bookmarks" ]; then
     export CDPATH=".:$HOME/.bookmarks:/"
     alias goto="cd -P"
+fi
+
+# add distrobox to path
+if [ -d "$HOME/Documents/code/distrobox" ]; then
+	export PATH="$HOME/Documents/code/distrobox:$PATH"
 fi
 
 # ====== Aliases ======

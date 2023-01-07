@@ -40,6 +40,6 @@ alias ionos="ssh lux@82.165.206.77"
 
 if [ -d "$HOME/.bookmarks" ]; then
     export CDPATH=".:$HOME/.bookmarks:/"
-    alias goto="cd -P"
 fi
 
+alias goto="cd -P"
