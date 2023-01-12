@@ -16,25 +16,14 @@ app.use(cors({
 	methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH', 'OPTIONS']
 }))
 
-app.get("/write", async (req,res,next) => {
-	data[0].valeur +=1
-	file.writeData(data, "data.json")
-		.then( R => {
-			R.success 
-				? res.send(data)
-				: res.send(R.message)
-		} )
+//app.get('/', (req,res) => {
+//	res.sendFile(path.join(__dirname, './public/index.html'))
+//})
 
-})
+app.use('/', express.static(path.join(__dirname, './public')))
 
-app.get('/exist', async (req, res, next) => {
-	file.fileExist("data.json")
-		.then(exist => {
-			console.log(exist)
-			exist 
-				?	res.send("Le fichier existe")
-				: res.send("Le fichier n'existe pas")
-		})
+app.listen(port, ()=>{
+	console.log(`port ${port} is open`)
 })
 
 server.listen(port, ()=> console.log("Listening on ", process.env.PORT))
