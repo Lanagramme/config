@@ -5,7 +5,7 @@
 	- ranger
 	- neovim
 
-* 
+* Code
 	- git
 	- curl
 	- nodejs
@@ -13,18 +13,30 @@
 	- python3
 	- docker
 
-*
-	- htop
+* Utilities
+	- htop / btop
 	- neofetch
 	- vimwiki
 	- mdless
+	- cheat.sh
+	- 
 
+* Tools
+	- ntfy
+	- exa
+	- ripgrep
+	- fzf
+	- bat
+	- rg
+	- entr
+	- z
+	- mc
+	- 
 	
 ## Hardware
 **Actual** 
 * Processing units
 	- Samsung galaxy tab s7
-	- Samsung galaxy s6
 	- Raspberry pi 400
 	- Raspberry 3b+
 	
@@ -34,7 +46,7 @@
 	- Wireless keyboard logitec K380
 
 * Periferals
-	- Wireless headphones JBL TUNE750BTNC
+	- Wireless headphones JBL LIVE650BTNC
 
 * Stockage units
 

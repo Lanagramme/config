@@ -27,13 +27,19 @@ What am I studying
 What am I coding
 * [ ] Markdown Site
 * [ ] Behind the veil
-* [ ] [Site de lettres](Site de lettres)
 * [ ] Index de prix
+* [ ] Pygame
+* [ ] [Learning cards](../Documents/code/git/Learning-Cards/README.md)
+* [ ] Listes
+* [ ] Storage system
 
 What am I Playin => Piano
 * [ ] Ceux qui dorment
 
 What am I Playin => Guitar
+ * Stairway to heaven
 
 What am I Playin => Video Game
-
+ * DBFighters
+ * Odin Sphere
+ * Elden Ring
