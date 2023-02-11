@@ -1,4 +1,4 @@
-popd => return to previous directory
+cd - => return to previous directory
 locate [filename] => find filename in the locate database
 sudo updatedb => update the locate database
 whatis [command] => explain the command

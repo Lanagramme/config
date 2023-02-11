@@ -37,3 +37,8 @@ alias ionos="ssh lux@82.165.206.77"
 
 # ===== Bookmarks =====
 alias goto="cd -P"
+
+# ====== ssh ======
+alias sdu1="ssh ludji@sdu1.gozaimass.io"
+alias sdu2="ssh ludji@sdu2.gozaimass.io"
+alias sdu3="ssh ludji@sdu3.gozaimass.io"
