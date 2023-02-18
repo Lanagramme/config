@@ -18,9 +18,9 @@ What am I studying
 ## Writing
 * [ ] Brandon Sanderson Creative writing
 ## Art
-* [ ]
+* [ ] 
 ## Music
-* [ ]
+* [ ] 
 ## General
 * [ ] Study less study smart
 

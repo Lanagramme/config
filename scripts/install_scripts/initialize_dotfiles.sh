@@ -14,12 +14,17 @@ ln -s ~/Documents/code/git/config/config_files/home/.tmux.conf ~/
 ln -s ~/Documents/code/git/config/config_files/home/.zshrc ~/
 
 ln -s ~/Documents/code/git/config/config_files/home/vimwiki ~/
-ln -s ~/Documents/code/git/config/config_files/home/.bookmarks ~/
 
 #bookmarks
+mkdir ~/.bookmarks
 cd ~/.bookmarks
 rm -f @code
 ln -s ~/Documents/code/ @code
+ln -s @code/git @git
+ln -s @git/config @config
+ln -s @config/documentations @documentations
+ln -s @config/scripts @scripts
+ln -s @config/config_files @home
 
 #config
 cd ~/.config

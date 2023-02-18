@@ -10,4 +10,5 @@ sudo find / -time d -name package
 **Find files containing the word essay with any capitalization**
 find . -iname '*essay*'
 
-
+**Find files by content**
+find ./ -type f -exec grep -Hn "YourContent" {} \;

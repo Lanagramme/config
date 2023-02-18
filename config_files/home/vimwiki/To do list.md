@@ -1,14 +1,17 @@
 # Daily
 
-* [ ] Make the s7 a viable vim alternative
-* [ ] script python zip
-
+* [ ] Read
+	* [ ] Les fondementes de la personnalité
+	* [ ] Lettre à un jeune poète
+	* [ ] DnD
+* [ ] Dessin and lore
+	* [ ] Personnages
+	* [ ] Item
+	* [ ] Weapons
+	* [ ] Spells
 * [ ] write mini story
 * [ ] write character lines
 * [ ] Ranger
-* [ ] Cours englais
-	* [ ] conjonctions de coordination
-	* [ ] conjonctions de subordination
 
 
 ======================================================================
@@ -85,18 +88,10 @@ Suite logique, développement
 * in order to
 * so as to
 * so that
-	 
+ 
 ======================================================================
 
 # FRAMEWORK
-
-## Config
-### Awesome
-- [ ] Create awesome config
-	- [ ] bottom bar togglable
-
-### Vim
-* [ ] add a language server
 
 #### Vimwiki
 - [.] https://mkaz.blog/working-with-vim/
@@ -126,6 +121,15 @@ Travailler à partire de références pour les visages et l'anatomie
 		- poitrine
 		- pectoraux
 	
+perspective 
+gesture
+construction 
+anathomy
+color and light
+composition
+story telling
+design
+
 ======================================================================
 
 # PROJECTS
@@ -135,7 +139,6 @@ Travailler à partire de références pour les visages et l'anatomie
 - [ ] lore
 	- [ ] plot
 		- [ ] detailed plot
-- [ ] 
 
 ## knowledge
 - [ ] node
@@ -161,22 +164,10 @@ Travailler à partire de références pour les visages et l'anatomie
  - [ ] Final Space
  - [ ] Sarazanmai
  - [ ] O maidens
-
-perspective 
-gesture
-construction 
-anathomy
-color and light
-composition
-story telling
-design
+ - [ ] The wutcg from mercury
+ - [ ] Dark
 
 ======================================================================
-
-Nouvelle vie
- - Sous-locations
- - Interim
- - nouveau RSA
 
 Cours 
  - Coreen
