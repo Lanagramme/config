@@ -42,3 +42,7 @@ alias goto="cd -P"
 alias sdu1="ssh ludji@sdu1.gozaimass.io"
 alias sdu2="ssh ludji@sdu2.gozaimass.io"
 alias sdu3="ssh ludji@sdu3.gozaimass.io"
+
+if [ -d "$HOME/.bookmarks" ]; then
+    export CDPATH=".:$HOME/.bookmarks:/"
+fi
