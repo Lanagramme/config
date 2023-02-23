@@ -45,3 +45,4 @@ keymap.set('n', '<C-l>', "<C-w>l")
 
 keymap.set('i', 'kj', "<ESC>")
 
+keymap.set("n", "<leader>pv", vim.cmd.Ex)

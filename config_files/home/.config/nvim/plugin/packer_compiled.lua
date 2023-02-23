@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/ludji/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/ludji/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/ludji/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
@@ -166,6 +171,11 @@ _G.packer_plugins = {
     path = "/home/ludji/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  tagbar = {
+    loaded = true,
+    path = "/home/ludji/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://github.com/preservim/tagbar"
+  },
   ["telescope-fzf-native.nvim"] = {
     cond = { true },
     loaded = false,
@@ -178,6 +188,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ludji/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-closetag"] = {
+    loaded = true,
+    path = "/home/ludji/.local/share/nvim/site/pack/packer/start/vim-closetag",
+    url = "https://github.com/alvan/vim-closetag"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/home/ludji/.local/share/nvim/site/pack/packer/start/vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -193,6 +213,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ludji/.local/share/nvim/site/pack/packer/start/vim-sleuth",
     url = "https://github.com/tpope/vim-sleuth"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/ludji/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/ludji/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/home/ludji/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 

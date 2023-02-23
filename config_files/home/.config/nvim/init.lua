@@ -102,6 +102,9 @@ vim.api.nvim_create_autocmd('BufWritePost', {
   pattern = vim.fn.expand '$MYVIMRC',
 })
 
+-- Vimwiki settings
+vim.cmd [[ let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}] ]]
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`

@@ -15,27 +15,25 @@ ln -s @config/documentations @documentations
 ln -s @config/scripts @scripts
 ln -s @config/config_files @home
 
-source .bash_aliases
-
 # link dotfiles
-ln -s @home/home/.bash_aliases ~/
-ln -s @home/home/.bashrc ~/
-ln -s @home/home/.paths ~/
-ln -s @home/home/.fonts ~/
-ln -s @home/home/.gitconfig ~/
-ln -s @home/home/.profile ~/
-ln -s @home/home/.tmux.conf ~/
-ln -s @home/home/.zshrc ~/
+ln -s ~/Documents/code/git/config/config_files/home/.bash_aliases ~/
+ln -s ~/Documents/code/git/config/config_files/home/.bashrc ~/
+ln -s ~/Documents/code/git/config/config_files/home/.paths ~/
+ln -s ~/Documents/code/git/config/config_files/home/.fonts ~/
+ln -s ~/Documents/code/git/config/config_files/home/.gitconfig ~/
+ln -s ~/Documents/code/git/config/config_files/home/.profile ~/
+ln -s ~/Documents/code/git/config/config_files/home/.tmux.conf ~/
+ln -s ~/Documents/code/git/config/config_files/home/.zshrc ~/
 
 # link vimwiki
-ln -s @home/home/vimwiki ~/
+ln -s ~/Documents/code/git/config/config_files/home/vimwiki ~/
 
 #config
 cd ~/.config
-rm -f awesome nvim polybar
+rm -rf awesome nvim polybar
 
-ln -s @home/home/.config/awesome ~/.config
-ln -s @home/home/.config/nvim    ~/.config
-ln -s @home/home/.config/polybar ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/awesome ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/nvim    ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/polybar ~/.config
 
 

@@ -1,6 +1,9 @@
-if [ -f "~/.nix-profile/etc/profile.d/nix.sh" ];then
+FILE=~/.nix-profile/etc/profile.d/nix.sh
+if [ -f "$FILE" ]; then
+    echo "$FILE exists."
 else
-	#install nix
+	echo profile not found
+	echo installing nix
 	sh <(curl -L https://nixos.org/nix/install) --no-daemon
 fi
 
