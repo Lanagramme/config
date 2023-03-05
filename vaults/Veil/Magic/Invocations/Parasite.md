@@ -1,9 +1,13 @@
 ---
 type: Invocation
-element: Earth
+element: Vegetation
+Name: Parasite
 ---
+#spell
 
 # Parasite
+
+[Element:: [[The Elements#Vegetation|Vegetation]]]
 
 ## Passives
 

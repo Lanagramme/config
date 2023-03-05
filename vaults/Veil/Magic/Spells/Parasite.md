@@ -1,10 +1,12 @@
 ---
 type: Spell
-Element: Earth
+Name: Parasite
 ---
+#spell 
+
 # Parasite
 
-[Element:: [[The Elements#Earth|Earth]]]
+[Element:: [[The Elements#Vegetation|Vegetation]]]
 
 ## Cost
 

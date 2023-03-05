@@ -1,7 +1,9 @@
 ---
 type: Spell
-Element: Fire
+Name: Fireball
 ---
+#spell
+
 # Fireball
 
 [Element:: [[The Elements#Fire|Fire]]]

@@ -15,7 +15,6 @@ nix-env -iA \
 	nixpkgs.git \
 	nixpkgs.bat \
 	nixpkgs.fzf \
-	nixpkgs.zsh \
 	nixpkgs.tmux \
 	nixpkgs.stow \
 	nixpkgs.yarn \
@@ -30,7 +29,7 @@ nix-env -iA \
 	nixpkgs.direnv
 
 # add zsh to valid login shells
-command -v zsh | sudo tee -a /etc/shells
+#command -v zsh | sudo tee -a /etc/shells
 
 # use zsh as the default shell
-sudo chsh -s $(which zsh) $USER
+#sudo chsh -s $(which zsh) $USER

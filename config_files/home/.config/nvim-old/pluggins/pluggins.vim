@@ -27,6 +27,7 @@ Plug 'https://github.com/junegunn/goyo.vim'
 Plug 'https://github.com/mattn/calendar-vim'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'navarasu/onedark.nvim'
 
 call plug#end()
 
@@ -71,3 +72,9 @@ au BufNewFile ~/vimwiki/diary/*.md :silent 0r !~/.config/nvim/templates/generate
 set nocompatible
 filetype plugin on
 syntax on
+
+" color scheme
+let g:onedark_config = {
+    \ 'style': 'darker',
+\}
+colorscheme onedark

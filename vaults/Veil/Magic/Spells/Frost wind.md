@@ -1,10 +1,12 @@
 ---
 type: Spell
-Element: Water
+Name: Frost wind
 ---
+#Spell
+
 # Frost wind
 
-[Element:: [[The Elements#Water|Water]]]
+[Element:: [[The Elements#Ice|Ice]]]
 
 ## Cost
 

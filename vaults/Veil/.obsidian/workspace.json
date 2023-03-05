@@ -8,29 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "149c17418cba5230",
+            "id": "199a47f439c89723",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Characters/_Index.md",
+                "file": "Lore/Magic/The Elements.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c47bfabbc13f5559",
+            "id": "695b0f5088c7ee78",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "release-notes",
               "state": {
-                "file": "Magic/Spells/Parasite.md",
-                "mode": "source",
-                "source": false
+                "currentVersion": "1.1.16"
               }
             }
-          },
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "edebb11bdb0012f2",
+        "type": "tabs",
+        "children": [
           {
             "id": "52055e6eab4a9c23",
             "type": "leaf",
@@ -38,13 +43,12 @@
               "type": "markdown",
               "state": {
                 "file": "Magic/Invocations/Parasite.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#character",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Magic/Invocations/Parasite.md",
+                "file": "Lore/Magic/The Elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Magic/Invocations/Parasite.md",
+                "file": "Lore/Magic/The Elements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Magic/Invocations/Parasite.md"
+                "file": "Lore/Magic/The Elements.md"
               }
             }
           }
@@ -172,17 +176,27 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "52055e6eab4a9c23",
+  "active": "695b0f5088c7ee78",
   "lastOpenFiles": [
-    "Magic/Effects/Burn.md",
-    "Magic/Invocations/Parasite.md",
-    "Magic/Spells/Parasite.md",
-    "apply.md",
-    "Magic/Spells/Frost wind.md",
+    "Untitled.md",
+    "2023-01-18.md",
+    "Magic/Spells/_Index.md",
     "Magic/Spells/Fireball.md",
-    "Magic/Spells/Splash.md",
+    "Magic/Spells/Frost wind.md",
+    "Magic/Spells/Parasite.md",
     "Magic/Spells/Spark.md",
-    "Gameplay/Mechanics/Combat/Terrain.md",
-    "Magic/Effects/Wet.md"
+    "Magic/Spells/Splash.md",
+    "Magic/Invocations/Parasite.md",
+    "Lore/Magic/The Elements.md",
+    "Templates/Character.md",
+    "Characters/Alice.md",
+    "Characters/_Index.md",
+    "Templates/Spell.md",
+    "Magic/Effects/Burn.md",
+    "Magic/Effects/Wet.md",
+    "Magic/Effects/Frozen.md",
+    "Gameplay/Mechanics/Combat/Caster.md",
+    "apply.md",
+    "Gameplay/Mechanics/Combat/Terrain.md"
   ]
 }

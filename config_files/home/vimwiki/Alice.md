@@ -1,4 +1,4 @@
-# *Malika*
+# *Alice*
 
 **Archetype**: Daddy issues
 **Want**: Prove she her worth
@@ -14,7 +14,7 @@ Fervnat croyants dans la doctrine du sang, la famille Ashford refusa de souiller
 
 Ivan Asford aurait du être banni pour s'être détourné des dogmes familliales en épousant Ellena. Pourtant, après son un entretien privé avec le pratriarche de la famille, il fut autorisé à conserver son rand. Nul ne sait quel accord secret ils passèrent, mais 
 
-Que pouvait il bien lui offrir pour qu'une sixième née accepte de se lier à un troisième d'une famille de renom moindre que la sienne? Nul ne le sut jamais, si ce n'est Alastar Ashford, patriarche de la famille, qui approuva leur union à la surprise générale.
+Que pouvait il bien lui offrir pour qu'une sixième née accepte de se lier au troisième d'une famille au renom inferieur à la sienne? Nul ne le sut jamais, si ce n'est Alastar Ashford, patriarche de la famille, qui approuva leur union à la surprise générale.
 
 **Biography** :
 Malika Comes from a once grand but now forgotten family of mages, who desperately cling to their tradition in hope for the return of their glorius past. Her parents specificaly marry each other in order to create a child with strong magic power according to the rule of blood, and as she grew up, they kept teling her that she had to be the miracle to save the family. She was taught from a young age the family magic and endured dangerous and painful rituals in order to develop her talent. When she grew mature enough to cast her first spell, her parents gave her an artefact, supposed to reveal her potential and demanded she perform a spell for them. But she could not. Realizing she was a failure and useless for their goal, they hid her form the rest of the family and turn all their attention toward other methods to create a strong heir. Another heir. 

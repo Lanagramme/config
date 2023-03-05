@@ -43,7 +43,8 @@ syntax on
  endif
  syntax enable
  " colorscheme evening
-colorscheme dracula
+" colorscheme dracula
+" colorscheme onedark
 
 " open new split panes to right and below
 set splitright
