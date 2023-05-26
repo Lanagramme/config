@@ -24,9 +24,9 @@ require("errors")(naughty)
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
--- terminal = "gnome-terminal"
+terminal = "gnome-terminal"
 -- terminal = "sakura"
-terminal = "tilix"
+-- terminal = "tilix"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"

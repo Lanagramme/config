@@ -24,6 +24,7 @@ nix-env -iA \
 	nixpkgs.ripgrep \
 	nixpkgs.cmatrix \
 	nixpkgs.firefox \
+	nixpkgs.awesome \
 	nixpkgs.neofetch \
 	nixpkgs.nettools \
 	nixpkgs.direnv

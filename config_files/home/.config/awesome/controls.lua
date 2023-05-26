@@ -63,7 +63,8 @@ local function Controls(gears, awful, hotkeys_popup, menubar)
 								os.execute(string.format("rofi -show run"))		        end,
 								{description = "show rofi", group = "launcher"}),
 			awful.key({ modkey },            "f",     function () 
-								awful.util.spawn("nautilus") end,
+								-- awful.util.spawn("nautilus") end,
+								awful.util.spawn("thunar") end,
 								{description = "Open file explorer", group = "applications"}),
 			awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
 								{description = "open a terminal", group = "launcher"}),
@@ -115,7 +116,8 @@ local function Controls(gears, awful, hotkeys_popup, menubar)
 								{description = "lua execute prompt", group = "awesome"}),
 			-- Menubar
 			awful.key({ modkey }, "p", function() menubar.show() end,
-								{description = "show the menubar", group = "launcher"})
+								{description = "show the menubar", group = "launcher"}),
+			awful.key({modkey}, "o", awful.client.movetoscreen)
 	)
 
 	clientkeys = gears.table.join(
