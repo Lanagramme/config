@@ -10,6 +10,7 @@ Stories
 [[TDL]]
 
 
+[[Damsell and nice guy]]
 [Daisy grows](Daisy grows)
 [Personalities](personalities)
 [Behaviours](Behaviours)
@@ -23,3 +24,4 @@ veil of ignorance
 
 **Design**
 [Spells](Spells)
+[[Prototype I]]
