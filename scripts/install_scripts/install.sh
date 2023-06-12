@@ -27,7 +27,8 @@ nix-env -iA \
 	nixpkgs.awesome \
 	nixpkgs.neofetch \
 	nixpkgs.nettools \
-	nixpkgs.direnv
+	nixpkgs.direnv \
+	nixpkgs.libsForQt5.gwenview
 
 # add zsh to valid login shells
 #command -v zsh | sudo tee -a /etc/shells
