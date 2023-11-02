@@ -61,6 +61,7 @@ export SILVER_ICONS=nerd
 
 source ~/.bash_aliases
 source ~/.paths
+. /home/ludji/.nix-profile/etc/profile.d/nix.sh
 
 # ===== Bookmarks ======
 if [ -d "$HOME/.bookmarks" ]; then

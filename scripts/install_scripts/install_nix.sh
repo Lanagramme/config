@@ -15,20 +15,25 @@ nix-env -iA \
 	nixpkgs.git \
 	nixpkgs.bat \
 	nixpkgs.fzf \
+  nixpkgs.feh \
 	nixpkgs.tmux \
 	nixpkgs.stow \
 	nixpkgs.yarn \
 	nixpkgs.htop \
+  nixpkgs.picom \
+  nixpkgs.tilix \
 	nixpkgs.ranger \
 	nixpkgs.neovim \
+	nixpkgs.direnv \
+  nixpkgs.polybar \
 	nixpkgs.ripgrep \
 	nixpkgs.cmatrix \
 	nixpkgs.firefox \
 	nixpkgs.awesome \
 	nixpkgs.neofetch \
 	nixpkgs.nettools \
-	nixpkgs.direnv \
-	nixpkgs.libsForQt5.gwenview
+	nixpkgs.libsForQt5.gwenview \
+  nixpkgs.networkmanagerapplet
 
 # add zsh to valid login shells
 #command -v zsh | sudo tee -a /etc/shells
