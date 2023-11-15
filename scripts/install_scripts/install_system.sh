@@ -7,26 +7,25 @@ fi
 
 # setup git
 #     installer cle ssh
-cp ./zzb.zip ~/
-cd ~/
-unzip ~/zzb.zip
-rm -f zzb.zip
+unzip ./zzb.zip
+rm -f ~/.ssh
+mv ./.ssh ~/
+rm -f .ssh
+
+exit 0
 
 #     ssh git
 ssh git -T git@github.com
 
-#     mkdir git
-mkdir -p ~/Documents/code/git
-
 #     go to git and clone config
-cd ~/Documents/code/git
-git clone git@github.com:Lanagramme/config
+mkdir -p ~/Documents/code/git
+git clone git@github.com:Lanagramme/config ~/Documents/code/git/
 # ================
 
 #install zsh
 if [[ $1 == "deb" ]]; then
 	sudo apt-get install zsh -y
-elif [[ $2 == "arch" ]]; then
+elif [[ $2 == "arch" ]]; thesh 
 	sudo pacman -S zsh
 fi
 
