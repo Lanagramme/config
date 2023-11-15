@@ -8,7 +8,7 @@ fi
 # setup git
 #     installer cle ssh
 unzip ./zzb.zip
-rm -f ~/.ssh
+rm -rf ~/.ssh
 mv ./.ssh ~/
 rm -f .ssh
 
