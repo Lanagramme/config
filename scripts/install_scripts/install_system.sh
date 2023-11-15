@@ -1,6 +1,7 @@
 #! /bin/sh
 
-if [[ "$1" != "deb" ]] || [[ "$1" != "arch" ]]; then
+echo $1
+if [[ $1 != "deb" ]] && [[ $1 != "arch" ]]; then
 	echo "options are 'deb' and 'arch'"
 	exit 0
 fi
