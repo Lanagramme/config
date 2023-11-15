@@ -1,10 +1,11 @@
 #! /bin/sh
 
-if [[ $1 != "deb" ]] || [[ $1 != "arch" ]]; then
+if [[ "$1" != "deb" ]] || [[ "$1" != "arch" ]]; then
 	echo "options are 'deb' and 'arch'"
 	exit 0
 fi
 
+exit 0
 # setup git
 #     installer cle ssh
 cp ./zzb.zip ~#/
