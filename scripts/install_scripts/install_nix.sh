@@ -12,7 +12,7 @@ fi
 
 #install packages
 nix-env -iA \
-	nixpkgs.git \
+	# nixpkgs.git \
 	nixpkgs.bat \
 	nixpkgs.fzf \
   nixpkgs.feh \

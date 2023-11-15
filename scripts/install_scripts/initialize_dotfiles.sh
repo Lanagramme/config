@@ -32,8 +32,8 @@ ln -s ~/Documents/code/git/config/config_files/home/vimwiki ~/
 cd ~/.config
 rm -rf awesome nvim polybar
 
-ln -s ~/Documents/code/git/config/config_files/home/.config/awesome ~/.config
-ln -s ~/Documents/code/git/config/config_files/home/.config/nvim    ~/.config
-ln -s ~/Documents/code/git/config/config_files/home/.config/polybar ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/awesome  ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/nvim-old ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/polybar  ~/.config
 
 
