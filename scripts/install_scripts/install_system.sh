@@ -6,60 +6,12 @@ if [[ $1 != "deb" ]] && [[ $1 != "arch" ]]; then
 fi
 
 # setup git
-#     installer cle ssh
-unzip ./zzb.zip
-rm -rf ~/.ssh
-mv ./.ssh ~/
-rm -f .ssh
-
-exit 0
-
-#     ssh git
-ssh git -T git@github.com
-
-#     go to git and clone config
-mkdir -p ~/Documents/code/git
-git clone git@github.com:Lanagramme/config ~/Documents/code/git/
-# ================
-
-#install zsh
-if [[ $1 == "deb" ]]; then
-	sudo apt-get install zsh -y
-elif [[ $2 == "arch" ]]; thesh 
-	sudo pacman -S zsh
-fi
-
-#     install ohmyzsh
-wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
-sh install.sh
-
-#     install zsh pluggins
-cd ~/Documents/code/git/config/scripts/install_scripts/
-sh install_dependencies.sh
-# ================
-
-# install nix /
-sh install_nix.sh
-
-if [[ $1 == "deb" ]]; then
-	sudo apt install $(cat ./awesome_requirements)
-	sudo apt install $(cat ./coding_environment_deb)
-elif [[ $2 == "arch" ]]; then
-	sudo pacman -S $(cat ./awesome_requirements)
-	sudo apt install $(cat ./coding_environment_arch)
-fi
-
-#setup neovim
-#   setup nvchad
-rm -rf ~/.local/share/nvim
-git clone https://github.com/NvChad/NvChad ~/.config/nvim-chad --depth 1
-
-#   setup vimplug
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sh ./install_zsh.sh $1
+sh ./install_nix.sh
+sh ./setup_neovim.sh
+sh ./setup_awesome.sh
 
 #initialize dotfiles
-sh initialize_dotfiles.sh
-sh setup_bookmarks.sh
+sh ./initialize_dotfiles.sh
+sh ./setup_bookmarks.sh
 
-#setup awesome

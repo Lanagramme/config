@@ -3,17 +3,7 @@
 #home
 cd ~/
 # delete all
-rm -fr .bash_aliases .bashrc .fonts .gitconfig .profile .tmux.conf .zshrc vimwiki .bookmarks .paths
-
-# create bookmarks
-mkdir ~/.bookmarks
-cd ~/.bookmarks
-ln -s ~/Documents/code/ @code
-ln -s @code/git @git
-ln -s @git/config @config
-ln -s @config/documentations @documentations
-ln -s @config/scripts @scripts
-ln -s @config/config_files @home
+rm -fr .bash_aliases .bashrc .fonts .gitconfig .profile .tmux.conf .zshrc vimwiki .paths
 
 # link dotfiles
 ln -s ~/Documents/code/git/config/config_files/home/.bash_aliases ~/

@@ -1,3 +1,10 @@
+#! /bin/sh
+
+echo "|.========================================.|"
+echo ""
+echo "Installing Nix"
+echo ""
+
 FILE=~/.nix-profile/etc/profile.d/nix.sh
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
@@ -12,31 +19,26 @@ fi
 
 #install packages
 nix-env -iA \
-	# nixpkgs.git \
-	nixpkgs.bat \
-	nixpkgs.fzf \
-  nixpkgs.feh \
-	nixpkgs.tmux \
-	nixpkgs.stow \
-	nixpkgs.yarn \
-	nixpkgs.htop \
-  nixpkgs.picom \
-  nixpkgs.tilix \
-	nixpkgs.ranger \
-	nixpkgs.neovim \
-	nixpkgs.direnv \
-  nixpkgs.polybar \
-	nixpkgs.ripgrep \
-	nixpkgs.cmatrix \
-	nixpkgs.firefox \
 	nixpkgs.awesome \
-	nixpkgs.neofetch \
-	nixpkgs.nettools \
+	nixpkgs.bat \
+	nixpkgs.btop \
+	nixpkgs.cargo \
+	nixpkgs.cmatrix \
+	nixpkgs.cmake \
+	nixpkgs.direnv \
+	nixpkgs.fzf \
+	nixpkgs.gcc \
 	nixpkgs.libsForQt5.gwenview \
-  nixpkgs.networkmanagerapplet
+	nixpkgs.nettools \
+	nixpkgs.neofetch \
+  nixpkgs.python3Full \
+	nixpkgs.ranger \
+	nixpkgs.ripgrep \
+	nixpkgs.stow \
+	nixpkgs.tmux \
+	nixpkgs.yarn \
 
-# add zsh to valid login shells
-#command -v zsh | sudo tee -a /etc/shells
+echo ""
+echo "|.========================================.|"
+# ================
 
-# use zsh as the default shell
-#sudo chsh -s $(which zsh) $USER

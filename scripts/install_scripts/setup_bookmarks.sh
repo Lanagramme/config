@@ -19,10 +19,10 @@ ln -s Documents/code/git/config/obsidian/vaults/ ./vaults
 
 cd ~/
 
-echo "if test -d '$HOME/.bookmarks'; then" >> .bashrc
-echo "  export CDPATH='.:$HOME/.bookmarks:/'" >> .bashrc
+echo "if test -d '$HOME/.bookmarks'; then" >> ~/.bashrc
+echo "  export CDPATH='.:$HOME/.bookmarks:/'" >> ~/.bashrc
 echo "fi" >> .bashrc
 
-echo "if test -d '$HOME/.bookmarks'; then" >> .zshrc
-echo "  export CDPATH='.:$HOME/.bookmarks:/'" >> .zshrc
+echo "if test -d '$HOME/.bookmarks'; then" >> ~/.zshrc
+echo "  export CDPATH='.:$HOME/.bookmarks:/'" >> ~/.zshrc
 echo "fi" >> .zshrc
