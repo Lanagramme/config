@@ -5,7 +5,7 @@ if [[ $1 != "deb" ]] && [[ $1 != "arch" ]]; then
 	exit 0
 fi
 
-# setup git
+sh ./setup_git
 sh ./install_zsh.sh $1
 sh ./install_nix.sh
 sh ./setup_neovim.sh
