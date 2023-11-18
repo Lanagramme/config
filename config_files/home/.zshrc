@@ -92,12 +92,6 @@ source ~/.paths
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
-if test -d '/home/ludji/.bookmarks'; then
-  export CDPATH='.:/home/ludji/.bookmarks:/'
-fi
 if test -d '/home/ludji/.bookmarks'; then
   export CDPATH='.:/home/ludji/.bookmarks:/'
 fi
