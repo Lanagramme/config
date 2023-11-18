@@ -13,7 +13,7 @@ echo ""
 # install zsh
 if [[ $1 == "deb" ]]; then
 	sudo apt-get install zsh -y
-elif [[ $2 == "arch" ]]; thesh 
+elif [[ $2 == "arch" ]]; then 
 	sudo pacman -S zsh
 fi
 

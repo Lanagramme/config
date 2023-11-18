@@ -95,3 +95,9 @@ if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
+if test -d '/home/ludji/.bookmarks'; then
+  export CDPATH='.:/home/ludji/.bookmarks:/'
+fi
+if test -d '/home/ludji/.bookmarks'; then
+  export CDPATH='.:/home/ludji/.bookmarks:/'
+fi
