@@ -22,6 +22,7 @@
 [[Free writing]]
 [Epistographie](./epistographie/Epistographie)
 
+[Journal](./journal/Journal.md)
 [Notes](./notes/notes.md)
 
 =====================================================
