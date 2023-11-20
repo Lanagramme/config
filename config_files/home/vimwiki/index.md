@@ -1,34 +1,42 @@
 # Index
 
+## Affirmative actions
 [[To do list]]
 [PressStart](PressStart)
 
 =====================================================
+## Centres d'interêts
+[Arts](./arts/Arts.md)
+[Musique](./musique/Musique.md)
 
-[[Buy_list]]
-[[Free writing]]
-[[Coreen]]
-
-[[Projets]]
-[[Epistographie]]
-
-[[Framework]]
-
-[[I Dont Know What to do]]
-
-[[Tabs]]
-
-[[Numbers]]
+[[Recherches]]
 
 =====================================================
-[Articles](Articles)
-[Songs](Songs)
+## Practice
+[Songs](./songs/Songs)
+[[Framework]]
+[[Projets]]
+
+=====================================================
+## Writing
+[[Free writing]]
+[Epistographie](./epistographie/Epistographie)
+
+[Notes](./notes/notes.md)
+
+=====================================================
+## Housework
+[[Buy_list]]
+
+=====================================================
+## Media
+[Read List](Reading List)
+[Watch List](Watch List)
+
+
+=====================================================
+## Watch
 
 
 
-
-
-
-
-
-[Keybindings](Keybindings)
+[Keybindings](./cheatsheets/Keybindings)

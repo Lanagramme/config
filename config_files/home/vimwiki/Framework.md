@@ -1,5 +1,3 @@
 [[Hacker]]
 [[Music]]
-[[Writing]]
 
-[[Drawing]]

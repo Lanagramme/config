@@ -22,6 +22,7 @@ nix-env -iA \
 	nixpkgs.awesome \
 	nixpkgs.bat \
 	nixpkgs.btop \
+	nixpkgs.pywal \
 	nixpkgs.cargo \
 	nixpkgs.cmatrix \
 	nixpkgs.cmake \

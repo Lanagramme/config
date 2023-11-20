@@ -31,6 +31,8 @@
 	- entr
 	- z
 	- mc
+	- pywal
+	- 
 	- 
 	
 ## Hardware

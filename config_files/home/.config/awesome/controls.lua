@@ -56,8 +56,10 @@ local function Controls(gears, awful, hotkeys_popup, menubar)
 				-- awful.util.spawn("firefox-esr") end,
 				awful.util.spawn("firefox") end,
 				{description = "Launch firefox", group = "applications"}),
+			-- awful.key({ modkey,					  }, "w", function ()
+			-- 					os.execute(string.format("feh --bg-fill -r -z ~/Images/Wallpapers/Landscape/"))		        end,
 			awful.key({ modkey,					  }, "w", function ()
-								os.execute(string.format("feh --bg-fill -r -z ~/Images/Wallpapers/Landscape/"))		        end,
+								os.execute(string.format("python3 ~/.config/awesome/terminal.py"))		        end,
 								{description = "show rofi", group = "launcher"}),
 			awful.key({ modkey,					  }, "d", function ()
 								os.execute(string.format("rofi -show run"))		        end,

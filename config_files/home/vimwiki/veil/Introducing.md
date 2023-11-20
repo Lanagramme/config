@@ -17,5 +17,6 @@ when building character, think about limitations flaws handicap and ask how do t
 [[Alice]]
 [[Ash]]
 [Malika](Malika)
+[[Moonar fool]]
 
 You know what ? Yeah, I'm a ..., and you know what happend when someone says no to a ... ? Exactly. So let's make things easier for you and faster for me and just give me what I asked for while I'm still asking nicely.

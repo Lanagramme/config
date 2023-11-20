@@ -6,6 +6,7 @@ alias rm='rm -i'
 
 # ===== run programs =====
 alias v="nvim"
+alias fzf="fzf --preview='less {}' --bind shift-up:preview-page-up,shift-down:preview-page-down"
 
 # ===== config files =====
 alias aw="v ~/.config/awesome/rc.lua"

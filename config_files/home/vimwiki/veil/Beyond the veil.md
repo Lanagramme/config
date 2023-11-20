@@ -15,6 +15,7 @@ Stories
 [Personalities](personalities)
 [Behaviours](Behaviours)
 [Miscellanious](Miscellanious)
+[[Student - Teacher]]
 
 **Concepts**
 veil of ignorance
@@ -25,3 +26,4 @@ veil of ignorance
 **Design**
 [Spells](Spells)
 [[Prototype I]]
+[[List of Names]]

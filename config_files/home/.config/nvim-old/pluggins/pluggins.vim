@@ -31,6 +31,7 @@ Plug 'https://github.com/mattn/calendar-vim'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'navarasu/onedark.nvim'
+Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 

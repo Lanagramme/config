@@ -16,7 +16,7 @@ Four young adults wake up in an old house with no memory of how they ended up th
 
 Doubt quickly arise between them and they each start to wonder if the one responsible for their situation is one of them, or if they are watching the whole thing form afar. 
 
-They reluctantly agree it would be more productive to cooperate in order to escpe the place, but the more paranoid openly display their mistrust toward the others. 
+They reluctantly agree it would be more productive to cooperate in order to escape the place, but the more paranoid openly display their mistrust toward the others. 
 
 As they explore the manor, they find themself trapped in a room in which they have to sole a puzzle to escape. As they do, they find a key opening a closed door inside the manor. the door lead to another puzzle, this one not trapping them but requiring a thourough exploration of the manor to be solved. Their prize is yet another key. They quicly conclude that by solving all the puzzles and finding all the keys, they will be able to leave. 
 
