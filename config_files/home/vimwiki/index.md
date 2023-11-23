@@ -9,13 +9,13 @@
 [Arts](./arts/Arts.md)
 [Musique](./musique/Musique.md)
 
+[Projets](projets/Projets.md)
 [[Recherches]]
 
 =====================================================
 ## Practice
 [Songs](./songs/Songs)
 [[Framework]]
-[[Projets]]
 
 =====================================================
 ## Writing

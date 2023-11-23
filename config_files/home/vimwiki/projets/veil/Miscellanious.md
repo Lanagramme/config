@@ -20,12 +20,12 @@ Tried to Cook for ... once and blew up the kitchen
  
 - Your filled them with so much hope I'm afraid they will do something stupid
 
- - can you keep a secret ?
- - of course !
- - so can i.
+- can you keep a secret ?
+- of course !
+- so can i.
   
 - You're in the way.
--  Oh ? And what are you gonna do about it?
+- Oh ? And what are you gonna do about it?
 - Why would I be the one doing anything?
 - huh ?
 - It's your problem, not mine.

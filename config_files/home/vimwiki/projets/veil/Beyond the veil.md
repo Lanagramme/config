@@ -1,21 +1,19 @@
 # Beyond the veil Archives
 
 **Characters**
-
 [Introducing](Introducing)
+[Character List](./characters/Character List.md)
+[Character stories](Character stories)
 
-Stories
-[[Quest ideas]]
-[Lore](Lore)
-[[TDL]]
-
-
-[[Damsell and nice guy]]
-[Daisy grows](Daisy grows)
 [Personalities](personalities)
 [Behaviours](Behaviours)
 [Miscellanious](Miscellanious)
 [[Student - Teacher]]
+
+**Stories**
+[[Quest ideas]]
+[Lore](Lore)
+[[TDL]]
 
 **Concepts**
 veil of ignorance
