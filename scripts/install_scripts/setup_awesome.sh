@@ -7,6 +7,7 @@ echo ""
 
 . ~/.nix-profile/etc/profile.d/nix.sh
 nix-env -iA \
+	nixpkgs.awesome \
 	nixpkgs.feh \
 	nixpkgs.networkmanagerapplet \
 	nixpkgs.picom \

@@ -19,7 +19,6 @@ fi
 
 #install packages
 nix-env -iA \
-	nixpkgs.awesome \
 	nixpkgs.bat \
 	nixpkgs.btop \
 	nixpkgs.pywal \
