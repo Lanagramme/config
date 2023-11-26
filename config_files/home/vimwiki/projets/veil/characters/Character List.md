@@ -1,10 +1,26 @@
 #Character List
 
-[[Ash]]
-[[Alice]]
-[Daisy](Daisy)
-[[Les quatre filles du général]]
-[Malika](Malika)
-[[Moonar fool]]
-[Odin](Odin)
-[[The dark lord]]
+| Nom               | Association | Status      |
+| ---               | ---         | ---         |
+| [[Ash]]           |             |             |
+| [[Alice]]         | Misfits     | En cours    |
+| [[Daisy]]         |             | A commencer |
+| [[Lucien]]        |             |             |
+| [[Malika]]        |             | A réviser   |
+| [[Moonar fool]]   |             | A commencer |
+| [[Odin]]          |             | A réviser   |
+| [[The dark lord]] |             | A réviser   |
+| [[Sheila]]        | Toph        |             |
+| [[Charlotte]]     | Toph        |             |
+| [[Orchide]]       | Toph        |             |
+| [[Lisa]]          |             |             |
+
+
+
+
+
+
+
+
+
+

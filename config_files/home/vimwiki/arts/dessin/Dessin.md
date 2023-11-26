@@ -40,11 +40,15 @@ design
 ================================
 
 ## Theory
+[Theory](./theory/theory.md)
+
 
 [Retour](#Arts)
 ================================
 
 ## Exercices
+
+[Exercises](./exercises/exercises.md)
 	
 Travailler à partire de références pour les visages et l'anatomie
 	**Visages**
@@ -79,5 +83,6 @@ Travailler à partire de références pour les visages et l'anatomie
 
 ## Projets
 
+[Projets](./projets/projets.md)
 [Retour](#Arts)
 ================================

@@ -1,43 +1,16 @@
-# Index
+## Wiki
 
-## Affirmative actions
-[[To do list]]
-[PressStart](PressStart)
+[To do list](./framework/To do list.md)
+[Framework](./framework/framework.md)
 
 =====================================================
-## Centres d'interêts
-[Arts](./arts/Arts.md)
-[Musique](./musique/Musique.md)
-
+[Arts](arts/Art.md)
 [Projets](projets/Projets.md)
-[[Recherches]]
 
 =====================================================
-## Practice
-[Songs](./songs/Songs)
-[[Framework]]
+[writing](./writing/writing.md)
 
 =====================================================
-## Writing
-[[Free writing]]
-[Epistographie](./epistographie/Epistographie)
-
-[Journal](./journal/Journal.md)
-[Notes](./notes/notes.md)
-
-=====================================================
-## Housework
-[[Buy_list]]
-
-=====================================================
-## Media
-[Read List](Reading List)
-[Watch List](Watch List)
-
-
-=====================================================
-## Watch
-
-
+[Media](./media/media.md)
 
 [Keybindings](./cheatsheets/Keybindings)

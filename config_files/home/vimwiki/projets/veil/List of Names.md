@@ -1,6 +1,8 @@
 =================
 * Tay
 * Frëya
+* Angeline
+* Lucina
 * Andromeda
 * Dynn
 * Nicolaï

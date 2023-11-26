@@ -1,3 +1,5 @@
+#Notes
 
-[Culture](Numbers)
+[[Free writing]]
+
 [Articles](./articles/Articles)

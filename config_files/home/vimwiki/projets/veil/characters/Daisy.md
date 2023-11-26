@@ -1,8 +1,8 @@
-# Ash
+#
 
-**Name**: Ashen, Ash
-**Physical traits**: small, chubby, 
-**Personnality traits**: peppy, proud, 
+**Name**:
+**Physical traits**:
+**Personnality traits**:
 **Positive traits**:
  *
 **Negative traits**:
@@ -15,3 +15,6 @@
 ## Backstory
 ### Legacy
 ### Biography
+
+## Stories
+[Daisy grows](../stories/Daisy grows.md)

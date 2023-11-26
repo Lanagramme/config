@@ -3,7 +3,7 @@
 **Characters**
 [Introducing](Introducing)
 [Character List](./characters/Character List.md)
-[Character stories](Character stories)
+[Character stories](./stories/Character stories)
 
 [Personalities](personalities)
 [Behaviours](Behaviours)
@@ -11,9 +11,10 @@
 [[Student - Teacher]]
 
 **Stories**
+[Stories](./stories/Stories)
 [[Quest ideas]]
 [Lore](Lore)
-[[TDL]]
+[[Notes]]
 
 **Concepts**
 veil of ignorance

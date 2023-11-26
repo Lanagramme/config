@@ -13,6 +13,10 @@ Character design
 
 when building character, think about limitations flaws handicap and ask how do that create motivation, and how does it create story
 
+=== Template ===
+
+#
+
 **Name**:
 **Physical traits**:
 **Personnality traits**:
@@ -28,3 +32,4 @@ when building character, think about limitations flaws handicap and ask how do t
 ## Backstory
 ### Legacy
 ### Biography
+
