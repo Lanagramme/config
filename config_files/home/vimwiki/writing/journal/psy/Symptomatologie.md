@@ -9,6 +9,10 @@
  * [ADHD](## ADHD)
  * [Depersonnalisation](## Depersonnalisation)
 
+Sertraline 
+seresta
+paroxétine
+
 [Retour](# Symptomatologie)
 ## Ralentissement psychomoteur
 
