@@ -6,7 +6,7 @@ if [[ $1 != "deb" ]] && [[ $1 != "arch" ]]; then
 fi
 
 bash ./install_nix.sh
-bash ./setup_git
+bash ./setup_git.sh
 bash ./install_zsh.sh $1
 bash ./setup_neovim.sh
 bash ./setup_awesome.sh
