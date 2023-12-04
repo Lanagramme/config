@@ -6,7 +6,7 @@ rm -rf ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
 mv id_rsa id_rsa.pub ~/.ssh
 
 # ssh git
-ssh git -T git@github.com
+ssh -T git@github.com
 
 # go to git and clone config
 mkdir -p ~/Documents/code/git
