@@ -5,13 +5,13 @@ if [[ $1 != "deb" ]] && [[ $1 != "arch" ]]; then
 	exit 0
 fi
 
-sh ./install_nix.sh
-sh ./setup_git
-sh ./install_zsh.sh $1
-sh ./setup_neovim.sh
-sh ./setup_awesome.sh
+bash ./install_nix.sh
+bash ./setup_git
+bash ./install_zsh.sh $1
+bash ./setup_neovim.sh
+bash ./setup_awesome.sh
 
 #initialize dotfiles
-sh ./initialize_dotfiles.sh
-sh ./setup_bookmarks.sh
+bash ./initialize_dotfiles.sh
+bash ./setup_bookmarks.sh
 

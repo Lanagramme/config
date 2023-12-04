@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # installer cle ssh
 unzip ./ssh.zip
