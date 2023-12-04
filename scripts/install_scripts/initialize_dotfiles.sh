@@ -20,7 +20,7 @@ ln -s ~/Documents/code/git/config/config_files/home/vimwiki ~/
 
 #config
 cd ~/.config
-rm -rf awesome nvim polybar
+rm -rf awesome polybar nvim-old
 
 ln -s ~/Documents/code/git/config/config_files/home/.config/awesome  ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/nvim-old ~/.config
