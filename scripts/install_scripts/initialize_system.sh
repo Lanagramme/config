@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 if [[ $1 != "deb" ]] && [[ $1 != "arch" ]]; then
 	echo "options are 'deb' and 'arch'"
