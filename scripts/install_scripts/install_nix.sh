@@ -20,6 +20,8 @@ fi
 #install packages
 nix-env -iA \
 	nixpkgs.bat \
+	nixpkgs.zip \
+	nixpkgs.unzip \
 	nixpkgs.btop \
 	nixpkgs.pywal \
 	nixpkgs.cargo \

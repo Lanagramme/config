@@ -1,12 +1,9 @@
 #! /bin/sh
 
 # installer cle ssh
-mkdir .ssh
-unzip ./zzb.zip ./.ssh
-mv id_rsa id_rsa.pub known_host ./.ssh 
-rm -rf ~/.ssh
-mv ./.ssh ~/
-rm -f .ssh
+unzip ./ssh.zip
+rm -rf ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+mv id_rsa id_rsa.pub ~/.ssh
 
 # ssh git
 ssh git -T git@github.com

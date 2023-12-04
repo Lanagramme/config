@@ -18,7 +18,7 @@ nix-env -iA \
 
 # setup nvchad
 rm -rf ~/.local/share/nvim
-git clone https://github.com/NvChad/NvChad ~/.config/nvim-chad --depth 1
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
 # setup vimplug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
