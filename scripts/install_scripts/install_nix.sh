@@ -11,7 +11,7 @@ if [ -f "$FILE" ]; then
 else
 	echo profile not found
 	echo installing nix
-	sh <(curl -L https://nixos.org/nix/install) --no-daemon
+	bash <(curl -L https://nixos.org/nix/install) --no-daemon
 fi
 
 #source nix
