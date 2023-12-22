@@ -56,10 +56,6 @@ export EDITOR=nvim
 # use custom fd command for fzf incl. showing hidden files by default
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 
-# configure silver command prompt
-export SILVER_ICONS=nerd
-source <(silver init)
-
 # # usage: ex <file>
 ex ()
 {
@@ -85,7 +81,6 @@ ex ()
 
 source ~/.bash_aliases
 source ~/.paths
-. /home/ludji/.nix-profile/etc/profile.d/nix.sh
 
 # ===== Bookmarks ======
 if [ -d "$HOME/.bookmarks" ]; then
