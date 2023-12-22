@@ -261,6 +261,8 @@ awful.screen.connect_for_each_screen(function(s)
           },
           left  = 5,
           right = 5,
+          bottom = 5,
+          top = 5,
           widget = wibox.container.margin
         },
         id     = 'background_role',
@@ -268,8 +270,8 @@ awful.screen.connect_for_each_screen(function(s)
         bg = "#26283133",
         widget = wibox.container.background,
       },
-      left  = 5,
-      right = 5,
+      left  = 8,
+      right = 8,
       widget = wibox.container.margin
       },
       separator,
