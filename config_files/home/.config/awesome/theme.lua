@@ -15,17 +15,20 @@ local theme = {}
 theme.font          = "sans 8"
 
 theme.bg_normal     = "#222222"
+theme.bg_focus      = "#86aaec"
+theme.bg_urgent     = "#ff0000"
+theme.bg_minimize   = "#444444"
+theme.bg_systray    = "#0d0f18"
 
 theme.fg_normal     = "#aaaaaa"
 theme.fg_focus      = "#ffffff"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
-theme.useless_gap   = dpi(0)
-theme.border_width  = dpi(1)
 theme.border_normal = "#000000"
 theme.border_focus  = "#86aaec"
 theme.border_marked = "#91231c"
+
 
 -- There are other variable sets
 -- overriding the default one when
@@ -124,5 +127,6 @@ theme.awesome_icon = theme_assets.awesome_icon(
 theme.icon_theme = nil
 
 beautiful.init(theme)
+return theme
 
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80

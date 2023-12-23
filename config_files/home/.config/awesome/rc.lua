@@ -21,7 +21,7 @@ require("errors")(naughty)
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-require("theme")
+local theme = require("theme")
 
 -- This is used later as the default terminal and editor to run.
 -- terminal = "gnome-terminal"
@@ -357,31 +357,35 @@ awful.screen.connect_for_each_screen(function(s)
     screen = s,
     width = 50,
     border_width = 10,
-    bg = "#0d0f18",
-    shape = mkroundedrect(),
+    bg = "#ffffff00"
   })
 
   mywibox:setup {
     {
       {
-        layout = wibox.layout.fixed.vertical,
-        tags,
+        {
+          layout = wibox.layout.fixed.vertical,
+          tags,
+        },
+        nil,
+        {
+          layout = wibox.layout.fixed.vertical,
+          tray,
+          clock,
+          layouts,
+        },
+        layout = wibox.layout.align.vertical,
       },
-      nil,
       {
-        layout = wibox.layout.fixed.vertical,
-        tray,
-        clock,
-        layouts,
+        tasks,
+        halign = "center",
+        valign = "center",
+        layout = wibox.container.place
       },
-      layout = wibox.layout.align.vertical,
+      layout = wibox.layout.stack
     },
-    {
-      tasks,
-      halign = "center",
-      valign = "center",
-      layout = wibox.container.place
-    },
-    layout = wibox.layout.stack
+    bg = "#0d0f18",
+    shape = mkroundedrect(),
+    widget = wibox.container.background,
   }
 end)
