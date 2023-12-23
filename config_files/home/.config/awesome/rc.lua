@@ -54,7 +54,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- {{{ Gaps
-beautiful.useless_gap = 5
 -- }}}
 
 require ("autostart")(awful)
@@ -62,8 +61,6 @@ require ("autostart")(awful)
 local dpi = beautiful.xresources.apply_dpi
 
 
-beautiful.tasklist_bg_normal =  "#0d0f18"
-beautiful.tasklist_bg_focus =  "#828fa5"
 
 
 local function get_tray(s)
@@ -71,7 +68,6 @@ local function get_tray(s)
   tray:set_screen(s)
   tray:set_horizontal(false)
   tray:set_base_size(20)
-  beautiful.systray_icon_spacing = 10
   return tray
 end
 
@@ -100,21 +96,13 @@ local function mkroundedrect(radius)
 end
 
 local taglist_buttons = gears.table.join(
-                    awful.button({ }, 1, function(t) t:view_only() end),
-                    awful.button({ modkey }, 1, function(t)
-                                              if client.focus then
-                                                  client.focus:move_to_tag(t)
-                                              end
-                                          end),
-                    awful.button({ }, 3, awful.tag.viewtoggle),
-                    awful.button({ modkey }, 3, function(t)
-                                              if client.focus then
-                                                  client.focus:toggle_tag(t)
-                                              end
-                                          end),
-                    awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
-                    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
-                )
+  awful.button({ }, 1, function(t) t:view_only() end),
+  awful.button({ modkey }, 1, function(t) if client.focus then client.focus:move_to_tag(t) end end),
+  awful.button({ }, 3, awful.tag.viewtoggle),
+  awful.button({ modkey }, 3, function(t) if client.focus then client.focus:toggle_tag(t) end end),
+  awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
+  awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
+)
 
 -- Créer une fonction pour mettre à jour la taglist
 local function update_taglist(s)
@@ -219,19 +207,25 @@ local function gettaglist(s)
     }
 end
 
-beautiful.taglist_bg_occupied = "#ffffff89"
-beautiful.taglist_bg_empty = "#1a1c25"
 -- backddd
 
 -- Ajouter la taglist à la barre avec une marge de 15 pixels
 awful.screen.connect_for_each_screen(function(s)
+  local light_gray = "#26283133"
+  local gray = "#1a1c25"
+  local light_dark =  "#0d0f18"
+  local light_bg = "#ffffff89"
+  local main_color = "#86aaec"
+  local transparent = "#66666600"
+
   local separator = wibox.widget {
     widget = wibox.widget.separator,
     orientation = "vertical",
     forced_width = 5,  -- Adjust the width of the separator as needed
     forced_height = 5,
-    color = "#66666600",  -- Adjust the color of the separator as needed
-}
+    color = transparent,  -- Adjust the color of the separator as needed
+  }
+
 
   local tasks = awful.widget.tasklist {
     screen   = s,
@@ -267,7 +261,7 @@ awful.screen.connect_for_each_screen(function(s)
         },
         id     = 'background_role',
         shape = mkroundedrect(),
-        bg = "#26283133",
+        bg = light_gray,
         widget = wibox.container.background,
       },
       left  = 8,
@@ -280,14 +274,24 @@ awful.screen.connect_for_each_screen(function(s)
     width = 5,
   }
 
-  beautiful.tasklist_bg_focus = "#86aaec"
-  beautiful.tasklist_bg_minimize = "#26283133"
+
+  beautiful.systray_icon_spacing = 10
+  beautiful.useless_gap = 5
+
+  beautiful.taglist_bg_occupied = light_bg
+  beautiful.taglist_bg_empty = gray
+
+  beautiful.tasklist_bg_normal = light_dark
+  beautiful.tasklist_bg_focus = main_color
+  beautiful.tasklist_bg_minimize = light_gray
+
   beautiful.tasklist_spacing = 10
   beautiful.tasklist_shape_focus = mkroundedrect()
   beautiful.tasklist_shape_minimized = mkroundedrect()
 
-  local clock = wibox.widget
-  {
+  beautiful.bg_systray = light_dark
+
+  local clock = wibox.widget {
     {
       {
         {
@@ -303,7 +307,7 @@ awful.screen.connect_for_each_screen(function(s)
         widget = wibox.container.margin
       },
       shape = mkroundedrect(),
-      bg = "#26283133",
+      bg = light_gray,
       widget = wibox.container.background,
     },
     left = 5,
@@ -311,7 +315,8 @@ awful.screen.connect_for_each_screen(function(s)
     bottom = 20,
     widget = wibox.container.margin
   }
-  local tray = wibox.widget{
+
+  local tray = wibox.widget {
     {
       {
         get_tray(s),
@@ -326,7 +331,7 @@ awful.screen.connect_for_each_screen(function(s)
     layout = wibox.container.place
   }
 
-  local tags = wibox.widget{
+  local tags = wibox.widget {
     {
       gettaglist(s),
       -- update_tagrist(s)
@@ -338,7 +343,7 @@ awful.screen.connect_for_each_screen(function(s)
     layout = wibox.container.place
   }
 
-  local layouts = wibox.widget{
+  local layouts = wibox.widget {
     {
       get_layout(s),
       bottom = 20,
@@ -349,7 +354,6 @@ awful.screen.connect_for_each_screen(function(s)
     layout = wibox.container.place
   }
 
-  -- Créer la Wibar
   local mywibox = awful.wibar({
     position = "left",
     screen = s,
@@ -358,9 +362,7 @@ awful.screen.connect_for_each_screen(function(s)
     bg = "#0d0f18",
     shape = mkroundedrect(),
   })
-  beautiful.bg_systray = "#0d0f18"
 
-  -- Ajouter d'autres widgets à la barre
   mywibox:setup {
     {
       {
@@ -384,7 +386,4 @@ awful.screen.connect_for_each_screen(function(s)
     },
     layout = wibox.layout.stack
   }
-
-  -- Ajouter une marge de 15 pixels autour de la Wibar
-  mytaglist = wibox.container.margin(mytaglist, 15, 15, 15, 15)
 end)
