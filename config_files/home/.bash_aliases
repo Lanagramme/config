@@ -47,3 +47,5 @@ alias sdu3="ssh ludji@sdu3.gozaimass.io"
 if [ -d "$HOME/.bookmarks" ]; then
     export CDPATH=".:$HOME/.bookmarks:/"
 fi
+
+alias love="~/.config/love/love-11.5-x86_64.AppImage"

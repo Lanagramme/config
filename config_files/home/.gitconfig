@@ -1,3 +1,5 @@
 [user]
 	email = lborromee16@gmail.com
 	name = Lanagramme
+[pull]
+	rebase = false
