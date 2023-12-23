@@ -1,4 +1,4 @@
-local function titlebar(client, awful, wibox)
+local function titlebar(gears, client, awful, wibox)
 	-- Add a titlebar if titlebars_enabled is set to true in the rules.
 	client.connect_signal("request::titlebars", function(c)
 	    -- buttons for the titlebar
