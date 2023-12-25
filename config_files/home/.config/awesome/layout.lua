@@ -1,4 +1,12 @@
-local function Screen(awful, beautiful, gears, hotkeys_popup, wibox,menubar)
+pcall(require, "luarocks.loader")
+
+local wibox = require 'wibox'
+local awful = require 'awful'
+local beautiful  = require 'beautiful'
+local gears  = require 'gears'
+local menubar  = require 'menubar'
+
+--local function Screen(hotkeys_popup)
 
 	-- Table of layouts to cover with awful.layout.inc, order matters.
 	awful.layout.layouts = {
@@ -36,5 +44,5 @@ local function Screen(awful, beautiful, gears, hotkeys_popup, wibox,menubar)
 	-- }}}
 
 
-end
-return Screen
+--end
+--return Screen

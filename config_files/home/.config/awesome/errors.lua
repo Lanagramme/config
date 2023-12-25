@@ -1,4 +1,4 @@
-local function Errors(naughty)
+local naughty = require("naughty")
 	-- {{{ Error handling
 	-- Check if awesome encountered an error during startup and fell back to
 	-- another config (This code will only ever execute for the fallback config)
@@ -23,6 +23,3 @@ local function Errors(naughty)
 			end)
 	end
 	-- }}}
-end
-
-return Errors

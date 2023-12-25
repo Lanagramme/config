@@ -1,4 +1,5 @@
-function rules(awful, beautiful)
+local awful     = require("awful")
+local beautiful = require("beautiful")
 	-- {{{ Rules
 	-- Rules to apply to new clients (through the "manage" signal).
 	awful.rules.rules = {
@@ -57,6 +58,3 @@ function rules(awful, beautiful)
 	}
 	-- }}}
 
-end
-
-return rules
