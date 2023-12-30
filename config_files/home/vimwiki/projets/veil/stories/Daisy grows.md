@@ -6,19 +6,18 @@
 	 say this because I am your friend and I care about you. Those kind of "" 
 	 have a price, and I dont want to see you hurt.
  - ..., I think you underestimate me.
- - You_ ..., Maybe I am. Maybe I should stop... 
+ - Daisy, you_ ..., Maybe I am. Maybe I should stop... 
  - You certainely should.
  - Then I hope you know what you are doing. And I wich you to be safe.
- - I do, I don't your worries.
+ - I do, I don't need your worries.
 
 ----------
+
  - I did warn you, every action have consequences.
  - I know, and I should have listen to you.
- - But you did, and you made a choice. That's what being a mage is about, 
-   choices and consequences.
+ - But you did, you listen to everything I said and then you made a choice. That's what being a mage is about, choices and consequences.
  - Please, this is not what I wanted, I just_ I dont know, I_
- - Calm down. You need to understand, this is exactly what you asked for, you
-   just didn't realise all it encompasses. 
+ - Breath. This is exactly what you asked for, you just didn't realise all it encompasses. 
  - Please, not you, don't abandon me like all the others!
  - I wont, and I am not. I am still your friend, and I don't want to see you
    hurt. But I will no longer be your get out of jail free card. You are now 
@@ -29,13 +28,11 @@
 	 for it.
   
 ----------
- - You did it. I knew you would. Don't take it as condescention, but as your 
-	 friend, I am so proud of you.
+
+ - You did it. I knew you would. Don't take it as condescention, but as your friend, I am so proud of you.
  - Ha ha. Right now, I don't really feel proud of myself.
- - You should, you took a big step today. You are now closer to reach your true
-   potentiel than you were a few days ago.
- - And when does it start to show ? Because i feel less... I don't know exactly 
-   but I do.
+ - You should, you took a big step today. You are now closer to reach your true potentiel than you were a few days ago.
+ - And when does it start to show ? Because i feel less... I don't know exactly, but I do.
  - I did baby you to much, you were right. This is normal, the road is never 
    easy, and you rarely get rewarded for a single effort. But At some point, 
 	 you will look back and see the way you <parcouru>, and realise how much you 
@@ -49,12 +46,10 @@
  - Anytime. ... Can I still have you braid my hairs ? I can't for the life of
  	 me_
  - ..._
- - I meen... As a fellow mage, would you teach me how you do it? And... assist 
-   me, if I need an extra pair of hands?
+ - I meen... As a fellow mage, would you teach me how you do it? And... assist me, if I need an extra pair of hands?
  - I'd love to.
  - Great. I really need a girl's night now.
- - Daisy, I spent the day running left and right to help people. Right now I'd
-   like the night for myself.
+ - Daisy, I spent the day running left and right to help people. Right now I'd like the night for myself.
  - Oh... Right.
 
 bad ending : ----------
@@ -69,11 +64,9 @@ good ending : ----------
  - Maybe to_
  - You know what this meens ?
  - That you wont empty my tea cupboard ?
- - No silly, it means you need a girl's night more than anyone.
+ - No silly, it means YOU need a girl's night more than anyone.
  - Daisy, I_
- - And this time, I will be the one to make you tea, and I will do your hair
-   while you can complain to me about your day.
- - D_ You know what ? I think I would like that.
+- And this time, I will be the one to make you tea, and I will do your hair while you can complain to me about your day.
+ - Daisy... You know what ? I think I would like that.
 
-Daisy will not join XXX, and will open her own Atelier. She will no longer
-have braids.
+Daisy will not join XXX, and will open her own Atelier. She will no longer have braids.

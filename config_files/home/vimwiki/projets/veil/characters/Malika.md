@@ -1,4 +1,4 @@
-# malika
+# Malika
 
 **Name**: Malika
 **Physical traits**: natural pretty, tall, long hair, cold gaze
