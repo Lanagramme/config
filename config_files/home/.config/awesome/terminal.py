@@ -14,5 +14,5 @@ value = randint(1, len(a))
 
 print(value)
 os.system("wal -i "+path+a[value-1])
-os.system("feh --bg-scale -z "+ path+a[value-1])
+os.system("feh --bg-fill -r -z "+ path+a[value-1])
 

@@ -1,0 +1,11 @@
+--2023-12-15 09:48:22--  https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+Résolution de raw.githubusercontent.com (raw.githubusercontent.com)… 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8002::154, ...
+Connexion à raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443… connecté.
+requête HTTP transmise, en attente de la réponse… 200 OK
+Taille : 18230 (18K) [text/plain]
+Sauvegarde en : « install.sh »
+
+install.sh                               0%[                                                                             ]       0  --.-KB/s               install.sh                             100%[============================================================================>]  17,80K  --.-KB/s    ds 0,001s  
+
+2023-12-15 09:48:22 (28,9 MB/s) — « install.sh » sauvegardé [18230/18230]
+

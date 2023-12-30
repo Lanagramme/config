@@ -1,4 +1,8 @@
-local function tabs(awful, gears, screen, client)
+local awful  = require("awful")
+local gears  = require("gears")
+pcall(require, "luarocks.loader")
+
+
 	-- Bind all key numbers to tags.
 	-- Be careful: we use keycodes to make it work on any keyboard layout.
 	-- This should map on the top row of your keyboard, usually 1 to 9.
@@ -48,5 +52,3 @@ local function tabs(awful, gears, screen, client)
 										{description = "toggle focused client on tag #" .. i, group = "tag"})
 			)
 	end
-end
-return tabs
