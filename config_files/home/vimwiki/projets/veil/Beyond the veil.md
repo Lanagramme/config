@@ -1,5 +1,11 @@
 # Beyond the veil Archives
 
+# Game design
+[[Design directions]]
+[[The 13 basics of game design]]
+
+# World building
+
 **Characters**
 [Introducing](Introducing)
 [Character List](./characters/Character List.md)

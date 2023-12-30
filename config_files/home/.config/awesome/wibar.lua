@@ -2,13 +2,13 @@ local wibox     = require("wibox")
 local beautiful = require("beautiful")
 local awful     = require("awful")
 local gears     = require("gears")
-local modkey    = "Mod4"
 local theme     = require("theme")
 local rubato = require 'rubato'
 
-local gray = "#1a1c25"
+require("user")
 
 local dpi = beautiful.xresources.apply_dpi
+local gray = "#1a1c25"
 
 local function mkroundedrect(radius)
     radius = radius or dpi(7)
@@ -16,6 +16,7 @@ local function mkroundedrect(radius)
         return gears.shape.rounded_rect(cr, w, h, radius)
     end
 end
+
 
 local function system_tray(s)
   local tray = wibox.widget.systray()
