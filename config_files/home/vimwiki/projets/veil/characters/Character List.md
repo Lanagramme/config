@@ -10,10 +10,10 @@
 | [[Moonar fool]]   |             | A commencer |
 | [[Odin]]          |             | A réviser   |
 | [[The dark lord]] |             | A réviser   |
-| [[Sheila]]        | Toph        |             |
-| [[Charlotte]]     | Toph        |             |
-| [[Orchide]]       | Toph        |             |
-| [[Lisa]]          |             |             |
+| [[Sheila]]        | Toph        | A réviser   |
+| [[Charlotte]]     | Toph        | A réviser   |
+| [[Orchide]]       | Toph        | A réviser   |
+| [[Lisa]]          | Toph        | A réviser   |
 
 
 

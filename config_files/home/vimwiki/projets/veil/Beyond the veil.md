@@ -12,8 +12,8 @@
 [Character stories](./stories/Character stories)
 
 [Personalities](personalities)
-[Behaviours](Behaviours)
-[Miscellanious](Miscellanious)
+[[Behaviours]]
+[[Miscellanious]]
 [[Student - Teacher]]
 
 **Stories**
