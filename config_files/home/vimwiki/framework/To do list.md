@@ -1,8 +1,6 @@
 * [ ] Setup rofi
 * [ ] Setup tmux
 * [ ] add ctrl s to nvim-old
-* [ ] add fzf to nvim-old
-* [ ] add better escapt to nvim-old
 
 cmus
 - [ ] install
