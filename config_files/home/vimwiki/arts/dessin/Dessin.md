@@ -83,6 +83,6 @@ Travailler à partire de références pour les visages et l'anatomie
 
 ## Projets
 
-[Projets](./projets/projets.md)
+[Projets](../../projets/Projets.md#Art)
 [Retour](#Arts)
 ================================

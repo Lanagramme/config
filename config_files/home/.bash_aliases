@@ -22,7 +22,8 @@ alias cl="clear"
 alias mkd="mkdir -pv" #create directory --create parent --give visual feedback
 alias ref="source ~/.bashrc" #reload bashrc
 
-alias l="ls -la --color=auto"
+# alias l="ls -la --color=auto"
+alias l="exa -la --header --git --icons"
 alias ls='ls --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
