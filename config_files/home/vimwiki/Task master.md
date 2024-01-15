@@ -22,7 +22,7 @@ task delete all
 
 * Créer une nouvelle liste
 Task context add [ context ]
-
+delete all tasks
 * Changer de liste
 taxk context [context]
 
