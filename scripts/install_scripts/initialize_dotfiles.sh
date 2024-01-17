@@ -12,7 +12,6 @@ ln -s ~/Documents/code/git/config/config_files/home/.paths ~/
 ln -s ~/Documents/code/git/config/config_files/home/.fonts ~/
 ln -s ~/Documents/code/git/config/config_files/home/.gitconfig ~/
 ln -s ~/Documents/code/git/config/config_files/home/.profile ~/
-ln -s ~/Documents/code/git/config/config_files/home/.tmux.conf ~/
 ln -s ~/Documents/code/git/config/config_files/home/.zshrc ~/
 
 # link vimwiki
@@ -22,8 +21,10 @@ ln -s ~/Documents/code/git/config/config_files/home/vimwiki ~/
 cd ~/.config
 rm -rf awesome polybar nvim-old
 
+ln -s ~/Documents/code/git/config/config_files/home/.config/tmux ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/awesome  ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/nvim-old ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/nvim ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/polybar  ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/picom  ~/.config
 
