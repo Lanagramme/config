@@ -13,6 +13,7 @@ local plugins = {
   },
 {
     "nvim-neo-tree/neo-tree.nvim",
+    lazy = false,
     branch = "v3.x",
     -- lazy = false,
     dependencies = {

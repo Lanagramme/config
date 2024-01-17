@@ -60,3 +60,4 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
 -- vim.keymap.set("n", "<A-k>", "<C-W>K")
 -- vim.keymap.set("n", "<A-l>", "<C-W>L")
 --
+
