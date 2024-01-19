@@ -1,11 +1,11 @@
-# Beyond the veil Archives
+# Beyond the veil
 
-# Game design
+## Game design
 [[Design directions]]
 [[The 13 basics of game design]]
-[Game systems](./The Lost City.md)
+[[Game systems]]
 
-# World building
+## World building
 [Setting](./worldbuilding/Setting.lua)
 [The City](./worldbuilding/thecity.md)
 [The incident](./worldbuilding/theincident.md)
@@ -24,11 +24,11 @@
 [[Quest ideas]]
 [[Notes]]
 
-**Concepts**
-[Magic](Magic)
+## Concepts
+[[Magic]]
 veil of ignorance
 
-**Design**
-[Spells](Spells)
+## Design
+[[Spells]]
 [[Prototype I]]
 [[List of Names]]
