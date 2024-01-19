@@ -3,30 +3,30 @@
 # Game design
 [[Design directions]]
 [[The 13 basics of game design]]
+[Game systems](./The Lost City.md)
 
 # World building
+[Setting](./worldbuilding/Setting.lua)
+[The City](./worldbuilding/thecity.md)
+[The incident](./worldbuilding/theincident.md)
 
-**Characters**
+## Characters
 [Introducing](Introducing)
 [Character List](./characters/Character List.md)
 [Character stories](./stories/Character stories)
-
 [Personalities](personalities)
 [[Behaviours]]
 [[Miscellanious]]
 [[Student - Teacher]]
 
-**Stories**
+## Stories
 [Stories](./stories/Stories)
 [[Quest ideas]]
-[Lore](Lore)
 [[Notes]]
 
 **Concepts**
+[Magic](Magic)
 veil of ignorance
-[The old house](The old house)
-[[The Lost City]]
-[Comic](Comic)
 
 **Design**
 [Spells](Spells)

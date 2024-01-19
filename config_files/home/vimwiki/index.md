@@ -15,3 +15,6 @@
 [Media](./media/media.md)
 
 [Keybindings](./cheatsheets/Keybindings)
+
+
+[Lists](./lists/lists.md)

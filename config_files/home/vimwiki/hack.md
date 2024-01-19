@@ -15,4 +15,10 @@ Prices
 FAQ*
 footer
 
+ a droite liens
+   compte client
+   
+ a gauche logo et contact societe
+ adresse sociale
+ telephone
 
