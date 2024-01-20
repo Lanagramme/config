@@ -59,5 +59,38 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
 -- vim.keymap.set("n", "<A-j>", "<C-W>J")
 -- vim.keymap.set("n", "<A-k>", "<C-W>K")
 -- vim.keymap.set("n", "<A-l>", "<C-W>L")
---
 
+
+-- Function to execute Python script
+function _G.execute_python_script(...)
+    local args = table.concat({...}, ' ')
+
+    local script_name, params = args:match("(%S+)%s(.+)")
+    
+    if not script_name then
+        print("Error: Please provide a script name")
+        return
+    end
+
+    local script_path = vim.fn.expand('~/.config/nvim/templates/' .. script_name .. '.py')
+
+    if vim.fn.filereadable(script_path) == 0 then
+        print("Error: Python script not found")
+        return
+    end
+
+    local current_buffer_path = vim.fn.expand('%:p')
+
+    local command = string.format("python3 %s %s %s", vim.fn.shellescape(script_path), vim.fn.shellescape(params or ''), vim.fn.shellescape(current_buffer_path))
+
+    local handle = io.popen(command .. ' 2>&1')
+    local result = handle:read('*a')
+    handle:close()
+
+    print(result)
+end
+
+-- Define the Neovim command
+vim.cmd([[
+  command! -nargs=+ -complete=file -bar Templates :lua execute_python_script(<q-args>)
+]])

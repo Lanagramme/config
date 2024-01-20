@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "7bffb7a5b25315ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "b21921cfa681a82e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4790b9781557149a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projets/Projets.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f6a5186018e707be",
+    "type": "split",
+    "children": [
+      {
+        "id": "28ddc7972585d31f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "813867eccb74b5aa",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "993322979b0b55fe",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "861f39eb0b1f298d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9cb66c863f5fb0cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "e051126be393a0ef",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f17f85ce24a63c3c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "projets/Projets.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8516a7a1eb8745b8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "projets/Projets.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "029b603a32c2b8ed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c7d176a520890b3b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "projets/Projets.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4790b9781557149a",
+  "lastOpenFiles": [
+    "projets/veil/Beyond the veil.md",
+    "projets/Projets.md",
+    "projets/Projets.md~",
+    "veil/Beyond.md",
+    "veil",
+    "index.md",
+    "framework/To do list.md",
+    "framework/Recherches.md",
+    "framework/To.md",
+    "framework/framework.md",
+    "Cooking.md",
+    "To Buy.md",
+    "In.md",
+    "projets/veil/Prototype I.md",
+    "projets/veil/List of Names.md"
+  ]
+}
