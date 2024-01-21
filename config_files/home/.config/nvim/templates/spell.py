@@ -10,7 +10,7 @@ path = sys.argv[2]
 index = path.rfind('/')
 path = path[:index + 1]
 
-file = path + "/" + name + ".md"
+file = "/home/ludji/vimwiki/projets/veil/spells/" + name + ".md"
 
 if (os.path.isfile(file)) :
     print("file exists")
@@ -24,9 +24,15 @@ archetype:
 ---@
 
 **Type**:
+
+**Range**:
+
 **Description**:
 
-    """
+**Cost**:
+
+**Effect**:
+"""
 
     f = open(file, 'w')
 

@@ -3,6 +3,7 @@
 | Nom               | Association | Status      |
 | ---               | ---         | ---         |
 | [[Ash]]           |             |             |
+| [[Alec]]          |             |             |
 | [[Alice]]         | Misfits     | En cours    |
 | [[Daisy]]         |             | A commencer |
 | [[Lucien]]        |             |             |

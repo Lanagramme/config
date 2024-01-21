@@ -1,4 +1,13 @@
-# *Alice*
+# Alice
+
+@---
+tags:character
+element:
+archetype:Support,Invoker
+affilliations:Misfits,Ashford
+orientation:Gang
+awakening:
+@---
 
 **Name**: Ashford, Alice
 **Physical traits**: small, boyish, athletic
@@ -12,7 +21,7 @@
  * Codependant
  * Fears abondonment
 
-## Personnalité
+## Attitude
 Alice est un boule d'énergie, incapable de rester en place. Optimiste, souriante, et toujours avec une mauvaise idée en tête, elle est le coeur du clan des Misfits, malgré son statu le plus inférieur dans la hiérarchie.
 
 ### Inner mentality
@@ -33,4 +42,6 @@ She ran away from the academy after a week to join Alec's gang.
 She always wears a miniature panther broken in half attached to a cord around her neck.
 
  * Genius invoker
- * Totem weather
+ * Totem weaver
+### Legacy
+### Biography

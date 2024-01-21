@@ -1,5 +1,14 @@
 # Lisa
 
+@---
+tags:character
+element:Earth
+archetype:
+affilliations:Toph
+orientation:Milice
+awakening:
+@---
+
 **Name**: Toph, Lisa
 **Physical traits**:
 **Personnality traits**:

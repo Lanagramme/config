@@ -1,5 +1,14 @@
 # Charlotte
 
+@---
+tags:character
+element:Earth
+archetype:
+affilliations:Toph,
+orientation:Milice
+awakening:
+@---
+
 **Name**: Toph, Charlotte
 **Physical traits**:
 **Personnality traits**:

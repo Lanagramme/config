@@ -1,5 +1,14 @@
 # Malika
 
+@---
+tags:
+element:
+archetype:
+affilliations:
+orientation:
+awakening:
+@---
+
 **Name**: Malika
 **Physical traits**: natural pretty, tall, long hair, cold gaze
 **Personnality traits**: not very talkative, calm, dreamer

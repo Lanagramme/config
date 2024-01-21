@@ -1,5 +1,14 @@
 # Orchide
 
+@---
+tags:character
+element:Wood
+archetype:
+affilliations:Toph
+orientation:Bosquet
+awakening:
+@---
+
 **Name**: Toph, Orchide
 **Physical traits**:
 **Personnality traits**:

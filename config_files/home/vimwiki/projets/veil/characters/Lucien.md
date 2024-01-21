@@ -1,5 +1,14 @@
 ## Lucien
 
+@---
+tags:character
+element:7
+archetype:
+affilliations:Academy
+orientation:
+awakening:
+@---
+
 **Name**: Lucien
 **Physical traits**: short, 6/10
 **Personnality traits**: loner, socially awkard, peppy

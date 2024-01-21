@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "tpope/vim-surround",
+    lazy = false,
+  },
+  {
     "nvim-neorg/neorg",
     lazy = false,
     build = ":Neorg sync-parsers",

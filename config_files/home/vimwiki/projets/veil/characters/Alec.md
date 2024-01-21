@@ -1,22 +1,21 @@
-# Daisy
+# Alec
 
 @---
 tags:character
-element:
-archetype:
-affilliations:
-orientation:
-awakening:
+element:7
+archetype:All-for-one
+affilliations:Misfits
+orientation:Gang
+awakening:7
 @---
 
-
-**Name**: Daisy
 **Physical traits**:
 **Personnality traits**:
 **Positive traits**:
  *
 **Negative traits**:
  *
+
 
 ## Attitude
 ### Inner mentality
@@ -25,6 +24,4 @@ awakening:
 ## Backstory
 ### Legacy
 ### Biography
-
-## Stories
-[Daisy grows](../stories/Daisy grows.md)
+    

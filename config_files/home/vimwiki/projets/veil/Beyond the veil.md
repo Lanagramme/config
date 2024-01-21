@@ -29,6 +29,7 @@
 veil of ignorance
 
 ## Design
+[Spell Compendium](spells/compendium.md)
 [[Spells]]
 [[Prototype I]]
 [[List of Names]]

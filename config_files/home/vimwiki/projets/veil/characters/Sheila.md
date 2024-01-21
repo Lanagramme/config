@@ -1,5 +1,14 @@
 # Sehila
 
+@---
+tags:character
+element:Earth
+archetype:
+affilliations:
+orientation:Gang
+awakening:
+@---
+
 **Name**: Toph, Sheila
 **Physical traits**:
 **Personnality traits**:

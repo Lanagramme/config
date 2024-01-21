@@ -1,12 +1,22 @@
-# Ash
+# Ashe
 
-**Name**: Ashen, Ash
+@---
+tags:character
+element:Fire,Wood
+archetype:DPS
+affilliations:Ashen
+orientation:Bosquet
+awakening:Maitre du bosquet
+@---
+
+**Name**: Ashe, Ashen
 **Physical traits**: small, chubby, 
 **Personnality traits**: peppy, proud, 
 **Positive traits**:
  *
 **Negative traits**:
  *
+
 
 ## Attitude
 ### Inner mentality
@@ -15,3 +25,4 @@
 ## Backstory
 ### Legacy
 ### Biography
+    
