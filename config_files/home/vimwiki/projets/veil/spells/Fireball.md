@@ -6,13 +6,14 @@ element:Fire
 archetype:
 @---
 
-**Type**:
-Projectile
+**Type**: Projectile
+**Cost**: 1n
+**Base Damage**:
+
+Range:
 
 **Description**:
 Cast a fire ball.
-
-Cost: 1N
 
 Effect:
 Apply one fire token to target.
