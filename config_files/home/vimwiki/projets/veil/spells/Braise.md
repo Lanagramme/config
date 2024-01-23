@@ -1,10 +1,10 @@
-# Braise
-
 @---
 tags:spell
 element:Red
 archetype:Boutefeu
 ---@
+
+# Braise
 
 **Type**:
 Effet de zone

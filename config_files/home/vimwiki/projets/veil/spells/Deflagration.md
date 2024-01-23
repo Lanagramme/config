@@ -1,10 +1,10 @@
-# Deflagration
-
 @---
 tags:spell
 element:Green Red
 archetype:Boutefeu
 ---@
+
+# Deflagration
 
 **Type**:
 

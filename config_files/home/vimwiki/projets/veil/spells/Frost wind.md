@@ -1,10 +1,10 @@
-# Frost wind
-
 @---
 tags:spell
 element:Blue
 archetype:
 ---@
+
+# Frost wind
 
 **Type**:
 

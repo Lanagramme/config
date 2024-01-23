@@ -1,10 +1,10 @@
-# Croissance
-
 @---
 tags:spell
 element:Green
 archetype:Gardener
 ---@
+
+# Croissance
 
 **Type**:
 Buff

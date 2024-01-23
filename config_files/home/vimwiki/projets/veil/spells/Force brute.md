@@ -1,10 +1,10 @@
-# Force brute
-
 @---
 tags:spell
 element:Red
 archetype:
 ---@
+
+# Force brute
 
 **Type**:
 Debuff

@@ -1,10 +1,10 @@
-# Bouclier Spirituel
-
 @---
 tags:spell
 element:Neutre
 archetype:Ghost memory
 ---@
+
+# Bouclier Spirituel
 
 **Type**:
 Invocation

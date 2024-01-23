@@ -1,10 +1,10 @@
-# Infestation fongique
-
 @---
 tags:spell
 element:Green
 archetype:
 ---@
+
+# Infestation fongique
 
 **Type**:
 Add

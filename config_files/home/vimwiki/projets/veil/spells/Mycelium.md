@@ -1,10 +1,10 @@
-# Mycelium
-
 @---
 tags:spell
 element:Green
 archetype:
 ---@
+
+# Mycelium
 
 **Type**:
 

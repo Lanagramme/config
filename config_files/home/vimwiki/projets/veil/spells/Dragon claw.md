@@ -1,10 +1,10 @@
-# Dragon claw
-
 @---
 tags:spell
 element:Neutre
 archetype:Dragon tatoo; Human form
 ---@
+
+# Dragon claw
 
 **Type**:
 Close range attack

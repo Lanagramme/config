@@ -1,10 +1,10 @@
-# Jugement céleste
-
 @---
 tags:spell
 element:Neutre
 archetype:Ghost weapon
 ---@
+
+# Jugement céleste
 
 **Type**:
 

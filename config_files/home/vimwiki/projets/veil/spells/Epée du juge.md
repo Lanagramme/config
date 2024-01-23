@@ -1,10 +1,10 @@
-# Epée du juge
-
 @---
 tags:spell
 element:Neutre
 archetype:Ghost weapon
 ---@
+
+# Epée du juge
 
 **Type**:
 Invocation

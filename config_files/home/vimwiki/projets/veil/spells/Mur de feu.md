@@ -1,10 +1,10 @@
-# Mur de feu
-
 @---
 tags:spell
 element:Red
 archetype:
 ---@
+
+# Mur de feu
 
 **Type**:
 

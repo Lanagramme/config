@@ -1,10 +1,10 @@
-# Fruit des terres maudites
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Fruit des terres maudites
 
 **Type**:
 Totem

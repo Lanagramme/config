@@ -1,10 +1,10 @@
-# Arc spirituel
-
 @---
 tags:spell
 element:Neutre
 archetype:Ghost weapon
 ---@
+
+# Arc spirituel
 
 **Type**:
 Invocation

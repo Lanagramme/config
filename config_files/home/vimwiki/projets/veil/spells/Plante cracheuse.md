@@ -1,10 +1,10 @@
-# Plante cracheuse
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Plante cracheuse
 
 **Type**:
 Totem

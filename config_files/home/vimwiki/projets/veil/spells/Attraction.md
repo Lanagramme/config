@@ -1,10 +1,10 @@
-# Attraction
-
 @---
 tags:spell
 element:Green Red
 archetype:Graviteer
 ---@
+
+# Attraction
 
 **Type**:
 Mouvement

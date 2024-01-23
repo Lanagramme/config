@@ -1,10 +1,10 @@
-# Petrification
-
 @---
 tags:spell
 element:
 archetype:
 ---@
+
+# Petrification
 
 **Type**:
 Reaction

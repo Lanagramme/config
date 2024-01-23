@@ -1,10 +1,10 @@
-# Fruit de passsion
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Fruit de passsion
 
 **Type**:
 Totem

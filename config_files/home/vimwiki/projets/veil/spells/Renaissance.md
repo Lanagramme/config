@@ -1,10 +1,10 @@
-# Renaissance
-
 @---
 tags:spell
 element:Green White
 archetype:Guardien du bosquet
 ---@
+
+# Renaissance
 
 **Type**:
 Invocation

@@ -1,10 +1,10 @@
-# Fruit de l'arsoniste
-
 @---
 tags:spell
 element:Green Red
 archetype:Guardien du bosquet
 ---@
+
+# Fruit de l'arsoniste
 
 **Type**:
 Totem

@@ -1,5 +1,3 @@
-# Spark
-
 @---
 tags:spell
 element:Fire
@@ -7,6 +5,8 @@ archetype:
 @---
 
 **Type**: Instant
+# Spark
+
 **Cost**: 2F 2PA
 **Base Damage**: 2
 

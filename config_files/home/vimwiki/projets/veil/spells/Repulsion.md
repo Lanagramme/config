@@ -1,10 +1,10 @@
-# Repulsion
-
 @---
 tags:spell
 element:Green Red
 archetype:Graviteer
 ---@
+
+# Repulsion
 
 **Type**:
 Mouvement

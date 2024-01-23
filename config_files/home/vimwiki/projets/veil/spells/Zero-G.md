@@ -1,10 +1,10 @@
-# Zero-G
-
 @---
 tags:spell
 element:Green Red
 archetype:Graviteer
 ---@
+
+# Zero-G
 
 **Type**:
 Buff

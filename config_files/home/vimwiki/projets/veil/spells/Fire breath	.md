@@ -4,15 +4,15 @@ element:Red
 archetype:Awakened form; Dragon tatoo
 ---@
 
-# Dragon scales
+# Fire breath	
 
 **Type**:
-Damage reduction
+Middle ranged attack
 
 **Range**:
 
 **Description**:
-Absorb fire based attack
+Spits fire
 
 **Cost**:
 

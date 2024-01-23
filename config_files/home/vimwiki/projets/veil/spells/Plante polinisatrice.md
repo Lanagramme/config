@@ -1,10 +1,10 @@
-# Plante polinisatrice
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Plante polinisatrice
 
 **Type**:
 Invocation

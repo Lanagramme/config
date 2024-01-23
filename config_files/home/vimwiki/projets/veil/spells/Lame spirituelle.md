@@ -1,10 +1,10 @@
-# Lame spirituelle
-
 @---
 tags:spell
 element:Neutre
 archetype:Ghost weapon
 ---@
+
+# Lame spirituelle
 
 **Type**:
 Invocation

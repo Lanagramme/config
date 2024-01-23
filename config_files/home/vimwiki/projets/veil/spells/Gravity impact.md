@@ -1,10 +1,10 @@
-# Gravity impact
-
 @---
 tags:spell
 element:Green Red
 archetype:Graviteer
 ---@
+
+# Gravity impact
 
 **Type**:
 

@@ -1,10 +1,10 @@
-# Reflux
-
 @---
 tags:spell
 element:Blue
 archetype:
 ---@
+
+# Reflux
 
 **Type**:
 Reaction

@@ -1,10 +1,10 @@
-# Scales
-
 @---
 tags:spell
 element:Red
 archetype:Dragon tatoo; Human form
 ---@
+
+# Scales
 
 **Type**:
 Damage reduction

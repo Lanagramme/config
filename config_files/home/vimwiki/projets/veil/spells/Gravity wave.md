@@ -1,10 +1,10 @@
-# Gravity wave
-
 @---
 tags:spell
 element:Green Red
 archetype:Graviteer
 ---@
+
+# Gravity wave
 
 **Type**:
 

@@ -1,10 +1,10 @@
-# Gravity well
-
 @---
 tags:spell
 element:Green Red
 archetype:Graviteer
 ---@
+
+# Gravity well
 
 **Type**:
 Totem

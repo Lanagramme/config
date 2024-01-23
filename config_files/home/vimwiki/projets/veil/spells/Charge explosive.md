@@ -1,10 +1,10 @@
-# Charge explosive
-
 @---
 tags:spell
 element:Neutre Red
 archetype:Ghost memory
 ---@
+
+# Charge explosive
 
 **Type**:
 Invocation

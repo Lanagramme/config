@@ -1,10 +1,10 @@
-# Givre
-
 @---
 tags:spell
 element:Blue
 archetype:
 ---@
+
+# Givre
 
 **Type**:
 Reaction

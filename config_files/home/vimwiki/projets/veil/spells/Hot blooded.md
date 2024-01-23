@@ -1,10 +1,10 @@
-# Hot blooded
-
 @---
 tags:spell
 element:Red
 archetype:Awakened form; Dragon tatoo
 ---@
+
+# Hot blooded
 
 **Type**:
 Status Effect; Token generation

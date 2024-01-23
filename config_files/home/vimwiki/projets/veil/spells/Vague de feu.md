@@ -1,10 +1,10 @@
-# Vague de feu
-
 @---
 tags:spell
 element:Red
 archetype:
 ---@
+
+# Vague de feu
 
 **Type**:
 

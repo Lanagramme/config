@@ -1,10 +1,10 @@
-# Fireball
-
 @---
 tags:spell
 element:Fire
 archetype:
 @---
+
+# Fireball
 
 **Type**: Projectile
 **Cost**: 1n

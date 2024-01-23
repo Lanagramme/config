@@ -1,10 +1,10 @@
-# Spores narcotiques
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Spores narcotiques
 
 **Type**:
 AOE Add

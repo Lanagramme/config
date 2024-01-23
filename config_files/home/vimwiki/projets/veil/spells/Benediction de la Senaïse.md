@@ -1,10 +1,10 @@
-# Benediction de la Senaïse
-
 @---
 tags:spell
 element:Green Neutre
 archetype:Ghost memory
 ---@
+
+# Benediction de la Senaïse
 
 **Type**:
 Invocation

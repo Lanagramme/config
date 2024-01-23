@@ -1,10 +1,10 @@
-# Dragon bite
-
 @---
 tags:spell
 element:Neutre
 archetype:Dragon tatoo; Human form
 ---@
+
+# Dragon bite
 
 **Type**:
 Close range attack

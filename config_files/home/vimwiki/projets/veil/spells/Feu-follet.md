@@ -1,10 +1,10 @@
-# Feu-foll
-
 @---
 tags:spell
 element:Red
 archetype:Boutefeu
 ---@
+
+# Feu-follet
 
 **Type**:
 Totem

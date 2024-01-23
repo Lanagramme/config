@@ -1,10 +1,10 @@
-# Panacée
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Panacée
 
 **Type**:
 Invocation

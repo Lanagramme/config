@@ -1,10 +1,10 @@
-# Dragon tail (2)
-
 @---
 tags:spell
 element:Neutre
 archetype:Dragon tatoo;Human form
 ---@
+
+# Dragon tail (2)
 
 **Type**:
 Status Effect

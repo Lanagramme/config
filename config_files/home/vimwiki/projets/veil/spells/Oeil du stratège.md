@@ -1,10 +1,10 @@
-# Oeil du stratège
-
 @---
 tags:spell
 element:Blue Neutre
 archetype:Ghost memory
 ---@
+
+# Oeil du stratège
 
 **Type**:
 

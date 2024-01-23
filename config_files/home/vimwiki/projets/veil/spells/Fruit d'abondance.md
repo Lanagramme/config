@@ -1,10 +1,10 @@
-# Fruit d'abondance
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Fruit d'abondance
 
 **Type**:
 Totem

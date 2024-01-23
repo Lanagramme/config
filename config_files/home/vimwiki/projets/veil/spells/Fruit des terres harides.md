@@ -1,10 +1,10 @@
-# Fruit des terres harides
-
 @---
 tags:spell
 element:Blue Green
 archetype:Guardien du bosquet
 ---@
+
+# Fruit des terres harides
 
 **Type**:
 Totem

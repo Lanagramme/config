@@ -1,10 +1,10 @@
-# Spores incandescants
-
 @---
 tags:spell
 element:Green Red
 archetype:Guardien du bosquet
 ---@
+
+# Spores incandescants
 
 **Type**:
 AOE Add

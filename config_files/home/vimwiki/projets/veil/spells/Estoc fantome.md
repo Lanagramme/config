@@ -1,10 +1,10 @@
-# Estoc fantome
-
 @---
 tags:spell
 element:Neutre
 archetype:Ghost weapon
 ---@
+
+# Estoc fantome
 
 **Type**:
 Invocation

@@ -1,10 +1,10 @@
-# Photosynthese
-
 @---
 tags:spell
 element:Green
 archetype:Gardener
 ---@
+
+# Photosynthese
 
 **Type**:
 Buff

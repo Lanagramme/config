@@ -1,10 +1,10 @@
-# Etreinte
-
 @---
 tags:spell
 element:Green
 archetype:
 ---@
+
+# Etreinte
 
 **Type**:
 Reaction

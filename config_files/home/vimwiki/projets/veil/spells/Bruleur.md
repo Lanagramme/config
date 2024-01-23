@@ -1,10 +1,10 @@
-# Bruleur
-
 @---
 tags:spell
 element:Red
 archetype:
 ---@
+
+# Bruleur
 
 **Type**:
 Reaction

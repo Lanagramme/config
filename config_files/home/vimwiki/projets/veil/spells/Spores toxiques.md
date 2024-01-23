@@ -1,10 +1,10 @@
-# Spores toxiques
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Spores toxiques
 
 **Type**:
 AOE Add

@@ -1,10 +1,10 @@
-# Splash
-
 @---
 tags:spell
 element:Blue
 archetype:
 ---@
+
+# Splash
 
 **Type**:
 

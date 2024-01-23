@@ -1,10 +1,10 @@
-# Spores soporifiques
-
 @---
 tags:spell
 element:Green
 archetype:Guardien du bosquet
 ---@
+
+# Spores soporifiques
 
 **Type**:
 AOE Add

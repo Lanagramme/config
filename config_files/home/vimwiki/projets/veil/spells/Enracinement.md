@@ -1,10 +1,10 @@
-# Enracinement
-
 @---
 tags:spell
 element:Green
 archetype:Gardener
 ---@
+
+# Enracinement
 
 **Type**:
 Totem
