@@ -1,10 +1,10 @@
-# Fire breath	
-
 @---
 tags:spell
 element:Red
 archetype:Awakened form; Dragon tatoo
 ---@
+
+# Fire breath	
 
 **Type**:
 Middle ranged attack
