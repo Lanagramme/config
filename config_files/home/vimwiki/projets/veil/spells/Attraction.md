@@ -12,7 +12,7 @@ Mouvement
 **Range**:
 
 **Description**:
-Attire la cible vers le Gravity-well 1. La portée dépends du niveau du puis.
+Attire la cible vers le [[Gravity well]] 1. La portée dépends du niveau du puis.
 
 **Cost**:
 
