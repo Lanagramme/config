@@ -12,7 +12,8 @@ archetype:Boutefeu
 **Range**:
 
 **Description**:
-Crée un mur de magie absorbant les compétences feu en echange d'un pv. Octroie 1 pv à Deflagration s'il est déja actif; onTurn: Perd 1 pv; onDeath: relache les effets des compétences absorber
+Crée un mur de magie de 3m de long à 3PV absorbant les compétences feu en echange d'un pv. 
+onTurn: Perd 1 pv; 
 
 **Cost**:
 

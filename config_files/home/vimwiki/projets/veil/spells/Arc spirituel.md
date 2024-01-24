@@ -12,7 +12,8 @@ Invocation
 **Range**:
 
 **Description**:
-Le caster invoque l'arme d'un héro légendaire et s'en sert pour projetter une épée fantomatique de grande taille.
+*Le caster invoque l'arme d'un héro légendaire*
+Projette une épée fantomatique de grande taille.
 
 **Cost**:
 

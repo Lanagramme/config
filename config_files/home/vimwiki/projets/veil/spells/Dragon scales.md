@@ -12,7 +12,7 @@ Damage reduction
 **Range**:
 
 **Description**:
-Absorb fire based attack
+Absorb fire based attack for 2 turns
 
 **Cost**:
 

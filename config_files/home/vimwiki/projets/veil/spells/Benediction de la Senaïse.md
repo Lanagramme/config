@@ -12,7 +12,9 @@ Invocation
 **Range**:
 
 **Description**:
-Le casteur en appelle à la bénédiction d'un héro mort pour protéger les faibles. rend 1D6 PV à sa sible. s'il a subit des dégats ce tour ci et que sa sible est un autre joueur celui-ci recoit un bonus de PV équivalent à la moitié du nombre de PV perdu par le lanceur ce tours ci aroudi au supérieur.
+*Le casteur en appelle à la bénédiction d'un héro mort pour protéger les faibles.*
+Rend 1D6 PV à la cible. 
+Si le casteur a subit des dégats ce tour ci et que la sible du sort est une autre entité, elle recoit un bonus de PV équivalent à la moitié du nombre de PV perdu par le casteur ce tours ci arondi au supérieur.
 
 **Cost**:
 

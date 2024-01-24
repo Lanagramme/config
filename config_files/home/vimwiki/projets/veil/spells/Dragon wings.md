@@ -12,7 +12,10 @@ Mouvement
 **Range**:
 
 **Description**:
-The dragon wings on her back spread to propel her she jumps. She can also use her wings to back dash. 
+Obtain the status flying for 5 turns.
+While flying gain 3 more max PM.
+Whyle flying is unafected by terrain effects but not auras.
+If enters in collision, loose flying status.
 
 **Cost**:
 

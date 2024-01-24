@@ -15,7 +15,6 @@
 | [[Dragon claw]]               | Neutre       | Dragon tatoo; Human form    |
 | [[Dragon scales]]             | Red          | Awakened form; Dragon tatoo |
 | [[Dragon tail]]               | Neutre       | Dragon tatoo;Human form     |
-| [[Dragon tail (2)]]           | Neutre       | Dragon tatoo;Human form     |
 | [[Dragon wings]]              | Neutre       | Dragon tatoo; Human form    |
 | [[Elagage]]                   | Green        | Gardener                    |
 | [[Enracinement]]              | Green        | Gardener                    |
