@@ -12,7 +12,9 @@ Close range attack
 **Range**:
 
 **Description**:
-The dragon's head on her shoulder will bite any enemy trying to attack her from behind
+The dragon's head the host's shoulder will bite any enemy trying to attack them from behind
+
+**Base damage**: 3
 
 **Cost**:
 

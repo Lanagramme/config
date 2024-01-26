@@ -12,7 +12,7 @@ Middle ranged attack
 **Range**:
 
 **Description**:
-The dragon's tail coils around her left leg giving an extended reach to her kicks pushing up to 3 targets 3m away.
+The dragon's tail coils around the host's left to their kicks up to 2 meters and push the target 5m away.
 
 **Cost**:
 

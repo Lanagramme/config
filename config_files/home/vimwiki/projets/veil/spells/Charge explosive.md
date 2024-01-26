@@ -13,8 +13,9 @@ Invocation
 
 **Description**:
 *La rage d'un héros tombé au combat emplit le casteur.*
-Tous les dommages qu'il subit ce tour ne lui seront appliqués qu'au début de son prochain tour. 
-S'il parvient à tuer un ennemi il ne subit aucun dommage et sa rage est prolongée pour un tour.
+Les dégats des attaques au contact sont augmenté de 1 pour chaque token feu sur la casteur.
+Pour trois tours tous les dommages subit ne seront appliqués qu'au début de son prochain tour. 
+Si le casteur parvient à tuer un ennemi il ne subit aucun dommages au prochain tour et sa rage est prolongée pour un tour.
 
 **Cost**:
 

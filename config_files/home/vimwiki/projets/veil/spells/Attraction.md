@@ -13,7 +13,7 @@ Mouvement
 
 **Description**:
 Attire une cible vers le [[Gravity well]]. 
-La portée dépends du niveau du puis.
+La portée dépends du niveau du [[Gravity well]]. 
 
 **Cost**:
 

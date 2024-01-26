@@ -12,7 +12,9 @@ Damage reduction
 **Range**:
 
 **Description**:
-Absorb fire based attack for 2 turns
+A scale armor covers the host's skin for 3 turns.
+The host Becomes invulnerable to fire damages and convert each fire spell targeting them to a token.
+Physical damages are reduced by 3.
 
 **Cost**:
 
