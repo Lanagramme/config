@@ -2,7 +2,7 @@
 
 | Nom               | Association | Status      |
 | ---               | ---         | ---         |
-| [[Ash]]           |             |             |
+| [[Asheline]]      |             |             |
 | [[Alec]]          |             |             |
 | [[Alice]]         | Misfits     | En cours    |
 | [[Daisy]]         |             | A commencer |

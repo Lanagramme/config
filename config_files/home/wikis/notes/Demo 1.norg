@@ -1,0 +1,68 @@
+* Demo 1
+  The first prototype of BTV. The goal of this demo is to test the engine for the main features of the project and query players for feedback.
+
+** Features
+   - {* Navigation}   
+   - [friend sim]{* friend sim}
+   - [multiple-choices dialogue]{* dialogues}
+   - multiple-branches story
+   - reputation
+   - building of a team
+   - building of a grimmoire
+   - battles
+** Narative
+   - Introduction of main character
+   - First week of school 
+   -- You have a week to pay your tuition
+   -- Joining a club
+   -- Finding a job
+   -- Joining a brotherhood
+   - Misfits height
+   - underground fights
+
+* Navigation
+  Travel between locations using a Persona3 like map.
+  Navigate inside locations using a top down view, and building with a side scroller view.
+  Locations :
+  - The school grounds
+  -- Auditoriums
+  -- Library
+  -- Arena
+  -- Infirmary
+  -- Cafeteria
+  - The clubs
+  -- Green House
+  -- Sports
+  -- Magic research
+  -- Dueling
+  - The duel grounds
+  - The shopping disctict
+  -- Cafe 
+  -- Bakery
+  -- Mart
+  -- Bookstore
+  - Brotherhoods
+  -- The dorm
+  -- The Vs
+  -- The wandering tree
+  -- The Chorus
+  -- The Milicia
+
+  ---
+[back]
+* Friend sim
+  Befriend a cast of colorful characters and follow their questline.
+
+
+  ---
+[back]
+* Dialogues
+
+
+  ---
+[back]
+
+  ---
+
+___
+[back]{* Demo 1}

@@ -9,6 +9,7 @@ orientation:Gang
 awakening:7
 @---
 
+**Name**: Alec,
 **Physical traits**:
 **Personnality traits**:
 **Positive traits**:

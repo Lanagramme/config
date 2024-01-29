@@ -1,4 +1,4 @@
-# Ashe
+# Asheline
 
 @---
 tags:character
@@ -9,7 +9,7 @@ orientation:Bosquet
 awakening:Maitre du bosquet
 @---
 
-**Name**: Ashe, Ashen
+**Name**: Asheline,
 **Physical traits**: small, chubby, 
 **Personnality traits**: peppy, proud, 
 **Positive traits**:
