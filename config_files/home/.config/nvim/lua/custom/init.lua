@@ -11,7 +11,7 @@ vim.cmd("set smarttab")
 vim.cmd("set cursorline")
 vim.cmd("set cc=80")
 
--- vim.cmd("set noswapfile")
+vim.cmd("set noswapfile")
 
 vim.cmd("set scrolloff=8")
 vim.cmd("set sidescrolloff=8")

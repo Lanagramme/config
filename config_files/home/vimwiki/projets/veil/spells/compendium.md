@@ -24,7 +24,7 @@
 | [[Etreinte]]                  | Green        |                             |
 | [[Far reach]]                 | Neutre       | Dragon tatoo; Human form    |
 | [[Feu-follet]]                | Red          | Boutefeu                    |
-| [[Fire breath]]              | Red          | Awakened form; Dragon tatoo |
+| [[Fire breath]]               | Red          | Awakened form; Dragon tatoo |
 | [[Fireball]]                  | Fire         |                             |
 | [[Fleur de vénus]]            | Green        | Guardien du bosquet         |
 | [[Force brute]]               | Red          |                             |
