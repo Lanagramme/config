@@ -104,3 +104,6 @@ source ~/.cache/wal/colors-tty.sh
 if test -d '/home/ludji/.bookmarks'; then
   export CDPATH='.:/home/ludji/.bookmarks:/'
 fi
+if test -d '/home/ludji/.bookmarks'; then
+  export CDPATH='.:/home/ludji/.bookmarks:/'
+fi
