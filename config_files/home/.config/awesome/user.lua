@@ -8,7 +8,8 @@ file_manager = "nautilus"
 -- terminal = "gnome-terminal"
 -- terminal = "sakura"
 -- terminal = "tilix"
-terminal = "kitty"
+-- terminal = "kitty"
+terminal = "alacritty"
 
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor

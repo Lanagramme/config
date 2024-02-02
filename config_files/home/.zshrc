@@ -107,3 +107,9 @@ fi
 
 # To add support for TTYs this line can be optionally added.
 [[ -f ~/.cache/wal/colors-tty.sh ]] && source ~/.cache/wal/colors-tty.sh
+if test -d '/home/ludji/.bookmarks'; then
+  export CDPATH='.:/home/ludji/.bookmarks:/'
+fi
+if test -d '/home/ludji/.bookmarks'; then
+  export CDPATH='.:/home/ludji/.bookmarks:/'
+fi

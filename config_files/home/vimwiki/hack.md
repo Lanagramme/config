@@ -22,3 +22,5 @@ footer
  adresse sociale
  telephone
 
+
+[[keybindings bspwm]]
