@@ -1,26 +1,22 @@
 [[Task master]]
+[[keybindings bspwm]]
+
+./ 
+DE
+WM
+Wallpaper
+Theme
+Icons packs
+Fonts
+Terminal emulator (Alacritty)
+Shell (zsh)
+Dock (plan)
+Transparency Blurring (picom-git)
 
 ./
 CSS crazyRDP
-header .transparent.glassmorphism
-	logo
-	ul>3li(home poduct about)
-	ul>2li(discord instagram)
-	ul>2li(login register)
-CSS wan-host
-hero
-	lorem
-CSS wan-host
-Prices
-FAQ*
-footer
 
- a droite liens
-   compte client
-   
- a gauche logo et contact societe
- adresse sociale
- telephone
-
-
-[[keybindings bspwm]]
+./
+xprop = find a programe name class pid and more
+killall -q app = kill app
+pkill app = kill app

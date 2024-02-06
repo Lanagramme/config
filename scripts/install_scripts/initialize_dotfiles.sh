@@ -19,13 +19,13 @@ ln -s ~/Documents/code/git/config/config_files/home/.zshrc         ~/
 
 #config
 cd ~/.config
-rm -rf alacritty awesome nvim polybar picom.conf rofi tmux
+rm -rf alacritty awesome nvim polybar picom rofi tmux
 
 ln -s ~/Documents/code/git/config/config_files/home/.config/alacritty/  ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/awesome     ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/nvim        ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/polybar     ~/.config
-ln -s ~/Documents/code/git/config/config_files/home/.config/picom.conf       ~/.config
+ln -s ~/Documents/code/git/config/config_files/home/.config/picom/      ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/rofi        ~/.config
 ln -s ~/Documents/code/git/config/config_files/home/.config/tmux        ~/.config
 
