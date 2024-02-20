@@ -3,7 +3,7 @@
 	* hosting hedge function = vercel, cloudflare
 	* firebase ??
 
-## Linux
+## Terminal tools
 	* calcurse
 	* tty-clock
 	* weechat
