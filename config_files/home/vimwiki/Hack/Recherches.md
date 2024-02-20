@@ -23,6 +23,8 @@
 ## Hacking
 	* /usr/lib/gdm-x-session --register-session --run-script awesome
 	* $ w
+  * https://n8n.io/
+  * Bitwarden
 
 	* expressions régulières regex 101
 	* updates-alternatives --config 

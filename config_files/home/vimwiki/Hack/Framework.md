@@ -36,4 +36,5 @@ How to recreate my hacking environment
 	- python3
 	- yarn
 
-
+## GUI applications
+ - plank
