@@ -3,4 +3,4 @@
 [[To Buy]]
 [[Cooking]]
 [[Hacker]]
-[Recherches](./Recherches.md)
+[[Recherches]]

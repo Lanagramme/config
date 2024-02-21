@@ -1,0 +1,23 @@
+# yazi.toml
+[manager]
+show_symlink = true
+[preview]
+tab_size = 2
+[opener]
+text = [
+	{ exec = 'nvim "$@"', block = true },
+]
+[open]
+rules = [
+	{ mime = "application/json", use = "text" },
+	{ name = "*.toml", use = "text" },
+	{ name = "*.js", use = "text" },
+	{ name = "*.json", use = "text" },
+	{ name = "*rc", use = "text" },
+	{ name = "*.lua", use = "text" },
+	{ name = "*.toml", use = "text" },
+	{ name = "*.html", use = "text" },
+	{ name = "*.js", use = "text" },
+	{ name = "*.jsx", use = "text" },
+	{ name = "*.md", use = "text" },
+]

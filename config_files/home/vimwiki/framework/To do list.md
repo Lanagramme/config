@@ -1,3 +1,8 @@
+* [ ] setup art workflow for exercises
+* [ ] play demos
+* [ ] finish the web project
+
+
 * [ ] Setup rofi
 * [ ] Setup tmux
 * [ ] add ctrl s to nvim-old

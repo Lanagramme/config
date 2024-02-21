@@ -36,5 +36,6 @@ veil of ignorance
 
 ## Random ideas
 [[The Human Side]]
+[[Story design]]
 
 Giving up things you enjoy because of your trauma is not growth it's pain avoidance

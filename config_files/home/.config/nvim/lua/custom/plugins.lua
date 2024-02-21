@@ -104,6 +104,7 @@ local plugins = {
 	},
 {
       "vimwiki/vimwiki",
+      lazy = false,
       event = "BufEnter *.md",
       keys = {"<leader>ww"},
       init = function()
