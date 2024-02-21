@@ -1,6 +1,8 @@
 [[Task master]]
 [[keybindings bspwm]]
 
+[[myOs]]
+
 ./ 
 DE
 WM

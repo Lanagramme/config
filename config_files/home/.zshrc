@@ -113,3 +113,11 @@ fi
 if test -d '/home/ludji/.bookmarks'; then
   export CDPATH='.:/home/ludji/.bookmarks:/'
 fi
+
+# pnpm
+export PNPM_HOME="/home/ludji/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
