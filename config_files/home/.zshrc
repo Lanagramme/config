@@ -122,3 +122,5 @@ function ya() {
 	fi
 	rm -f -- "$tmp"
 }
+
+eval "$(zoxide init --cmd cd zsh)"

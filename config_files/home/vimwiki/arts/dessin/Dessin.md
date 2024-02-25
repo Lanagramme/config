@@ -40,6 +40,7 @@ design
 ================================
 
 ## Theory
+- The planes of the face
 [Theory](./theory/theory.md)
 
 

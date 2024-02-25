@@ -37,4 +37,16 @@ dessin
 Vimwiki
 - [ ] Use many wikis
 
+______
 
+* Dessin
+ - dessiner 9 visages
+ - dessiner 9 corps
+ - 3 corps + visage
+
+* Game
+ - Designer mon interface
+ - Reflechir à un prototype
+
+* Code
+ - 

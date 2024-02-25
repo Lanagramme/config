@@ -6,6 +6,7 @@
 =====================================================
 [Arts](arts/Art.md)
 [Projets](projets/Projets.md)
+[Games making](gamemaker/games.md)
 
 =====================================================
 [writing](./writing/writing.md)
