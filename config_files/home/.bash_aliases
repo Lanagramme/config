@@ -51,3 +51,4 @@ fi
 
 # ===== Love2D =====
 alias love="~/.config/love/love-11.5-x86_64.AppImage"
+alias npm="pnpm"
