@@ -121,7 +121,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
+# =======
 function ya() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -130,3 +130,5 @@ function ya() {
 	fi
 	rm -f -- "$tmp"
 }
+
+eval "$(zoxide init --cmd cd zsh)"
