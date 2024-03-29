@@ -32,7 +32,7 @@ else
 fi
   
 cd ~/.config
-rm -rf alacritty awesome nvim polybar picom rofi tmux
+rm -rf alacritty awesome nvim polybar picom rofi tmux bspwm sxhkd
 
 config_files=(
   "nvim/"
@@ -41,6 +41,7 @@ config_files=(
   "rofi/"
   "tmux/"
   "bspwm"
+  "sxhkd"
 )
 
 cd ~/Documents/code/git/config/config_files/home/.config/
