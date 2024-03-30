@@ -14,7 +14,8 @@ bspc config gapless_monocle      true
 
 #Autostart applications
 lsxhkd &
-picom --config $Home/.config/picom/picom.conf &
+# picom --config $Home/.config/picom/picom.conf &
+picom &
 dunst &
 nm-applet &
 killall polybar
