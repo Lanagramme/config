@@ -8,8 +8,11 @@
 	 - [Inspirations](#Inspirations)
  * [Outline](#Outline)
  * [Dialogue](#Dialogue)
+ * [Characters](#Characters)
+ * [Notes](#Notes)
 
-[retour](#The old house)
+==========
+[back](#The old house)
 ## Setting
 
 Four young adults wake up in an old house with no memory of how they ended up there. After exploring the house they discover they each have a room in their name, there is no way for them to leave the house, and they apparently chose to be here of their free will.
@@ -23,7 +26,7 @@ As they explore the manor, they find themself trapped in a room in which they ha
 Quicly after, the player character comes to the realisation that every one except them has the ability to use magic except for them.
 
 ==========
-[retour](#The old house)
+[back](#The old house)
 ## Secret plot
 
 Everyone in the house is a mage, but they are all weak. Some so weak they can barel use any power. 
@@ -36,7 +39,7 @@ Peole from the first house were there to grant somethind to perform the ritual a
 But something went wrong during the rital and all your memories of the last year were erased and you were all locked inside the manor.
 
 ==========
-[retour](#The old house)
+[back](#The old house)
 ## Themes
 
 What makes the manor a special place ?
@@ -44,7 +47,7 @@ What makes the manor a special place ?
 What is every one's power ? Insecurity ? Desire ? True form ?
 
 ======
-[retour](#The old house)
+[back](#The old house)
 ## Gameplay
 ### Inspirations
 *For the sake of creativity, each section is independant from the other, no idea is definitive and any can and should be disregrded if it does not help improve he whole*
@@ -71,7 +74,7 @@ Every character in the game have a reason to be in the manor, but none of them c
  * pendant les dialogues le PJ peut avoir des idées qui apparaissent, laissant la possibilité d'interrompre le personnage qui parle
  * un fois interrompu, le personnage peut décider de ne pas continuer sa pensée
 
-[retour](#The old house)
+[back](#The old house)
 ### Outline
  * Les jours commencent tous par une scene dans la cuisine ou tous les perso se rassemblent. 
  * le joueur peut partager des plats avec les autres mais il doit les avoir cuisinés au moins la veille, et il doit avoir un plat prêt par personnage qu'il veut inviter
@@ -100,14 +103,72 @@ exemple d'activités d'histoire :
 	* puzzle demandant l'aide d'un personnage
 	* escape room à la 555
 
-[retour](#The old house)
-### Dialogue
+==========
+[back](#The old house)
+### Characters
 
- - What's the deal with her ?
- - Well, I can see her point.
- - Huh ?
- - In a potentially dangerous situation, with a bunch of unknown variables, it makes sense to distrust anyone you do not know.
- - That souds paranoid to me, like everyone is a culprit to you just because you don't know who is ?
- - Rather, anyone "could" be a culprit so its better not to risk it.
- - And you agree with that ?
- - Maybe not 
+ **Skyler** :
+ - Bitchy
+ 
+ **Anna** :
+ - Puppy
+ 
+ **Tricky**
+ - Tatoo girl
+  
+ **Gregory**
+ - Glasses
+  
+ **Charlie**
+ - Party dude
+
+==========
+[back](#The old house)
+### Dialogue
+ 
+ S - What the ...!
+ C - Wow, hey folks! Did I pass out again ?
+ G - What ?
+ C - Yeah, like, did I party too hard and pass out ? I do that sometimes ?
+ G - Well, to be honest with you_
+ S - Who are you people ? What did you do to me !
+ T - Wow, do you have to scream ?
+ S - Shut up ! Tell me where what is appening !
+ T - Do I shut up or do I tell ? Make up your mind girl ?
+ A - Skyler ?
+ S - Anna ! Thanks luck, you are ok!
+ A - Sky, what is appening ?
+ S - Don't worry Ann. Stay with me, I'm gonna get us out of this.
+ C - Anyway, who'se place is this ? I'm still out of it sorry. This party must have been harcore, I can't remember... well... 
+ G - Can I assume by the general vibe that you are all as confused as me regarding our current situation ?
+ T - You mean waking up in a creepy ass room surrounded by strangers ?
+ G - Yes, that's part of it but 
+
+ C - What's the deal with her ?
+ G - Well, I can see her point.
+ C - Huh ?
+ G - In a potentially dangerous situation, with a bunch of unknown variables, it makes sense to distrust anyone you do not know.
+ C - That souds paranoid to me, like everyone is a culprit to you just because you don't know who is ?
+ G - Rather, anyone "could" be a culprit so its better not to risk it.
+ C - And you agree with that ?
+ G - Maybe not 
+ 
+If you were to go to the ... you would pass the ... ritual and connect with your element,
+if you went to the ... you would learn to connect to your guiding spirit,
+and the ... would drug you until your body transform into ...
+
+And who is right ?
+
+Everyone i guess ? I mean they all work out in the end... I'v heard of people who leave their clan to learn from another...
+So maybe it depends on the individual ? 
+
+And you ?
+
+I was born into a clan of ... I never had to wonder this kind of stuff. As far as I can remember I always knew I would get my ...
+
+==========
+[back](#The old house)
+### Notes
+
+
+

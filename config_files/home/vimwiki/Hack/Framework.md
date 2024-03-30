@@ -15,6 +15,7 @@ How to recreate my hacking environment
     - tldr
     - exa
     - yazi
+    - zoxide
   * Nice bonus
     - fzf
     - htop / btop

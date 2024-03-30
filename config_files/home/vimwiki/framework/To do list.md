@@ -1,7 +1,14 @@
-* [ ] setup art workflow for exercises
-* [ ] play demos
-* [ ] finish the web project
+* [ ] Add pico games to steam deck
+* [ ] Steam rom manager
 
+* [ ] go get the parcel
+
+* [ ] setup art workflow for exercises
+* [ ] study requin cobalt
+* [ ] draw silla
+* [ ] draw cats
+* [ ] draw sitting sketches
+* [ ] draw back looking girl
 
 * [ ] Setup rofi
 * [ ] Setup tmux

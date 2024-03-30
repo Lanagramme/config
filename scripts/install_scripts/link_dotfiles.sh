@@ -47,3 +47,6 @@ cd ~/Documents/code/git/config/config_files/home/.config/
 for file in "${config_files[@]}"; do 
   ln -s $(realpath "$file") ~/.config
 done
+
+rm -rf ~/Images/Wallpapers/
+ln -s ~/Documents/code/git/config/Wallpapers/ ~/Images/
