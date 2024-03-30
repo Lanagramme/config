@@ -20,4 +20,5 @@ dunst &
 nm-applet &
 killall polybar
 polybar &
-python ~/.config/bspwm/terminal.py &
+# sh ~/.config/bspwm/random_wallpaper.sh &
+wal -i $(python ~/.config/bspwm/random_wallpaper.py) 

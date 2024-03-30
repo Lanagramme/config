@@ -3,7 +3,7 @@
 #home
 cd ~/
 # delete all
-rm -fr .bash_aliases .bashrc .fonts .gitconfig .paths .profile .tmux.conf vimwiki wikis .zshrc
+rm -fr .bash_aliases .bashrc .fonts .gitconfig .paths .profile vimwiki wikis .zshrc
 
 # link dotfiles
 home_files=(
@@ -13,7 +13,6 @@ home_files=(
   ".gitconfig"
   ".paths"
   ".profile"
-  ".tmux.conf"
   "vimwiki"
   "wikis"
   ".zshrc"
