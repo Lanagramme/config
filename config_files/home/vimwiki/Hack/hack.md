@@ -6,6 +6,9 @@
 
 ## Projets
 [[Task master]]
+[[Myos]]
+
+## Documents
 [[keybindings bspwm]]
 
 ## Articles
