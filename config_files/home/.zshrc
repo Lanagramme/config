@@ -7,6 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib/:/usr/lib/
 
 # Path to your oh-my-zsh installation.
@@ -122,13 +123,13 @@ case ":$PATH:" in
 esac
 # pnpm end
 # =======
-function ya() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
+# function ya() {
+#	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+#	yazi "$@" --cwd-file="$tmp"
+#	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+#		cd -- "$cwd"
+#	fi
+#	rm -f -- "$tmp"
+#}
 
-eval "$(zoxide init --cmd cd zsh)"
+#eval "$(zoxide init --cmd cd zsh)"

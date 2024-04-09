@@ -1,2 +1,1 @@
-
 [Culture](Numbers)

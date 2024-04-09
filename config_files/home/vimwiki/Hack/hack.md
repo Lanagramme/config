@@ -9,7 +9,6 @@
 [[Myos]]
 
 ## Documents
-[[keybindings bspwm]]
 
 ## Articles
 [[What goes in a linux desktop]]
