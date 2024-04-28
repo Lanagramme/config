@@ -13,7 +13,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 #Autostart applications
-lsxhkd &
+sxhkd &
 # picom --config $Home/.config/picom/picom.conf &
 picom &
 dunst &

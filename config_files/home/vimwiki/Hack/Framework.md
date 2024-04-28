@@ -17,6 +17,8 @@ How to recreate my hacking environment
     - yazi
     - zoxide
     - brightnessctl
+    :q
+    :q
   * Nice bonus
     - fzf
     - htop / btop
