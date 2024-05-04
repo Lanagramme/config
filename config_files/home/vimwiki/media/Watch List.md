@@ -5,6 +5,7 @@
  - [ ] Sarazanmai
  - [ ] O maidens
  - [ ] The witch from mercury
+ - [ ]  Dark Gathering
 
 ## Animation
  - [ ] The Hollow

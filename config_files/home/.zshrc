@@ -7,6 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib/:/usr/lib/
 
 # Path to your oh-my-zsh installation.
@@ -122,16 +123,22 @@ case ":$PATH:" in
 esac
 # pnpm end
 # =======
-function ya() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
+# function ya() {
+#	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+#	yazi "$@" --cwd-file="$tmp"
+#	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+#		cd -- "$cwd"
+#	fi
+#	rm -f -- "$tmp"
+#}
 
+<<<<<<< HEAD
 eval "$(zoxide init --cmd cd zsh)"
 export ANDROID_HOME=/opt/android-sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+=======
+#eval "$(zoxide init --cmd cd zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(fzf --zsh)"
+>>>>>>> 23895da28220dd20926fc5e065be93e89f46fd15

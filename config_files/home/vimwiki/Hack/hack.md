@@ -6,7 +6,9 @@
 
 ## Projets
 [[Task master]]
-[[keybindings bspwm]]
+[[Myos]]
+
+## Documents
 
 ## Articles
 [[What goes in a linux desktop]]
