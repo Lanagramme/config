@@ -1,8 +1,6 @@
 * [ ] Add pico games to steam deck
 * [ ] Steam rom manager
 
-* [ ] go get the parcel
-
 * [ ] setup art workflow for exercises
 * [ ] study requin cobalt
 * [ ] draw silla
@@ -13,6 +11,17 @@
 * [ ] Setup rofi
 * [ ] Setup tmux
 * [ ] add ctrl s to nvim-old
+
+===
+
+* [x] add lang bash setting to hacks
+* [ ] create playlists
+* [ ] conceptualize game story
+* [ ] conceptualize superapp
+* [ ] watch cyberpunk guides
+* [ ] draw
+* [ ] read
+* [ ] setup machine
 
 cmus
 - [ ] install

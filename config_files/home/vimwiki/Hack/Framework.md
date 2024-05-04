@@ -39,3 +39,4 @@ How to recreate my hacking environment
 
 ## GUI applications
  - plank
+ - kdeconnect
