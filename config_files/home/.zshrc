@@ -133,3 +133,5 @@ esac
 #}
 
 #eval "$(zoxide init --cmd cd zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(fzf --zsh)"
