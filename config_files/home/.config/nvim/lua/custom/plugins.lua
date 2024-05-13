@@ -1,4 +1,5 @@
 local plugins = {
+  {'Yggdroot/indentLine', lazy = false},
   {"dundalek/lazy-lsp.nvim"},
   {
     'nvimdev/lspsaga.nvim',
