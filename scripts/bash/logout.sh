@@ -1,1 +1,0 @@
-pkill -SIGKILL-u $(whoami)

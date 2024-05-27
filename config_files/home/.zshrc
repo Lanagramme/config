@@ -133,8 +133,11 @@ esac
 #}
 
 eval "$(zoxide init --cmd cd zsh)"
+<<<<<<< HEAD
 export ANDROID_HOME=/opt/android-sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+=======
+>>>>>>> df534000f824685aad3cc83d68b604062a0df1c0
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
