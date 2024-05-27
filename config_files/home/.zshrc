@@ -132,13 +132,9 @@ esac
 #	rm -f -- "$tmp"
 #}
 
-<<<<<<< HEAD
 eval "$(zoxide init --cmd cd zsh)"
 export ANDROID_HOME=/opt/android-sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-=======
-#eval "$(zoxide init --cmd cd zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
->>>>>>> 23895da28220dd20926fc5e065be93e89f46fd15
