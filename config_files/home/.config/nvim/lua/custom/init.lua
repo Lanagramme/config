@@ -2,11 +2,17 @@ vim.wo.number = true
 vim.cmd("set relativenumber")
 
 vim.opt.colorcolumn ='80'
-
 vim.cmd("set autoindent")
-vim.cmd("set tabstop=2")
-vim.cmd("set shiftwidth=2")
+-- vim.cmd("set tabstop=2")
+-- vim.cmd("set shiftwidth=2")
+vim.cmd("%retab!")
 vim.cmd("set smarttab")
+
+vim.o.tabstop = 2
+-- Set the number of spaces to use for each step of (auto)indent
+vim.o.shiftwidth = 2
+-- Convert tabs to spaces
+vim.o.expandtab = true
 
 vim.cmd("set cursorline")
 vim.cmd("set cc=80")
