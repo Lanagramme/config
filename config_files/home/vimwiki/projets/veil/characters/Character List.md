@@ -9,7 +9,7 @@
 | [[Lucien]]        |             |             |
 | [[Malika]]        |             | A réviser   |
 | [[Moonar fool]]   |             | A commencer |
-| [[Odin]]          |             | A réviser   |
+| [[Arthur]]          |             | A réviser   |
 | [[The dark lord]] |             | A réviser   |
 | [[Sheila]]        | Toph        | A réviser   |
 | [[Charlotte]]     | Toph        | A réviser   |
