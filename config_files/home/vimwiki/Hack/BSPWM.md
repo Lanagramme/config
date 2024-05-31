@@ -1,4 +1,6 @@
-# BSPWM configuration for navigating windows on a AZERTY keyboard
+# BSPWM 
+
+## Configuration for navigating windows on a AZERTY keyboard
 
 ```
 # Switch to desktop 1
