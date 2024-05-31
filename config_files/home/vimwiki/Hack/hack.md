@@ -17,4 +17,5 @@
 ## Troubleshooting
 [[Wrong keyboard detected]]
 
-
+## Configs
+[[BSPWM]]
