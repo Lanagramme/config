@@ -1,8 +1,15 @@
 local gears = require("gears")
 local awful = require("awful")
+local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 require('user')
+
+volume_up_key   = "XF86AudioRaiseVolume"
+volume_down_key = "XF86AudioLowerVolume"
+function volume_control(command)
+    awful.spawn.easy_async(command, function(stdout, stderr, reason, exit_code) end)
+end
 
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
@@ -14,6 +21,17 @@ root.buttons(gears.table.join(
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
+
+
+    awful.key({}, volume_up_key, function ()
+        volume_control("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+")
+    end, {description = "increase volume", group = "media"}),
+
+    awful.key({}, volume_down_key, function ()
+        volume_control("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")
+    end, {description = "increase volume", group = "media"}),
+
+  
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
@@ -48,6 +66,8 @@ globalkeys = gears.table.join(
     -- 				end
         -- end,
         -- {description = "go back", group = "client"}),
+
+
 
     -- Standard program
     awful.key({ modkey ,          }, "b", function () 

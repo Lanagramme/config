@@ -7,3 +7,5 @@
 ## Web articles
 https://mkaz.blog/working-with-vim/
 [[Tabs]]
+
+[[Resistance a la frustration]]

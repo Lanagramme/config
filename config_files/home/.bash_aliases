@@ -24,15 +24,27 @@ alias cl="clear"
 alias mkd="mkdir -pv" #create directory --create parent --give visual feedback
 alias ref="source ~/.bashrc" #reload bashrc
 
-# alias l="ls -la --color=auto"
-alias l="exa -la --header --icons"
-alias ls='ls --color=auto'
-alias dir='dir --color=auto'
-alias vdir='vdir --color=auto'
+#
+if command -v exa &> /dev/null
+then
+  alias l="exa -la --header --icons"
+  alias ls='exa'
+  # Check if eza is installed
+elif command -v eza &> /dev/null
+then
+  alias l="eza -la --header --icons"
+  alias ls='eza'
+  # Default to ls -la if neither exa nor eza is installed
+else
+  alias l='ls -la --color=auto'
+  alias ls='ls --color=auto'
+  fi
+  alias dir='dir --color=auto'
+  alias vdir='vdir --color=auto'
 
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+  alias grep='grep --color=auto'
+  alias fgrep='fgrep --color=auto'
+  alias egrep='egrep --color=auto'
 
 # ===== ssh =====
 # alias noumenm="ssh ludji@noumenm.org"
@@ -46,7 +58,7 @@ alias egrep='egrep --color=auto'
 alias goto="cd -P"
 
 if [ -d "$HOME/.bookmarks" ]; then
-    export CDPATH=".:$HOME/.bookmarks:/"
+  export CDPATH=".:$HOME/.bookmarks:/"
 fi
 
 # ===== Love2D =====

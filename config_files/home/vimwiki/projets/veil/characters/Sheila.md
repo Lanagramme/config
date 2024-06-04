@@ -31,3 +31,7 @@ Les relations entre Sheila et sa mère sont tendues, voire hostiles. Sa mère, a
 
 ### Legacy
 ### Biography
+
+### Notes
+
+* Use legoshy as a template for her posture
