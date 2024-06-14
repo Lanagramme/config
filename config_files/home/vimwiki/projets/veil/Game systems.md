@@ -34,7 +34,7 @@
 
 [Up](# Make the everyday life a game)
 ## The dean quest line
-* Unlocked if you live in the dorms at the end of the two week period, or if you reach the top of one of the school classment while not being part of a brotherhood.
+* Unlocked if you live in the dorms at the end of the two week period, ot if you reach the top of one of the school classment while not being part of a brotherhood.
 * 
 
 [Up](# Make the everyday life a game)

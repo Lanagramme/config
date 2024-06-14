@@ -1,24 +1,144 @@
-#! /bin/sh
+#!/usr/bin/env bash
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+## General ---------------------------------------------------#
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+## Bspwm config directory
+BSPDIR="$HOME/.config/bspwm"
 
-bspc config border_width         2
-bspc config window_gap          12
-bspc config top_padding         26
+## Export bspwm/bin dir to PATH
+export PATH="${PATH}:$BSPDIR/scripts"
+export XDG_CURRENT_DESKTOP='bspwm'
 
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+## Run java applications without issues
+export _JAVA_AWT_WM_NONREPARENTING=1
+#wmname LG3D
 
-#Autostart applications
-sxhkd &
-# picom --config $Home/.config/picom/picom.conf &
-picom &
-dunst &
-nm-applet &
-killall polybar
-polybar &
-# sh ~/.config/bspwm/random_wallpaper.sh &
-wal -i $(python ~/.config/bspwm/random_wallpaper.py) 
+## Current theme ---------------------------------------------#
+
+## Bspwm colors
+BSPWM_FBC='#00BCD4'
+BSPWM_NBC='#222d32'
+BSPWM_ABC='#ba68c8'
+BSPWM_PFC='#61c766'
+
+## Bspwm appearance
+BSPWM_BORDER='1'
+BSPWM_GAP='10'
+BSPWM_SRATIO='0.50'
+
+## Configurations --------------------------------------------#
+
+## Manage Monitors and Workspaces
+##
+## Default Setup (Set 8 workspaces on each monitor)
+default_workspaces() {
+	for monitor in `xrandr -q | grep -w 'connected' | cut -d' ' -f1`; do
+		# bspc monitor "$monitor" -d '' '' '' '' '' '' '' ''
+        bspc monitor "$monitor" -d 1 2 3 4 5 6 7 8
+	done
+}
+
+## Two Monitors Setup (Laptop and external monitor, set 4 workspaces on each monitor)
+two_monitors_workspaces() {
+	# change these values according to your system
+	# you can use `xrandr -q` to get the names of monitors
+	INTERNAL_MONITOR="eDP"
+	EXTERNAL_MONITOR="HDMI-A-0"
+	if [[ $(xrandr -q | grep "${EXTERNAL_MONITOR} connected") ]]; then
+		bspc monitor "$EXTERNAL_MONITOR" -d 1 2 3 4
+		bspc monitor "$INTERNAL_MONITOR" -d 5 6 7 8
+		bspc wm -O "$EXTERNAL_MONITOR" "$INTERNAL_MONITOR"
+	else
+        bspc monitor "$INTERNAL_MONITOR" -d 1 2 3 4 5 6 7 8
+	fi
+}
+
+## Three Monitors Setup (Laptop and two external monitor, 3-2-3 workspaces)
+three_monitors_workspaces() {
+	# again, change these values accordingly
+	MONITOR_1="eDP"
+	MONITOR_2="HDMI-A-0"
+	MONITOR_3="HDMI-A-1"
+	bspc monitor "$MONITOR_1" -d 1 2 3
+	bspc monitor "$MONITOR_2" -d 4 5 6
+	bspc monitor "$MONITOR_3" -d 7 8 9
+	bspc wm -O "$MONITOR_2" "$MONITOR_1" "$MONITOR_3"
+}
+
+## Uncomment only one function according to your needs
+default_workspaces
+#two_monitors_workspaces
+#three_monitors_workspaces
+
+## Apply bspwm configurations
+bspc config border_width "$BSPWM_BORDER"
+bspc config window_gap "$BSPWM_GAP"
+bspc config split_ratio "$BSPWM_SRATIO"
+
+bspc config focused_border_color "$BSPWM_FBC"
+bspc config normal_border_color "$BSPWM_NBC"
+bspc config active_border_color "$BSPWM_ABC"
+bspc config presel_feedback_color "$BSPWM_PFC"
+
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+bspc config paddingless_monocle true
+bspc config single_monocle false
+bspc config focus_follows_pointer true
+bspc config presel_feedback true
+
+## Manage all the unmanaged windows remaining from a previous session.
+bspc wm --adopt-orphans
+
+## Window rules ----------------------------------------------#
+
+## remove all rules first
+bspc rule -r *:*
+
+## Always Floating Apps
+declare -a floating=(alacritty-float Onboard Yad \
+Nm-connection-editor calamares Calamares)
+for i in ${floating[@]}; do
+   bspc rule -a $i state=floating follow=on focus=on; done
+
+bspc rule -a Conky state=floating manage=off
+bspc rule -a stalonetray state=floating manage=off
+
+## Autostart -------------------------------------------------#
+
+# Kill if already running
+killall -9 xsettingsd sxhkd dunst ksuperkey xfce4-power-manager bspc caffeine
+
+# Lauch xsettingsd daemon
+xsettingsd --config="$BSPDIR"/xsettingsd &
+
+# polkit agent
+if [[ ! `pidof xfce-polkit` ]]; then
+	/usr/lib/xfce-polkit/xfce-polkit &
+fi
+
+# Lauch keybindings daemon
+sxhkd -c "$BSPDIR"/sxhkdrc &
+
+# Enable Super Keys For Menu
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
+# Enable power management
+xfce4-power-manager &
+
+# Fix cursor
+xsetroot -cursor_name left_ptr
+
+# Restore wallpaper
+bash ~/.fehbg
+
+# Start mpd
+exec mpd &
+
+# Start bspwm scripts
+bspbar
+bspcomp
+bspdunst
+caffeine &
+bspfloat &
