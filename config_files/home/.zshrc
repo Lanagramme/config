@@ -64,8 +64,10 @@ export LANG=fr_FR.UTF-8
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
+  export SUDO_EDITOR='nvim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
+  export SUDO_EDITOR='nvim'
 fi
 
 # Compilation flags
