@@ -8,8 +8,7 @@
 
 ## World building
 [Before the war](Before the war)
-The Third Great Magic War
-[Setting](./worldbuilding/Setting.lua)
+[The Third Great Magic War](The Third Great Magic War)
 [The City](./worldbuilding/thecity.md)
 [The incident](./worldbuilding/theincident.md)
 
