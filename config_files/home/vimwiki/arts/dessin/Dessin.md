@@ -30,7 +30,7 @@
 perspective 
 gesture
 construction 
-anathomy
+anatomy
 color and light
 composition
 story telling
@@ -49,7 +49,7 @@ design
 
 ## Exercices
 
-[Exercises](./exercises/exercises.md)
+[Exercices](./exercises/exercises.md)
 	
 Travailler à partire de références pour les visages et l'anatomie
 	**Visages**

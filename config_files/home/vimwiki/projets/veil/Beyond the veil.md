@@ -7,7 +7,8 @@
 [[Dungeons]]
 
 ## World building
-[Setting](./worldbuilding/Setting.lua)
+[Before the war](Before the war)
+[The Third Great Magic War](The Third Great Magic War)
 [The City](./worldbuilding/thecity.md)
 [The incident](./worldbuilding/theincident.md)
 
