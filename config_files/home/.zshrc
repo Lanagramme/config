@@ -8,10 +8,12 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+export PATH=~/.local/bin/:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib/:/usr/lib/
+export ZSH="$HOME/.oh-my-zsh"
+export LANG=fr_FR.UTF-8
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -57,9 +59,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-export LANG=fr_FR.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -127,3 +126,4 @@ esac
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
+npm config set prefix '~/.local/'

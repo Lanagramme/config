@@ -1,0 +1,24 @@
+-- local awful = require("awful")
+--
+-- local function get_workspaces()
+--     local workspaces = ""
+--     local tags = awful.screen.focused().tags
+--     -- Debug print to verify tags
+--     print("Number of tags:", #tags)
+--     for i, tag in ipairs(tags) do
+--         if tag.selected then
+--             workspaces = workspaces .. " " -- Icon for active workspace
+--         elseif #tag:clients() > 0 then
+--             workspaces = workspaces .. " " -- Icon for inactive workspace with windows
+--         else
+--             workspaces = workspaces .. " " -- Icon for inactive empty workspace
+--         end
+--     end
+--     return workspaces
+-- end
+--
+-- -- Debug prints
+-- print("Fetching workspaces...")
+-- local workspaces = get_workspaces()
+-- print("Workspaces:", workspaces)
+print("Hello from AwesomeWM!")

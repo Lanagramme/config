@@ -16,7 +16,6 @@ How to recreate my hacking environment
     - exa
     - yazi
     - zoxide
-    - brightnessctl
   * Nice bonus
     - fzf
     - htop / btop
@@ -27,6 +26,8 @@ How to recreate my hacking environment
 	- pywal
 	- ripgrep
 	- z
+    - brightnessctl
+    - acpi
 
 ### Coding environment
 	- curl
