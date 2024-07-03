@@ -1,10 +1,10 @@
-#HAck
+#Hack
 
 [[Recherches]]
 [[Framework]]
 
 
-## Projets
+## Projects
 [[Task master]]
 [[Myos]]
 
@@ -16,6 +16,7 @@
 
 ## Troubleshooting
 [[Wrong keyboard detected]]
+[[Change sink]]
 
 ## Configs
 [[BSPWM]]
