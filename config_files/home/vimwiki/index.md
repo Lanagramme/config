@@ -2,6 +2,7 @@
 
 [To do list](./framework/To do list.md)
 [Framework](./framework/framework.md)
+[Notes](./notes/Notes.md)
 
 =====================================================
 [Arts](./arts/Art.md)
