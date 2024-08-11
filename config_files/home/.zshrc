@@ -7,6 +7,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/share/applications/:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 export PATH=~/.local/bin/:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib/:/usr/lib/

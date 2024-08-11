@@ -3,6 +3,26 @@
 local default_plugins = {
 
   "nvim-lua/plenary.nvim",
+  {
+    "vimwiki/vimwiki",
+    lazy = false,
+    event = "BufEnter *.md",
+    keys = { "<leader>ww" },
+    init = function()
+      vim.g.vimwiki_list = {
+        {
+          path = "~/vimwiki",
+          syntax = "markdown",
+          ext = ".md",
+        },
+      }
+      vim.g.vimwiki_ext2syntax = {
+        [".md"] = "markdown",
+        [".markdown"] = "markdown",
+        [".mdown"] = "markdown",
+      }
+    end,
+  },
 
   {
     "NvChad/base46",
@@ -97,18 +117,16 @@ local default_plugins = {
       vim.api.nvim_create_autocmd({ "BufRead" }, {
         group = vim.api.nvim_create_augroup("GitSignsLazyLoad", { clear = true }),
         callback = function()
-          vim.fn.jobstart({"git", "-C", vim.loop.cwd(), "rev-parse"},
-            {
-              on_exit = function(_, return_code)
-                if return_code == 0 then
-                  vim.api.nvim_del_augroup_by_name "GitSignsLazyLoad"
-                  vim.schedule(function()
-                    require("lazy").load { plugins = { "gitsigns.nvim" } }
-                  end)
-                end
+          vim.fn.jobstart({ "git", "-C", vim.loop.cwd(), "rev-parse" }, {
+            on_exit = function(_, return_code)
+              if return_code == 0 then
+                vim.api.nvim_del_augroup_by_name "GitSignsLazyLoad"
+                vim.schedule(function()
+                  require("lazy").load { plugins = { "gitsigns.nvim" } }
+                end)
               end
-            }
-          )
+            end,
+          })
         end,
       })
     end,
