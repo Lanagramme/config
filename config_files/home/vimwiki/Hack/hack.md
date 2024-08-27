@@ -14,6 +14,7 @@
 [[What goes in a linux desktop]]
 [[Shell wizard]]
 [[Backend Hosting]]
+[[python]]
 
 ## Troubleshooting
 [[Wrong keyboard detected]]
