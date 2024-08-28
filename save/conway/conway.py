@@ -10,11 +10,11 @@
 # The new state of a cell is stored in the next turn array
 
 # Generate the grid
-import sys
-import time
 import pygame
 import numpy as np
 
+# G_WIDTH = 47
+# G_HEIGHT = 47
 G_WIDTH = 10
 G_HEIGHT = 10
 GRID = [[0 for _ in range(G_WIDTH)] for _ in range(G_HEIGHT)]
@@ -24,11 +24,20 @@ LIVE = set()
 def neighbours(coords):
     x, y = coords
 
-    prev_row = (x - 1) % G_HEIGHT
-    next_row = (x + 1) % G_HEIGHT
+    # prev_row = (x - 1) % G_HEIGHT
+    # next_row = (x + 1) % G_HEIGHT
 
-    prev_col = (y - 1) % G_WIDTH
-    next_col = (y + 1) % G_WIDTH
+    # prev_col = (y - 1) % G_WIDTH
+    # next_col = (y + 1) % G_WIDTH
+
+    prev_row = G_HEIGHT - 1 if x - 1 < 0 else x - 1
+    next_row = 0 if x + 1 >= G_HEIGHT else x + 1
+
+    prev_col = G_WIDTH - 1 if y - 1 < 0 else y - 1
+    next_col = 0 if y + 1 >= G_WIDTH else y + 1
+
+    print(coords)
+    print(prev_col, y, next_col)
 
     return [
         (prev_col, prev_row),  # Top-left
@@ -46,19 +55,27 @@ def turn():
     global GRID, LIVE
     NEXT = [[0 for _ in range(G_WIDTH)] for _ in range(G_HEIGHT)]
     updated = set()
+    birthed = LIVE.copy()
 
     def live(x, y):
         NEXT[x][y] = 1
-        LIVE.add((x, y))
+        birthed.add((x, y))
 
     def die(x, y):
         NEXT[x][y] = 0
-        LIVE.discard((x, y))
+        birthed.discard((x, y))
 
     def check_status(x, y):
         if (x, y) not in updated:
             around = neighbours((x, y))
-            strength = sum(GRID[nx][ny] for nx, ny in around)
+            # strength = sum(GRID[nx][ny] for nx, ny in around)
+            strength = 0
+            for N in around:
+                if GRID[N[0]][N[1]] == 1:
+                    strength += 1
+            print(around)
+
+            # print(strength)
             if strength < 2 or strength > 3:
                 die(x, y)
             elif strength == 3:
@@ -71,20 +88,106 @@ def turn():
         for case in cluster:
             check_status(case[0], case[1])
 
+    for cell in birthed:
+        NEXT[cell[0]][cell[1]] = 1
+
+    # print(NEXT)
+    for X in NEXT:
+        print(X)
     if not np.array_equal(GRID, NEXT):
         GRID = NEXT
+        LIVE = birthed
 
 
-SIZE = WIDTH, HEIGTH = 300, 400
+SIZE = WIDTH, HEIGTH = 726, 726
+PAUSE = False
 black = 0, 0, 0
+white = 255, 255, 255
+red = 250, 0, 0
 pygame.init()
 SCREEN = pygame.display.set_mode(SIZE)
-# SCREEN.fill("purple")
+clock = pygame.time.Clock()
+SCREEN.fill("purple")
 pygame.display.set_caption("GAME")
+font = pygame.font.SysFont(None, 36)
 
+side = 10
+gutter = 2
+cell_dimentions = (side, side)
+x = y = 0
+margin = 80
+cell_position = (margin + x, margin + y)
 running = True
+
+clicked = False
+
+function_interval = 0.2
+time_since_last_call = 0
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
+    delta_time = clock.tick(60) / 1000.0
+    time_since_last_call += delta_time
+    SCREEN.fill("purple")
+
+    # for cell in LIVE:
+    #     print(GRID[cell[0]][cell[1]])
+
+    for X in range(G_WIDTH):
+        for Y in range(G_HEIGHT):
+            cell_position = (margin + X * (side + gutter),
+                             margin + Y * (side + gutter))
+            color = black if GRID[X][Y] == 0 else white
+            pygame.draw.rect(SCREEN, color, pygame.Rect(
+                cell_position, cell_dimentions))
+
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+    clic, _, _ = pygame.mouse.get_pressed(num_buttons=3)
+
+    if not clic:
+        clicked = False
+
+    # pause button
+    pygame.draw.rect(SCREEN, red, pygame.Rect(10, 10, 50, 50))
+    if (
+        mouse_x > 10
+        and mouse_x < 60
+        and mouse_y > 10
+        and mouse_y < 60
+        and clic
+        and not clicked
+    ):
+        clicked = True
+        # PAUSE = not PAUSE
+        print(LIVE)
+        turn()
+
+    if not PAUSE:
+        text_surface = font.render("PAUSE", True, (255, 255, 255))
+        SCREEN.blit(text_surface, (100, 30))
+
+        if mouse_x > margin and mouse_x < margin + G_WIDTH * (side + gutter):
+            if mouse_y > margin and mouse_y < margin + G_HEIGHT * (side + gutter):
+                g_x = int((mouse_x - margin) / (side + gutter))
+                g_y = int((mouse_y - margin) / (side + gutter))
+
+                if clic and not clicked:
+                    clicked = True
+                    GRID[g_x][g_y] = 1 if GRID[g_x][g_y] == 0 else 0
+                    if (g_x, g_y) in LIVE:
+                        LIVE.remove((g_x, g_y))
+                    else:
+                        LIVE.add((g_x, g_y))
+
+    # else:
+    #     text_surface = font.render("RUNNING", True, (255, 255, 255))
+    #     SCREEN.blit(text_surface, (100, 30))
+    #     if time_since_last_call >= function_interval:
+    #         turn()
+    #         time_since_last_call = 0
+
     pygame.display.flip()
+    clock.tick(60)
