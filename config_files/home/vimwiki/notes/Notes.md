@@ -1,4 +1,5 @@
 [[To do in paris]]
+[[Game notes]]
 
 spawn
 26/144

@@ -13,47 +13,44 @@
 import pygame
 import numpy as np
 
-# G_WIDTH = 47
-# G_HEIGHT = 47
-G_WIDTH = 10
-G_HEIGHT = 10
-GRID = [[0 for _ in range(G_WIDTH)] for _ in range(G_HEIGHT)]
+G_WIDTH = 47
+G_HEIGHT = 47
+
+# GRID = [[0 for _ in range(G_WIDTH)] for _ in range(G_HEIGHT)]
+GRID = np.zeros((G_HEIGHT, G_WIDTH), dtype=int)
 LIVE = set()
 
 
 def neighbours(coords):
     x, y = coords
 
-    # prev_row = (x - 1) % G_HEIGHT
-    # next_row = (x + 1) % G_HEIGHT
+    prev_row = (x - 1) % G_HEIGHT
+    next_row = (x + 1) % G_HEIGHT
 
-    # prev_col = (y - 1) % G_WIDTH
-    # next_col = (y + 1) % G_WIDTH
+    prev_col = (y - 1) % G_WIDTH
+    next_col = (y + 1) % G_WIDTH
 
-    prev_row = G_HEIGHT - 1 if x - 1 < 0 else x - 1
-    next_row = 0 if x + 1 >= G_HEIGHT else x + 1
+    # prev_row = G_HEIGHT - 1 if x - 1 < 0 else x - 1
+    # next_row = 0 if x + 1 >= G_HEIGHT else x + 1
 
-    prev_col = G_WIDTH - 1 if y - 1 < 0 else y - 1
-    next_col = 0 if y + 1 >= G_WIDTH else y + 1
-
-    print(coords)
-    print(prev_col, y, next_col)
+    # prev_col = G_WIDTH - 1 if y - 1 < 0 else y - 1
+    # next_col = 0 if y + 1 >= G_WIDTH else y + 1
 
     return [
-        (prev_col, prev_row),  # Top-left
-        (x, prev_row),  # Top
-        (next_col, prev_row),  # Top-right
-        (prev_col, y),  # Left
-        (next_col, y),  # Right
-        (prev_col, next_row),  # Bottom-left
-        (x, next_row),  # Bottom
-        (next_col, next_row),  # Bottom-right
+        ( prev_row,prev_col),  # Top-left
+        ( prev_row, y),  # Top
+        ( prev_row,next_col),  # Top-right
+        ( x,prev_col),  # Left
+        ( x,next_col),  # Right
+        ( next_row,prev_col),  # Bottom-left
+        ( next_row, y),  # Bottom
+        ( next_row,next_col),  # Bottom-right
     ]
 
 
 def turn():
     global GRID, LIVE
-    NEXT = [[0 for _ in range(G_WIDTH)] for _ in range(G_HEIGHT)]
+    NEXT = np.zeros((G_HEIGHT, G_WIDTH), dtype=int)
     updated = set()
     birthed = LIVE.copy()
 
@@ -65,17 +62,11 @@ def turn():
         NEXT[x][y] = 0
         birthed.discard((x, y))
 
-    def check_status(x, y):
-        if (x, y) not in updated:
-            around = neighbours((x, y))
-            # strength = sum(GRID[nx][ny] for nx, ny in around)
-            strength = 0
-            for N in around:
-                if GRID[N[0]][N[1]] == 1:
-                    strength += 1
-            print(around)
-
-            # print(strength)
+    def check_status(cell):
+        x,y = cell
+        if cell not in updated:
+            around = neighbours(cell)
+            strength = sum(GRID[nx][ny] for nx, ny in around)
             if strength < 2 or strength > 3:
                 die(x, y)
             elif strength == 3:
@@ -83,17 +74,14 @@ def turn():
             updated.add((x, y))
 
     for cell in LIVE:
-        cluster = neighbours((cell[0], cell[1]))
-        cluster.append((cell[0], cell[1]))
+        cluster = neighbours(cell)
+        cluster.append(cell)
         for case in cluster:
-            check_status(case[0], case[1])
+            check_status(case)
 
     for cell in birthed:
         NEXT[cell[0]][cell[1]] = 1
 
-    # print(NEXT)
-    for X in NEXT:
-        print(X)
     if not np.array_equal(GRID, NEXT):
         GRID = NEXT
         LIVE = birthed
@@ -133,8 +121,6 @@ while running:
     time_since_last_call += delta_time
     SCREEN.fill("purple")
 
-    # for cell in LIVE:
-    #     print(GRID[cell[0]][cell[1]])
 
     for X in range(G_WIDTH):
         for Y in range(G_HEIGHT):
@@ -161,9 +147,8 @@ while running:
         and not clicked
     ):
         clicked = True
-        # PAUSE = not PAUSE
-        print(LIVE)
-        turn()
+        PAUSE = not PAUSE
+        # turn()
 
     if not PAUSE:
         text_surface = font.render("PAUSE", True, (255, 255, 255))
@@ -182,12 +167,12 @@ while running:
                     else:
                         LIVE.add((g_x, g_y))
 
-    # else:
-    #     text_surface = font.render("RUNNING", True, (255, 255, 255))
-    #     SCREEN.blit(text_surface, (100, 30))
-    #     if time_since_last_call >= function_interval:
-    #         turn()
-    #         time_since_last_call = 0
+    else:
+        text_surface = font.render("RUNNING", True, (255, 255, 255))
+        SCREEN.blit(text_surface, (100, 30))
+        if time_since_last_call >= function_interval:
+            turn()
+            time_since_last_call = 0
 
     pygame.display.flip()
     clock.tick(60)
