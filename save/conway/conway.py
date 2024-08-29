@@ -13,11 +13,11 @@
 import pygame
 import numpy as np
 
-G_WIDTH = 47
-G_HEIGHT = 47
+G_WIDTH = 100
+G_HEIGHT = 60
 
 # GRID = [[0 for _ in range(G_WIDTH)] for _ in range(G_HEIGHT)]
-GRID = np.zeros((G_HEIGHT, G_WIDTH), dtype=int)
+GRID = np.zeros((G_WIDTH, G_HEIGHT), dtype=int)
 LIVE = set()
 
 
@@ -50,7 +50,7 @@ def neighbours(coords):
 
 def turn():
     global GRID, LIVE
-    NEXT = np.zeros((G_HEIGHT, G_WIDTH), dtype=int)
+    NEXT = np.zeros((G_WIDTH, G_HEIGHT), dtype=int)
     updated = set()
     birthed = LIVE.copy()
 
@@ -87,15 +87,12 @@ def turn():
         LIVE = birthed
 
 
-SIZE = WIDTH, HEIGTH = 726, 726
 PAUSE = False
 black = 0, 0, 0
 white = 255, 255, 255
 red = 250, 0, 0
 pygame.init()
-SCREEN = pygame.display.set_mode(SIZE)
 clock = pygame.time.Clock()
-SCREEN.fill("purple")
 pygame.display.set_caption("GAME")
 font = pygame.font.SysFont(None, 36)
 
@@ -107,6 +104,12 @@ margin = 80
 cell_position = (margin + x, margin + y)
 running = True
 
+HEIGHT =  (2* 80) + G_HEIGHT * (side + gutter)
+WIDTH =  (2* 80) + G_WIDTH * (side + gutter)
+SIZE = (WIDTH,HEIGHT )
+
+SCREEN = pygame.display.set_mode(SIZE)
+SCREEN.fill("purple")
 clicked = False
 
 function_interval = 0.2
