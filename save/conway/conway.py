@@ -13,79 +13,79 @@
 import pygame
 import numpy as np
 
-G_WIDTH = 100
-G_HEIGHT = 60
+class GameOfLife:
+    def __init__(self, width, height):
+        self.X = width
+        self.Y = height
+        self.grid = np.zeros((width, height), dtype=int)
+        self.live = set()
 
-# GRID = [[0 for _ in range(G_WIDTH)] for _ in range(G_HEIGHT)]
-GRID = np.zeros((G_WIDTH, G_HEIGHT), dtype=int)
-LIVE = set()
+    def neighbours(self, coords):
+        x, y = coords
+
+        prev_row = (x - 1) % self.X
+        next_row = (x + 1) % self.X
+
+        prev_col = (y - 1) % self.Y
+        next_col = (y + 1) % self.Y
+
+        return [
+            ( prev_row,prev_col),  # Top-left
+            ( prev_row, y),  # Top
+            ( prev_row,next_col),  # Top-right
+            ( x,prev_col),  # Left
+            ( x,next_col),  # Right
+            ( next_row,prev_col),  # Bottom-left
+            ( next_row, y),  # Bottom
+            ( next_row,next_col),  # Bottom-right
+        ]
+
+    def invert(self, x, y):
+        self.grid[x][y] = 1 if self.grid[x][y] == 0 else 0
+        if cell in self.live:
+            self.live.remove(cell)
+        else:
+            self.live.add(cell)
 
 
-def neighbours(coords):
-    x, y = coords
+    def turn(self):
+        NEXT = np.zeros((self.X, self.Y), dtype=int)
+        updated = set()
+        birthed = self.live.copy()
 
-    prev_row = (x - 1) % G_HEIGHT
-    next_row = (x + 1) % G_HEIGHT
+        def live(x, y):
+            NEXT[x][y] = 1
+            birthed.add((x, y))
 
-    prev_col = (y - 1) % G_WIDTH
-    next_col = (y + 1) % G_WIDTH
+        def die(x, y):
+            NEXT[x][y] = 0
+            birthed.discard((x, y))
 
-    # prev_row = G_HEIGHT - 1 if x - 1 < 0 else x - 1
-    # next_row = 0 if x + 1 >= G_HEIGHT else x + 1
+        def check_status(cell):
+            x,y = cell
+            if cell not in updated:
+                around = self.neighbours(cell)
+                strength = sum(self.grid[nx][ny] for nx, ny in around)
+                if strength < 2 or strength > 3:
+                    die(x, y)
+                elif strength == 3:
+                    live(x, y)
+                updated.add((x, y))
 
-    # prev_col = G_WIDTH - 1 if y - 1 < 0 else y - 1
-    # next_col = 0 if y + 1 >= G_WIDTH else y + 1
+        for cell in self.live:
+            cluster = self.neighbours(cell)
+            cluster.append(cell)
+            for case in cluster:
+                check_status(case)
 
-    return [
-        ( prev_row,prev_col),  # Top-left
-        ( prev_row, y),  # Top
-        ( prev_row,next_col),  # Top-right
-        ( x,prev_col),  # Left
-        ( x,next_col),  # Right
-        ( next_row,prev_col),  # Bottom-left
-        ( next_row, y),  # Bottom
-        ( next_row,next_col),  # Bottom-right
-    ]
+        for cell in birthed:
+            NEXT[cell[0]][cell[1]] = 1
 
+        if not np.array_equal(self.grid, NEXT):
+            self.grid = NEXT
+            self.live = birthed
 
-def turn():
-    global GRID, LIVE
-    NEXT = np.zeros((G_WIDTH, G_HEIGHT), dtype=int)
-    updated = set()
-    birthed = LIVE.copy()
-
-    def live(x, y):
-        NEXT[x][y] = 1
-        birthed.add((x, y))
-
-    def die(x, y):
-        NEXT[x][y] = 0
-        birthed.discard((x, y))
-
-    def check_status(cell):
-        x,y = cell
-        if cell not in updated:
-            around = neighbours(cell)
-            strength = sum(GRID[nx][ny] for nx, ny in around)
-            if strength < 2 or strength > 3:
-                die(x, y)
-            elif strength == 3:
-                live(x, y)
-            updated.add((x, y))
-
-    for cell in LIVE:
-        cluster = neighbours(cell)
-        cluster.append(cell)
-        for case in cluster:
-            check_status(case)
-
-    for cell in birthed:
-        NEXT[cell[0]][cell[1]] = 1
-
-    if not np.array_equal(GRID, NEXT):
-        GRID = NEXT
-        LIVE = birthed
-
+Game = GameOfLife(10, 10)
 
 PAUSE = False
 black = 0, 0, 0
@@ -98,14 +98,21 @@ font = pygame.font.SysFont(None, 36)
 
 side = 10
 gutter = 2
-cell_dimentions = (side, side)
 x = y = 0
 margin = 80
-cell_position = (margin + x, margin + y)
 running = True
 
-HEIGHT =  (2* 80) + G_HEIGHT * (side + gutter)
-WIDTH =  (2* 80) + G_WIDTH * (side + gutter)
+class Cell:
+    def __init__(self, x, y, margin, gutter, side, position):
+        self.dimentions = (side, side)
+        self.color = black if position == 0 else white
+        self.body = pygame.Rect((margin + x * (side + gutter), margin + y * (side + gutter)), self.dimentions)
+
+    def draw(self, screen):
+        pygame.draw.rect(screen, self.color, self.body)
+    
+HEIGHT =  (2* 80) + Game.Y * (side + gutter)
+WIDTH  =  (2* 80) + Game.X * (side + gutter)
 SIZE = (WIDTH,HEIGHT )
 
 SCREEN = pygame.display.set_mode(SIZE)
@@ -115,66 +122,59 @@ clicked = False
 function_interval = 0.2
 time_since_last_call = 0
 
+Game.width = Game.X * (side + gutter)
+Game.height = Game.Y * (side + gutter)
+board = pygame.Rect(margin, margin, Game.width, Game.height)
+Button = pygame.Rect(10,10,50,50)
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
+    # internal clock
     delta_time = clock.tick(60) / 1000.0
     time_since_last_call += delta_time
+
+    # draw
     SCREEN.fill("purple")
+    for X in range(Game.X):
+        for Y in range(Game.Y):
+            cell = Cell(X,Y,margin,gutter,side,Game.grid[X][Y])
+            cell.draw(SCREEN)
 
-
-    for X in range(G_WIDTH):
-        for Y in range(G_HEIGHT):
-            cell_position = (margin + X * (side + gutter),
-                             margin + Y * (side + gutter))
-            color = black if GRID[X][Y] == 0 else white
-            pygame.draw.rect(SCREEN, color, pygame.Rect(
-                cell_position, cell_dimentions))
-
-    mouse_x, mouse_y = pygame.mouse.get_pos()
+    # mouse info
+    mouse_x, mouse_y = mouse_pos = pygame.mouse.get_pos()
     clic, _, _ = pygame.mouse.get_pressed(num_buttons=3)
 
     if not clic:
         clicked = False
 
     # pause button
-    pygame.draw.rect(SCREEN, red, pygame.Rect(10, 10, 50, 50))
-    if (
-        mouse_x > 10
-        and mouse_x < 60
-        and mouse_y > 10
-        and mouse_y < 60
-        and clic
-        and not clicked
-    ):
+    pygame.draw.rect(SCREEN, red, Button)
+    if Button.collidepoint(mouse_pos) and clic and not clicked:
         clicked = True
         PAUSE = not PAUSE
-        # turn()
 
     if not PAUSE:
         text_surface = font.render("PAUSE", True, (255, 255, 255))
         SCREEN.blit(text_surface, (100, 30))
 
-        if mouse_x > margin and mouse_x < margin + G_WIDTH * (side + gutter):
-            if mouse_y > margin and mouse_y < margin + G_HEIGHT * (side + gutter):
-                g_x = int((mouse_x - margin) / (side + gutter))
-                g_y = int((mouse_y - margin) / (side + gutter))
+        
+        if board.collidepoint(mouse_pos):
+            g_x = int((mouse_x - margin) / (side + gutter))
+            g_y = int((mouse_y - margin) / (side + gutter))
+            cell = (g_x, g_y)
 
-                if clic and not clicked:
-                    clicked = True
-                    GRID[g_x][g_y] = 1 if GRID[g_x][g_y] == 0 else 0
-                    if (g_x, g_y) in LIVE:
-                        LIVE.remove((g_x, g_y))
-                    else:
-                        LIVE.add((g_x, g_y))
+            if clic and not clicked:
+                clicked = True
+                Game.invert(g_x, g_y)
 
     else:
         text_surface = font.render("RUNNING", True, (255, 255, 255))
         SCREEN.blit(text_surface, (100, 30))
         if time_since_last_call >= function_interval:
-            turn()
+            Game.turn()
             time_since_last_call = 0
 
     pygame.display.flip()
