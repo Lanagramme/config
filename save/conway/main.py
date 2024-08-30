@@ -15,7 +15,7 @@ import utils
 import colors
 
 # GameOfLive settings
-Game = GameOfLife.Main(10, 10)
+Game = GameOfLife.Main(100, 70)
 
 bg_col   = colors.light
 live_col = colors.honey
@@ -46,8 +46,8 @@ class Cell:
 pygame.init()
 clock = pygame.time.Clock()
 pygame.display.set_caption("GAME")
-HEIGHT =  (2* 80) + Game.Y * (side + gutter)
-WIDTH  =  (2* 80) + Game.X * (side + gutter)
+HEIGHT =  (2* margin) + Game.Y * (side + gutter)
+WIDTH  =  (2* margin) + Game.X * (side + gutter)
 SIZE   = (WIDTH,HEIGHT)
 SCREEN = pygame.display.set_mode(SIZE)
 PAUSE = False
