@@ -17,7 +17,7 @@ import colors
 # GameOfLive settings
 Game = GameOfLife.Main(100, 70)
 
-bg_col   = colors.light
+bg_col = colors.light
 live_col = colors.honey
 dead_col = colors.dark
 
@@ -27,35 +27,53 @@ x = y = 0
 margin = 80
 playing = True
 
-Game.width  = Game.X * (side + gutter)
+Game.width = Game.X * (side + gutter)
 Game.height = Game.Y * (side + gutter)
-board  = pygame.Rect(margin, margin, Game.width, Game.height)
+board = pygame.Rect(margin, margin, Game.width, Game.height)
+
 
 class Cell:
     def __init__(self, x, y, margin, gutter, side, position):
         self.dimentions = (side, side)
         self.color = dead_col if position == 0 else live_col
-        self.body = pygame.Rect((margin + x * (side + gutter), 
-                                 margin + y * (side + gutter)), 
-                                self.dimentions)
+        self.body = pygame.Rect(
+            (margin + x * (side + gutter), margin + y * (side + gutter)),
+            self.dimentions,
+        )
 
     def draw(self, screen):
         pygame.draw.rect(screen, self.color, self.body)
-    
+
+
 # pygame settings
 pygame.init()
 clock = pygame.time.Clock()
-pygame.display.set_caption("GAME")
-HEIGHT =  (2* margin) + Game.Y * (side + gutter)
-WIDTH  =  (2* margin) + Game.X * (side + gutter)
-SIZE   = (WIDTH,HEIGHT)
+pygame.display.set_caption("Conway's Game of Life")
+HEIGHT = (2 * margin) + Game.Y * (side + gutter)
+WIDTH = (2 * margin) + Game.X * (side + gutter)
+SIZE = (WIDTH, HEIGHT)
 SCREEN = pygame.display.set_mode(SIZE)
 PAUSE = False
+clicking = False
 
 function_interval = 0.2
 time_since_last_call = 0
 
-pause_button = utils.Button1(10,10,100,30, "RUN", colors.dark, colors.white )
+pause_button = utils.Button1(
+    10, 10, 100, 30, "RUN", "PAUSE", colors.green, colors.red, colors.dark, colors.white
+)
+reset_button = utils.Button1(
+    10 + 100 + 10,
+    10,
+    100,
+    30,
+    "RESET",
+    "RESET",
+    colors.red,
+    colors.red,
+    colors.dark,
+    colors.white,
+)
 
 while playing:
     for event in pygame.event.get():
@@ -70,21 +88,35 @@ while playing:
     mouse_x, mouse_y = mouse_pos = pygame.mouse.get_pos()
     clic, _, _ = pygame.mouse.get_pressed(num_buttons=3)
 
-    # cancel clicking state if needed 
-    if not clic: clicking = False
-        
+    # cancel clicking state if needed
+    if not clic:
+        clicking = False
+
     # pause button
     pause_button.update(mouse_pos)
-    if pause_button.is_clicked(mouse_pos, clic and not clicking):
+    if pause_button.is_clicked(clic and not clicking):
         clicking = True
         PAUSE = not PAUSE
+
+    # reset button
+    reset_button.update(mouse_pos)
+    if reset_button.is_clicked(clic and not clicking):
+        clicking = True
+        PAUSE = False
+        Game.reset()
+        if pause_button.status != 0:
+            pause_button.switch_state()
 
     # draw
     SCREEN.fill(bg_col)
     pause_button.draw(SCREEN)
-    [Cell(x, y, margin, gutter, side, Game.grid[x][y]).draw(SCREEN) 
-        for x in range(Game.X) for y in range(Game.Y)]
-    
+    reset_button.draw(SCREEN)
+    [
+        Cell(x, y, margin, gutter, side, Game.grid[x][y]).draw(SCREEN)
+        for x in range(Game.X)
+        for y in range(Game.Y)
+    ]
+
     if not PAUSE:
         if board.collidepoint(mouse_pos):
             hovered_cell_x = int((mouse_x - margin) / (side + gutter))
