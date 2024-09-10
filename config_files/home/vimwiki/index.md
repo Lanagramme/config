@@ -13,6 +13,8 @@
 [writing](./writing/writing.md)
 [Hack](./Hack/hack.md)
 
+[Hyperfixations](./hyperfixations/index.md)
+
 =====================================================
 [Media](./media/media.md)
 
