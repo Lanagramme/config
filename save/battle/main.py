@@ -62,6 +62,7 @@ class Grid:
 
         self.cells = []
         self.hover = False
+        self.active = False
         self.reset()
 
     def reset(self):
