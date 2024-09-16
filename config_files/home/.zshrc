@@ -126,7 +126,7 @@ esac
 #}
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# eval "$(fzf --zsh)"
+eval "$(fzf --zsh)"
 
 npm config set prefix '~/.local/'
 command -v setxkbmap >/dev/null 2>&1 && setxkbmap -layout fr
