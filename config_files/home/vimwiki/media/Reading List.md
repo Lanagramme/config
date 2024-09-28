@@ -1,3 +1,0 @@
-[Culture](Numbers)
-[[Creepypastas]]
-[[Books]]
