@@ -129,3 +129,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
 npm config set prefix '~/.local/'
 setxkbmap -layout fr
+source /usr/share/nvm/init-nvm.sh
