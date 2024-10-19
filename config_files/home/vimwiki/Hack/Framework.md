@@ -24,6 +24,7 @@ How to recreate my hacking environment
 	- entr
 	- ntfy
 	- pywal
+  - gifpaper
 	- ripgrep
 	- z
     - brightnessctl
@@ -40,3 +41,8 @@ How to recreate my hacking environment
 ## GUI applications
  - plank
  - kdeconnect
+
+### Weather tui
+ - [richweather](https://github.com/Rizen54/richweather)
+ - curl wttr.in/amiens,france
+ - 
