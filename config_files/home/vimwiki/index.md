@@ -19,3 +19,9 @@
 [Media](./media/media.md)
 
 [Keybindings](./cheatsheets/Keybindings)
+
+https://github.com/slavfox/Cozette?tab=readme-ov-file
+https://github.com/romeovs/creep?tab=readme-ov-file
+https://github.com/oppiliappan/scientifica/tree/master
+https://github.com/jesseduffield/lazygit
+

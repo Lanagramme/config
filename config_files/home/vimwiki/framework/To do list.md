@@ -1,7 +1,7 @@
 # To Dos
 
-- [ ] Setup rofi
-- [ ] Setup tmux
+- [ ] app
+- [ ] free database
 * [ ] conceptualize game story
 * [ ] conceptualize superapp
 
