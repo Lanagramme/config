@@ -1,3 +1,7 @@
+export LANG=fr_FR.UTF-8
+export LANGUAGE=fr_FR:fr
+export LC_ALL=fr_FR.UTF-8
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -130,3 +134,7 @@ eval "$(fzf --zsh)"
 
 npm config set prefix '~/.local/'
 command -v setxkbmap >/dev/null 2>&1 && setxkbmap -layout fr
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
