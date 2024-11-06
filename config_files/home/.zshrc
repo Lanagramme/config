@@ -2,6 +2,8 @@ export LANG=fr_FR.UTF-8
 export LANGUAGE=fr_FR:fr
 export LC_ALL=fr_FR.UTF-8
 
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/ludji/.zsh/completions:"* ]]; then export FPATH="/home/ludji/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -133,6 +135,7 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
 
 npm config set prefix '~/.local/'
+source /usr/share/nvm/init-nvm.sh
 command -v setxkbmap >/dev/null 2>&1 && setxkbmap -layout fr
 
 export NVM_DIR="$HOME/.nvm"

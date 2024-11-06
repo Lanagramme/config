@@ -1,40 +1,28 @@
 [[To do in paris]]
 [[Game notes]]
 
-spawn
-26/144
 
-grotto
--335/534
+https://rule34.world/post/764978
+https://rule34.world/post/766144
+https://rule34.world/post/767534
+https://rule34.world/post/755991
+https://rule34.world/post/765487
+https://hentaipaw.com/viewer?articleId=772164&page=144
+https://nhentai.net/g/530850/
+https://nhentai.net/g/530850/
+https://nhentai.net/artist/etuzan-jakusui/?page=2315
+https://github.com/VaughnValle/kofuku
+https://alumae.itch.io/bracket-chain
+https://poch4n.gumroad.com/
+https://github.com/nekonako/dotfiles
+https://www.construct.net/etuzan-jakusui
+https://pixijs.com/
+https://playground.babylonjs.com/#P1RZV0
+https://docs.requarks.io/editors
+https://ochika0519.tumblr.com/
+https://www.21-draw.com/course-tags/anatomy/?
+https://github.com/saimoomedits/dotfiles?tab=readme-ov-file
+https://danbooru.donmai.us/posts/7704246?q=nacchan_%28ohisashiburi%29
+https://danbooru.donmai.us/posts/7475735?q=breasts_on_another%27s_back
+https://www.qwant.com/?client=brz-kiwi&q=anime+punchline&t=web
 
-My place
--372/495
-
-Sakura
-353/1020
-
-
-Forest village
-83/1786
-
-accacia plain
--247/2315
-
-birch forest
--1251/552
-
-Dark oak manor
-12028/375
-
-jungle
--1753/1013
-
-avandonned snow village
--919/-993
-
-not abandonned snow forest village
--2605/-1031
-
-
-Verry small forest snow village
--3038/-757

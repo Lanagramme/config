@@ -60,11 +60,11 @@ globalkeys = gears.table.join(
               {description = "switch wallpaper", group = "launcher"}),
 
     awful.key({ modkey,					  }, "d", function ()
-              os.execute(string.format("rofi -show run"))		        end,
+              os.execute(string.format("rofi -show run -theme ~/.config/rofi/spotlight.rasi"))		        end,
               {description = "show rofi launcher", group = "launcher"}),
 
     awful.key({ modkey,					  }, "Tab", function ()
-              os.execute(string.format("rofi -show window"))		        end,
+              os.execute(string.format("rofi -show window -theme ~/.config/rofi/spotlight.rasi"))		        end,
               {description = "show rofi window switcher", group = "launcher"}),
 
     awful.key({ modkey,           }, "f",     function () 
