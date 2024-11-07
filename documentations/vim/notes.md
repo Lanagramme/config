@@ -16,7 +16,7 @@ b: next word backward
 :number => got to line number
 
 gg: top of document
-GG: bottom of document
+G: bottom of document
 
 ## Actions
 d => Delete
