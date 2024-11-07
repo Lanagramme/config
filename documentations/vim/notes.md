@@ -1,17 +1,22 @@
 [Table des matière](../table_of_content.md)
 
 ## Movements
-**Scroll**
 <c-d> scroll down half page
-<c-f> scroll down full page
 <c-u> scroll up half page
+<c-f> scroll down full page
 <c-b> scroll up full page
+
+j => one line down
+k => one line up
 
 $: end of line
 0: beggining of line
 w: next word
 b: next word backward
 :number => got to line number
+
+gg: top of document
+GG: bottom of document
 
 ## Actions
 d => Delete
@@ -22,8 +27,14 @@ p => Paste
 u => undo last action
 <C-r> => undo undo last action
 
-s => delete character and enter insert mode 
 x => delete chracter
+s => delete character and enter insert mode 
+
+<Shift>
+D => delete to end of line
+C => change to end of line
+Y => copy to end of line
+P => paste backward
 
 ## Modifiers
 i: inside
