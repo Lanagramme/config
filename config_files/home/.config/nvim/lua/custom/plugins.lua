@@ -98,8 +98,8 @@ local plugins = {
       })
 
 
-      vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle left<CR>", {})
-      vim.keymap.set("n", "<C-t>", ":Neotree focus<CR>", {})
+      vim.keymap.set("n", "<C-t>", ":Neotree filesystem toggle left<CR>", {})
+      vim.keymap.set("n", "<C-e>", ":Neotree focus<CR>", {})
     end
   },
   {

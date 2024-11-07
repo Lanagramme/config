@@ -1,5 +1,15 @@
 # To Dos
 
+- [ ] art
+  - [ ] 1 character
+    - [ ] 1 standing post
+    - [ ] 1 dynamic pose
+    - [ ] 1 closup
+    - [ ] 1 chibi
+- [ ] game
+  - [x] switch from team select to battle
+  - [ ] apply direct tamage to target in aoe
+
 - [ ] app
 - [ ] free database
 * [ ] conceptualize game story
