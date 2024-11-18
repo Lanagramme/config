@@ -1,15 +1,8 @@
 local gears = require("gears")
 local awful = require("awful")
-local naughty = require("naughty")
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 require('user')
-
-volume_up_key   = "XF86AudioRaiseVolume"
-volume_down_key = "XF86AudioLowerVolume"
-function volume_control(command)
-    awful.spawn.easy_async(command, function(stdout, stderr, reason, exit_code) end)
-end
 
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
@@ -22,68 +15,56 @@ root.buttons(gears.table.join(
 -- {{{ Key bindings
 globalkeys = gears.table.join(
 
+  awful.key({},  "XF86AudioRaiseVolume", function ()
+    awful.spawn.easy_async("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+      function(stdout, stderr, reason, exit_code) end)
+  end, {description = "increase volume", group = "media"}),
 
-    awful.key({}, volume_up_key, function ()
-        volume_control("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+")
-    end, {description = "increase volume", group = "media"}),
+  awful.key({},  "XF86AudioLowerVolume", function ()
+    awful.spawn.easy_async("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+      function(stdout, stderr, reason, exit_code) end)
+  end, {description = "increase volume", group = "media"}),
 
-    awful.key({}, volume_down_key, function ()
-        volume_control("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")
-    end, {description = "increase volume", group = "media"}),
+  awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
+    {description="show help", group="awesome"}),
+  awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
+    {description = "view previous", group = "tag"}),
+  awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
+    {description = "view next", group = "tag"}),
+  awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
+    {description = "go back", group = "tag"}),
+  awful.key({ modkey,           }, "j", function () awful.client.focus.byidx( 1)    end,
+    {description = "focus next by index", group = "client"}),
+  awful.key({ modkey,           }, "k", function () awful.client.focus.byidx(-1)    end,
+    {description = "focus previous by index", group = "client"}),
 
-  
-    awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
-              {description="show help", group="awesome"}),
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
-              {description = "view previous", group = "tag"}),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
-              {description = "view next", group = "tag"}),
-    awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
-              {description = "go back", group = "tag"}),
-    awful.key({ modkey,           }, "j", function () awful.client.focus.byidx( 1)    end,
-              {description = "focus next by index", group = "client"}
-    ),
-    awful.key({ modkey,           }, "k", function () awful.client.focus.byidx(-1)    end,
-        {description = "focus previous by index", group = "client"}
-    ),
-
-    -- Layout manipulation
-    awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
-              {description = "swap with next client by index", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
-              {description = "swap with previous client by index", group = "client"}),
-    awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
-              {description = "focus the next screen", group = "screen"}),
-    awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
-              {description = "focus the previous screen", group = "screen"}),
-    awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
-              {description = "jump to urgent client", group = "client"}),
-    -- awful.key({ modkey,           }, "Tab",
-    -- 		function ()
-    -- 				awful.client.focus.history.previous()
-    -- 				if client.focus then
-    -- 						client.focus:raise()
-    -- 				end
-        -- end,
-        -- {description = "go back", group = "client"}),
-
-
+  -- Layout manipulation
+  awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
+    {description = "swap with next client by index", group = "client"}),
+  awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end,
+    {description = "swap with previous client by index", group = "client"}),
+  awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end,
+    {description = "focus the next screen", group = "screen"}),
+  awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end,
+    {description = "focus the previous screen", group = "screen"}),
+  awful.key({ modkey,           }, "u", awful.client.urgent.jumpto,
+    {description = "jump to urgent client", group = "client"}),
 
     -- Standard program
     awful.key({ modkey ,          }, "b", function () 
       awful.util.spawn("firefox") end,
               {description = "Launch firefox", group = "applications"}),
-  
+
     awful.key({ modkey,					  }, "w", function ()
-              os.execute(string.format("python3 ~/.config/awesome/terminal.py"))    end,
+              os.execute(string.format("python3 ~/.config/awesome/random_wallpaper.py"))    end,
               {description = "switch wallpaper", group = "launcher"}),
 
     awful.key({ modkey,					  }, "d", function ()
-              os.execute(string.format("rofi -show run"))		        end,
+              os.execute(string.format("rofi -show run -theme ~/.config/rofi/spotlight.rasi"))		        end,
               {description = "show rofi launcher", group = "launcher"}),
 
     awful.key({ modkey,					  }, "Tab", function ()
-              os.execute(string.format("rofi -show window"))		        end,
+              os.execute(string.format("rofi -show window -theme ~/.config/rofi/spotlight.rasi"))		        end,
               {description = "show rofi window switcher", group = "launcher"}),
 
     awful.key({ modkey,           }, "f",     function () 

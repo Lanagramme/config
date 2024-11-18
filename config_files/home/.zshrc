@@ -1,3 +1,9 @@
+export LANG=fr_FR.UTF-8
+export LANGUAGE=fr_FR:fr
+export LC_ALL=fr_FR.UTF-8
+
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/home/ludji/.zsh/completions:"* ]]; then export FPATH="/home/ludji/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -7,11 +13,14 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/share/applications/:$PATH
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+export PATH=~/.local/bin/:$PATH
 export LD_LIBRARY_PATH=/usr/local/lib/:/usr/lib/
+export ZSH="$HOME/.oh-my-zsh"
+export LANG=fr_FR.UTF-8
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -58,14 +67,13 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-export LANG=fr_FR.UTF-8
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
+  export SUDO_EDITOR='nvim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
+  export SUDO_EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -125,3 +133,11 @@ esac
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(fzf --zsh)"
+
+npm config set prefix '~/.local/'
+source /usr/share/nvm/init-nvm.sh
+command -v setxkbmap >/dev/null 2>&1 && setxkbmap -layout fr
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

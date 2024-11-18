@@ -1,25 +1,30 @@
 # To Dos
 
+- [ ] art
+  - [ ] 1 character
+    - [ ] 1 standing post
+    - [ ] 1 dynamic pose
+    - [ ] 1 closup
+    - [ ] 1 chibi
+- [ ] game
+  - [x] switch from team select to battle
+  - [ ] apply direct tamage to target in aoe
+
+- [ ] app
+- [ ] free database
+* [ ] conceptualize game story
+* [ ] conceptualize superapp
+
+===
+
 - [ ] Add pico games to steam deck
 - [ ] Steam rom manager
 - [ ] setup art workflow for exercises
 - [ ] study requin cobalt
-- [ ] draw silla
-- [ ] draw cats
-- [ ] draw sitting sketches
-- [ ] draw back looking girl
-- [ ] Setup rofi
-- [ ] Setup tmux
 
 ===
 
-* [x] add lang bash setting to hacks
 * [ ] create playlists
-* [ ] conceptualize game story
-* [ ] conceptualize superapp
-* [ ] draw
-* [x] read
-* [x] setup machine
 
 **cmus**
 
@@ -50,7 +55,3 @@
 	* [ ] Spells
 * [ ] write mini story
 * [ ] write character lines
-
-**Vimwiki**
-
-* [ ] Use many wikis

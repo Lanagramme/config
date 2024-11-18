@@ -1,2 +1,2 @@
-[Dessin](dessin/Dessin.md)
+[Dessin](./dessin/Dessin.md)
 [Musique](./musique/Musique.md)

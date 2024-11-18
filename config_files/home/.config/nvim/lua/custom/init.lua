@@ -3,16 +3,12 @@ vim.cmd("set relativenumber")
 
 vim.opt.colorcolumn ='80'
 vim.cmd("set autoindent")
--- vim.cmd("set tabstop=2")
--- vim.cmd("set shiftwidth=2")
 vim.cmd("%retab!")
 vim.cmd("set smarttab")
-
-vim.o.tabstop = 2
--- Set the number of spaces to use for each step of (auto)indent
-vim.o.shiftwidth = 2
--- Convert tabs to spaces
+-- use tab instead of spaces when using >
 vim.o.expandtab = true
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
 
 vim.cmd("set cursorline")
 vim.cmd("set cc=80")
@@ -54,49 +50,47 @@ vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGai
   pattern = { "*" },
 })
 
--- vim.g.mapleader = " "
--- vim.keymap.set("n", "<C-l>", "<C-w>l")
--- vim.keymap.set("n", "<C-h>", "<C-w>h")
--- vim.keymap.set("n", "<C-k>", "<C-w>k")
--- vim.keymap.set("n", "<C-j>", "<C-w>j")
---
--- -- move pane with alt key
--- vim.keymap.set("n", "<A-h>", "<C-W>H")
--- vim.keymap.set("n", "<A-j>", "<C-W>J")
--- vim.keymap.set("n", "<A-k>", "<C-W>K")
--- vim.keymap.set("n", "<A-l>", "<C-W>L")
-
-
 -- Function to execute Python script
 function _G.execute_python_script(...)
-    local args = table.concat({...}, ' ')
+  local args = table.concat({...}, ' ')
 
-    local script_name, params = args:match("(%S+)%s(.+)")
-    
-    if not script_name then
-        print("Error: Please provide a script name")
-        return
-    end
+  local script_name, params = args:match("(%S+)%s(.+)")
 
-    local script_path = vim.fn.expand('~/.config/nvim/templates/' .. script_name .. '.py')
+  if not script_name then
+    print("Error: Please provide a script name")
+    return
+  end
 
-    if vim.fn.filereadable(script_path) == 0 then
-        print("Error: Python script not found")
-        return
-    end
+  local script_path = vim.fn.expand('~/.config/nvim/templates/' .. script_name .. '.py')
 
-    local current_buffer_path = vim.fn.expand('%:p')
+  if vim.fn.filereadable(script_path) == 0 then
+    print("Error: Python script not found")
+    return
+  end
 
-    local command = string.format("python3 %s %s %s", vim.fn.shellescape(script_path), vim.fn.shellescape(params or ''), vim.fn.shellescape(current_buffer_path))
+  local current_buffer_path = vim.fn.expand('%:p')
 
-    local handle = io.popen(command .. ' 2>&1')
-    local result = handle:read('*a')
-    handle:close()
+  local command = string.format("python3 %s %s %s", vim.fn.shellescape(script_path), vim.fn.shellescape(params or ''), vim.fn.shellescape(current_buffer_path))
 
-    print(result)
+  local handle = io.popen(command .. ' 2>&1')
+  local result = handle:read('*a')
+  handle:close()
+
+  print(result)
 end
 
 -- Define the Neovim command
 vim.cmd([[
   command! -nargs=+ -complete=file -bar Templates :lua execute_python_script(<q-args>)
 ]])
+
+-- defind tab size for python files
+vim.api.nvim_create_augroup('CustomFileTypeSettings', {})
+vim.api.nvim_create_autocmd('FileType', {
+    group = 'CustomFileTypeSettings',
+    pattern = 'python',  -- or '*.py' for matching file extension
+    callback = function()
+        vim.opt.shiftwidth = 2
+        vim.opt.tabstop = 2
+    end
+})

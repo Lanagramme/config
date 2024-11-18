@@ -16,7 +16,6 @@ How to recreate my hacking environment
     - exa
     - yazi
     - zoxide
-    - brightnessctl
   * Nice bonus
     - fzf
     - htop / btop
@@ -25,8 +24,11 @@ How to recreate my hacking environment
 	- entr
 	- ntfy
 	- pywal
+  - gifpaper
 	- ripgrep
 	- z
+    - brightnessctl
+    - acpi
 
 ### Coding environment
 	- curl
@@ -39,3 +41,8 @@ How to recreate my hacking environment
 ## GUI applications
  - plank
  - kdeconnect
+
+### Weather tui
+ - [richweather](https://github.com/Rizen54/richweather)
+ - curl wttr.in/amiens,france
+ - 
