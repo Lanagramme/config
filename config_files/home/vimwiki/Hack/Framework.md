@@ -19,6 +19,7 @@ How to recreate my hacking environment
   * Nice bonus
     - fzf
     - htop / btop
+    - ncdu
   
 ### Utilities
 	- entr
