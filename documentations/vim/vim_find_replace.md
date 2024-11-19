@@ -38,7 +38,7 @@ Press
 
 **Replace all lines starting "with" foo with "Vim is the best"**
 ```
-:%s/oo.*/Vim is the best/g
+:%s/foo.*/Vim is the best/g
 ```
 "^" matches the beginning of a line
 ".*" matches any number of any characters*
