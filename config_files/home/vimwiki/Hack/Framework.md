@@ -27,9 +27,11 @@ How to recreate my hacking environment
   - gifpaper
 	- ripgrep
 	- z
-    - brightnessctl
-    - acpi
-
+  - brightnessctl
+  - acpi
+  - yt-dlp
+  - ytfzf
+ 
 ### Coding environment
 	- curl
 	- docker
