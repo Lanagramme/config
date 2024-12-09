@@ -4,7 +4,6 @@ local awful = require("awful")
 local gears = require("gears")
 local theme = require("theme")
 local rubato = require("rubato")
-local battery_widget = require("battery-widget")
 
 require("user")
 
