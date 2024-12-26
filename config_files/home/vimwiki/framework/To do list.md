@@ -1,9 +1,6 @@
 # To Dos
 
 - [ ] What to eat
-  - [x] what do i have at home
-  - [x] what can i have for cheap
-  - [x] what can i cook with it
   - [ ] meal prep
 - [ ] What to learn
   - [ ] Tailwind
@@ -18,7 +15,7 @@
   - [ ] Dandadan
   - [ ] Re Zero
 - [ ] what to read
-  - [ ] The name of the wind
+  - [x] The name of the wind
 - [ ] what to work at
   - [ ] pygame
   - [ ] arc browser css
