@@ -1,0 +1,3 @@
+Airfryer
+
+[Potatoes](Potatoes)

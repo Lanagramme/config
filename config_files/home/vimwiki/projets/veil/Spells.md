@@ -4,11 +4,11 @@
 |----------|--------|----------------------------------------------------------|
 | Fireball | 1N     | Cast a fire ball.                                        |
 |          |        | Apply one fire token to target.                          |
-|          |        | ---                                                      |
+|----------|--------|----------------------------------------------------------|
 | Spark    | 1F 1PA | Create an explosion up to 3m from caster.                |
 |          |        | All fire token of the target explode multiplying damage. |
 |          |        | 1t x1.3 / 2t x1.6 / 2t x2 / 4t x2.3                      |
-|          |        | ---                                                      |
+|----------|--------|----------------------------------------------------------|
 |          |        |                                                          |
 
 ## Water
@@ -17,12 +17,12 @@
 |------------|--------|------------------------------------------------------|
 | Splash     | 2E 2PA | All target within 1m are pushed 2m away from caster. |
 |            |        | Apply one water token to target.                     |
-|            |        | Apply wet to target.                                 |
-|            |        | ---                                                  |
+|            |        | Apply wet to target for 3 water tokens .             |
+|------------|--------|------------------------------------------------------|
 | Frost wind |        | Apply frozen to wet target.                          |
 |            |        | Apply frozen to target location.                     |
 |            |        | Push target 1m away from caster.                     |
-|            |        | ---                                                  |
+|------------|--------|------------------------------------------------------|
 |            |        |                                                      |
 
 ## Earth
@@ -43,7 +43,7 @@
 |                |      | water token consummed.                                           |
 |                |      | At lv 4 caster gains half of the damage inflicted by parasite.   |
 |                |      | Parasite dies if target if inflicted with burn.                  |
-|                |      | ---                                                              |
+|----------------|------|------------------------------------------------------------------|
 | Photosynthesis |      | Infect target with a sunflower.                                  |
 |                |      | Every time caster gais pv, every target contamined gains half    |
 |                |      | of the pv regained multiplied according to sunflower's level.    |
@@ -57,6 +57,7 @@
 |                |      | Sunflower dies after 5 turns.                                    |
 |                |      | Sunflower's death counter is reset efter every lv gained.        |
 |                |      | Sunflower dies if target if inflicted with burn.                 |
-|                |      | ---                                                              |
+|----------------|------|------------------------------------------------------------------|
 |                |      |                                                                  |
+
 

@@ -1,3 +1,5 @@
 [notes](./notes/notes.md)
 [journal](./journal/Journal.md)
 [study](./study/study.md)
+[Reading notes](Reading)
+[Recipes](./recipes/index.md)
