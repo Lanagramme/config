@@ -34,6 +34,7 @@ cd ~/.config
 rm -rf alacritty awesome nvim polybar picom rofi tmux bspwm sxhkd
 
 config_files=(
+  "awesome"
   "nvim/"
   "polybar/"
   "picom/"
@@ -47,5 +48,3 @@ cd ~/Documents/code/git/config/config_files/home/.config/
 for file in "${config_files[@]}"; do 
   ln -s $(realpath "$file") ~/.config
 done
-
-ln -s ~/Documents/code/git/config/Wallpapers/ ~/Images/

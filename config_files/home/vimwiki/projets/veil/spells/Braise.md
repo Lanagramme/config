@@ -22,9 +22,10 @@ Déploie une aura de feu de 3m de rayon à partir de la cible.
 * Si la zone chevauche une zone d'élément air, 
   * toutes les entités présentent dans une des deux auras recoivent des dégats égal au deux rayons aditionnées, l'état brulé et deux token feu
   * les deux auras sont détruites.
+ 
 onTurn: 
- * Toutes les entités à l'intérieur de l'aura recoivent un token de feu.
- * Le rayon de l'aura est réduit de 1m
+  * Toutes les entités à l'intérieur de l'aura recoivent un token de feu.
+  * Le rayon de l'aura est réduit de 1m
 
 **Cost**:
 

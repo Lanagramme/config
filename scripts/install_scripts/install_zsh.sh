@@ -18,12 +18,10 @@ elif [[ $2 == "arch" ]]; then
 fi
 
 # install ohmyzsh
-sh <(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)
+sh install_omz.sh
 
 # install zsh pluggins
-cd ~/Documents/code/git/config/scripts/install_scripts/
-sh ./install_dependencies.sh
-
+sh ./install_zsh_plugins.sh
 
 # add zsh to valid login shells
 command -v zsh | sudo tee -a /etc/shells

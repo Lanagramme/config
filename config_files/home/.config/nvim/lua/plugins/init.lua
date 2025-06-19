@@ -3,26 +3,26 @@
 local default_plugins = {
 
   "nvim-lua/plenary.nvim",
-  {
-    "vimwiki/vimwiki",
-    lazy = false,
-    event = "BufEnter *.md",
-    keys = { "<leader>ww" },
-    init = function()
-      vim.g.vimwiki_list = {
-        {
-          path = "~/vimwiki",
-          syntax = "markdown",
-          ext = ".md",
-        },
-      }
-      vim.g.vimwiki_ext2syntax = {
-        [".md"] = "markdown",
-        [".markdown"] = "markdown",
-        [".mdown"] = "markdown",
-      }
-    end,
-  },
+  -- {
+  --   "vimwiki/vimwiki",
+  --   lazy = false,
+  --   event = "BufEnter *.md",
+  --   keys = { "<leader>ww" },
+  --   init = function()
+  --     vim.g.vimwiki_list = {
+  --       {
+  --         path = "~/vimwiki",
+  --         syntax = "markdown",
+  --         ext = ".md",
+  --       },
+  --     }
+  --     vim.g.vimwiki_ext2syntax = {
+  --       [".md"] = "markdown",
+  --       [".markdown"] = "markdown",
+  --       [".mdown"] = "markdown",
+  --     }
+  --   end,
+  -- },
 
   {
     "NvChad/base46",

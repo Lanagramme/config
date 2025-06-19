@@ -33,6 +33,8 @@
 veil of ignorance
 
 ## Design
+[[About aura and status]]
+[[Battle system]]
 [Spell Compendium](spells/compendium.md)
 [[Spells]]
 [[Prototype I]]
@@ -44,3 +46,6 @@ veil of ignorance
 [[Book stores Names]]
 
 Giving up things you enjoy because of your trauma is not growth it's pain avoidance
+
+## Build
+[[Demo1](Demo1)]
