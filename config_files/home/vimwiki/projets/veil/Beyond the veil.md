@@ -11,6 +11,7 @@
 [The Third Great Magic War](The Third Great Magic War)
 [The City](./worldbuilding/thecity.md)
 [The incident](./worldbuilding/theincident.md)
+[[Assisted]]
 
 ## Characters
 [Introducing](Introducing)

@@ -9,7 +9,7 @@ for _,mini in ipairs({
 	"icons",
 	"tabline",
 	"starter",
-	"map",
+	-- "map",
 	"statusline",
 }) do
 	table.insert(minis ,{ "echasnovski/mini." .. mini, version = '*' })

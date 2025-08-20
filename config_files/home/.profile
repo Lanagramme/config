@@ -20,3 +20,4 @@ fi
 
 if [ -e /home/ludji/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ludji/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 . "$HOME/.cargo/env"
+. "/home/ludji/.deno/env"

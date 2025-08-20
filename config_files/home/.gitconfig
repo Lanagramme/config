@@ -6,3 +6,7 @@
 [safe]
 	directory = /storage/emulated/0/Documents/obsidian/vaults/Zett
 	directory = /storage/emulated/0/Documents/Obsidian/arcane
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true

@@ -110,3 +110,5 @@ fi
 if test -d '/home/ludji/.bookmarks'; then
   export CDPATH='.:/home/ludji/.bookmarks:/'
 fi
+. "/home/ludji/.deno/env"
+source /home/ludji/.local/share/bash-completion/completions/deno.bash

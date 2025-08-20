@@ -130,3 +130,92 @@ stdout,stderr = process.comunicate()
 
 var = subprocess.Popen([], strout = subprocess.PIPE, universal_lines = True)
 process.stdout
+
+========
+Shadow slave
+Kernel jet senior officer of the **first awakened irregular company** of the northest quadran core of the evatuation army
+Sunny 
+
+Master Randal (Vandal)
+Late 40 or early 50
+muscular
+grey hair full beard
+
+Ascended Jessy (Mustang)
+late 20s, early 30s
+friendly demeanour
+radiates warmth
+slender
+blonde
+
+Ascended Winter (Queen)
+late 30s
+curly dark brown in a pony tail
+wears polarized sunglasses indoor
+aloof and nonchaleant
+tanned tatooed black arms
+
+Ascended Dale (Knight)
+honest eyes and galant bearing
+dark stubbles
+circles under his eyes
+same tatooes as winter
+defender
+
+Ascended Davis (Pride)
+cold eyes
+Chilling gaze of a killer
+
+
+**Sunny's cohort**
+ * Belle 
+	* A charismatic man with a lean figure, athletic build, and blond hair.
+	* is swift and has mercurial nature
+	* Weapon: sword
+	* Aspect: 
+		* is able to turn his body intangible and phase through solid matter.
+		* can infuse unnatural sharpness into his weapon
+	* flaw: a poor impulse control
+
+ * Dorn
+	* He was a giant of a man, noticeably taller than Effie, and had strong muscles
+	* has a solid and calculated approach
+	* He possessed a serious, sedate attitude and deeply intelligent eyes
+	* Weapon : Sledge hammer
+	* Ability: 
+		* He was able to control at least something that approximated gravity, to empower his strikes with crushing weight and throw his enemies off-balance
+	* flaw: his body is slow and grows constantly
+
+ * Quentin
+	* has stalwart persistence
+	* He was supposed to be a reasonable senior but he can't really hold his curiosity about gossip
+	* Weapon: sword
+	* Abilities: 
+		* he is able to constantly repair his shield and armor. 
+		* apply corrosive property to his weapons
+	* flaw: is unable to break a promise
+
+ * Samara 
+	 * tall, gorgeous redhead
+	 * has steadiness and a deadly aim
+	 * Weapon: ranged fire arms
+	 * Ability: can infuse projectiles with essence
+	 * Flaw: slow essence regeneration
+
+ * Kim 
+	 * She is a meek-looking young woman with mousy hair and an unassuming face
+	 * has mastery of sight and quiet competence
+	 * luster's wife
+	 * Abilities: 
+		 * She possessed an affinity to revelations
+		 * can perceive the flaws and vulnerabilities of living creatures 
+		 * can share her visual perception with several people.
+	 * Flaw: she is unasuming
+
+ * Luster 
+	 * has spirit and inexhaustible bravado
+	 * kim's husband
+	 * Weapon: halberd
+	 * Abilities:
+		 * enhance the regeneration rate of soul essence, both his own and that of his allies. 
+		 * transfer his essence to others
