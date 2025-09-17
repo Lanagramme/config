@@ -112,3 +112,6 @@ if test -d '/home/ludji/.bookmarks'; then
 fi
 . "/home/ludji/.deno/env"
 source /home/ludji/.local/share/bash-completion/completions/deno.bash
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export PATH="$HOME/.local/bin:$PATH"
+

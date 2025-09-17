@@ -12,10 +12,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/.local/share/applications/:$PATH
-export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
-export PATH=~/.local/bin/:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/.local/share/applications/:$PATH
+# export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+# export PATH=~/.local/bin/:$PATH
+
+export PATH="$HOME/bin:/usr/local/bin:$HOME/.local/share/applications:/home/linuxbrew/.linuxbrew/bin:$HOME/.local/bin:$PATH"
+
 export LD_LIBRARY_PATH=/usr/local/lib/:/usr/lib/
 export ZSH="$HOME/.oh-my-zsh"
 export LANG=fr_FR.UTF-8
@@ -130,9 +133,10 @@ esac
 #	fi
 #	rm -f -- "$tmp"
 #}
-eval "$(zoxide init --cmd cd zsh)"
+# eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-eval "$(fzf --zsh)"
+# eval "$(fzf --zsh)"
 
 npm config set prefix '~/.local/'
 # source /usr/share/nvm/init-nvm.sh
@@ -141,4 +145,4 @@ command -v setxkbmap >/dev/null 2>&1 && setxkbmap -layout fr
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-. "/home/ludji/.deno/env"
+# . "/home/ludji/.deno/env"

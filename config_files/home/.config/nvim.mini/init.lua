@@ -64,10 +64,10 @@ for _, mini in ipairs({
   "icons",
   "tabline",
   "starter",
-  "map",
+  -- "map",
   "statusline",
 }) do
 	require("mini." .. mini).setup()
 end
 
-lua = MiniMap.open()
+-- lua = MiniMap.open()
