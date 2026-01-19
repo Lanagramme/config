@@ -1,35 +1,21 @@
-local function command_exists(command)
-    local handle = io.popen("command -v " .. command .. " >/dev/null 2>&1 && echo 1 || echo 0")
-    local result = handle:read("*a")
-    handle:close()
-    return tonumber(result) == 1
-end
-
--- browser = "firefox-esr"
-browser = "firefox"
-
--- file_manager = "thunar"
-file_manager = "pcmanfm"
--- file_manager = "nautilus"
-
--- terminal = "gnome-terminal"
--- terminal = "sakura"
--- terminal = "tilix"
--- terminal = "kitty"
--- terminal = "alacritty"
-
-
 modkey = "Mod4"
 
--- Set the terminal based on availability
-if command_exists("kitty") then
-    terminal = "kitty"
-elseif command_exists("alacritty") then
-    terminal = "alacritty"
-else
-    -- Fallback to another terminal if neither is available
-    terminal = "gnome-terminal"
+local function pick_first_available(...)
+		for _, cmd in ipairs({...}) do
+        local f = io.popen("command -v " .. cmd .. " >/dev/null 2>&1 && echo 1 || echo 0")
+        local ok = tonumber(f:read("*a"))
+        f:close()
+        if ok == 1 then
+            return cmd
+        end
+    end
+    return nil
 end
 
-editor = os.getenv("EDITOR") or "nvim"
-editor_cmd = terminal .. " -e " .. editor
+terminal     = os.getenv("TERMINAL") or pick_first_available("kitty", "alacritty", "gnome-terminal", "sakura", "tilix")
+file_manager = os.getenv("FILE_MANAGER") or pick_first_available("pcmanfm", "thunar", "nautilus", "dolphin")
+browser      = os.getenv("BROWSER") or pick_first_available("zen-browser", "firefox", "firefox-esr", "chromium")
+editor       = os.getenv("EDITOR") or pick_first_available("nvim", "vim", "vi")
+
+editor_cmd   = terminal .. " -e " .. editor
+volume_cmd = pick_first_available("wpctl", "amixer")
