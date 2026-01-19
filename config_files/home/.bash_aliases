@@ -8,7 +8,6 @@ alias rm='rm -i'
 alias v="nvim"
 alias vimwiki='v -c VimwikiIndex'
 alias wiki='v -c VimwikiIndex'
-alias fzf="fzf --preview='less {}' --bind shift-up:preview-page-up,shift-down:preview-page-down"
 
 # ===== config files =====
 # alias aw="v ~/.config/awesome/rc.lua"
@@ -19,32 +18,46 @@ alias fzf="fzf --preview='less {}' --bind shift-up:preview-page-up,shift-down:pr
 # alias ohmyrc="v ~/.oh-my-zsh"
 # alias xrc="v ~/.Xresources"
 
+# ===== Arch Specific =====
 alias p="sudo pacman -S"
+alias d="sudo pacman -Rsn"
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+alias update="sudo pacman -Syu"
+#
+# Cleanup orphaned packages safely
+alias cleanup='orphans=$(pacman -Qtdq 2>/dev/null) && [[ -n $orphans ]] && sudo pacman -Rsn $orphans'
+
+# ===== System Helpers =====
+alias jctl="journalctl -p 3 -xb"
+alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl" # Recent installed packages
+
+# ===== General Helpers =====
 alias cl="clear"
 alias mkd="mkdir -pv" #create directory --create parent --give visual feedback
-alias ref="source ~/.bashrc" #reload bashrc
+alias ref='source ${ZDOTDIR:-$HOME}/.zshrc'
 
-#
-if command -v exa &> /dev/null
-then
-  alias l="exa -la --header --icons"
-  alias ls='exa'
-  # Check if eza is installed
-elif command -v eza &> /dev/null
-then
-  alias l="eza -la --header --icons"
+
+# ===== ls =====
+if command -v eza >/dev/null 2>&1; then
+  alias l='eza -la --header --icons'
   alias ls='eza'
-  # Default to ls -la if neither exa nor eza is installed
+elif command -v exa >/dev/null 2>&1; then
+  alias l='exa -la --header --icons'
+  alias ls='exa'
 else
   alias l='ls -la --color=auto'
   alias ls='ls --color=auto'
-  fi
-  alias dir='dir --color=auto'
-  alias vdir='vdir --color=auto'
+fi
 
-  alias grep='grep --color=auto'
-  alias fgrep='fgrep --color=auto'
-  alias egrep='egrep --color=auto'
+# ===== coreutils =====
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+# ===== grep =====
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 
 # ===== ssh =====
 # alias noumenm="ssh ludji@noumenm.org"
@@ -53,15 +66,3 @@ else
 # alias sdu1="ssh ludji@sdu1.gozaimass.io"
 # alias sdu2="ssh ludji@sdu2.gozaimass.io"
 # alias sdu3="ssh ludji@sdu3.gozaimass.io"
-
-# ===== Bookmarks =====
-alias goto="cd -P"
-
-if [ -d "$HOME/.bookmarks" ]; then
-  export CDPATH=".:$HOME/.bookmarks:/"
-fi
-
-# ===== Love2D =====
-alias love="~/.config/love/love-11.5-x86_64.AppImage"
-# alias npm="pnpm"
-alias musicplayer="ncmpcpp"

@@ -55,9 +55,13 @@ globalkeys = gears.table.join(
       awful.util.spawn("firefox") end,
               {description = "Launch firefox", group = "applications"}),
 
-    awful.key({ modkey,					  }, "w", function ()
-              os.execute(string.format("python3 ~/.config/awesome/random_wallpaper.py"))    end,
-              {description = "switch wallpaper", group = "launcher"}),
+		awful.key({ modkey }, "w", function ()
+							awful.spawn.with_shell("python3 ~/.config/awesome/random_wallpaper.py") end,
+							{description = "switch wallpaper", group = "launcher"}),
+
+    -- awful.key({ modkey,					  }, "w", function ()
+    --           os.execute(string.format("python3 ~/.config/awesome/random_wallpaper.py"))    end,
+    --           {description = "switch wallpaper", group = "launcher"}),
 
     awful.key({ modkey,					  }, "d", function ()
               -- os.execute(string.format("rofi -show run -theme ~/.config/rofi/spotlight.rasi"))		        end,

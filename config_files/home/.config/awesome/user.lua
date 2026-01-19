@@ -9,8 +9,8 @@ end
 browser = "firefox"
 
 -- file_manager = "thunar"
--- file_manager = "pcmanfm"
-file_manager = "nautilus"
+file_manager = "pcmanfm"
+-- file_manager = "nautilus"
 
 -- terminal = "gnome-terminal"
 -- terminal = "sakura"

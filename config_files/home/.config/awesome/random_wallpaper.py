@@ -1,1 +1,1 @@
-/home/ludji/Documents/code/git/config/scripts/python/random_wallpaper.py
+/home/christen/Documents/code/git/config/scripts/python/random_wallpaper.py
