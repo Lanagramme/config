@@ -1,0 +1,90 @@
+# ------------------------------------------------------------------------------
+# Shared interactive shell setup (Bash + Zsh)
+# ------------------------------------------------------------------------------
+
+# Only run once
+[[ -n "$SHELL_RC_LOADED" ]] && return
+export SHELL_RC_LOADED=1
+
+missing_features=()
+
+# ------------------------------------------------------------------------------
+# Aliases & functions
+# ------------------------------------------------------------------------------
+[[ -f "$HOME/.bash_aliases" ]] && source "$HOME/.bash_aliases"
+
+# ------------------------------------------------------------------------------
+# wal (fire-and-forget, non-blocking)
+# ------------------------------------------------------------------------------
+if command -v wal >/dev/null 2>&1; then
+    [[ -f "$HOME/.cache/wal/sequences" ]] && cat "$HOME/.cache/wal/sequences" &
+else
+    missing_features+=("wal")
+fi
+
+# ------------------------------------------------------------------------------
+# zoxide (directory jumping)
+# ------------------------------------------------------------------------------
+if command -v zoxide >/dev/null 2>&1; then
+  # Detect shell
+  case "$SHELL" in
+    */zsh) eval "$(zoxide init zsh)" ;;
+    */bash) eval "$(zoxide init bash)" ;;
+  esac
+else
+  missing_features+=("zoxide")
+fi
+
+# ------------------------------------------------------------------------------
+# Optional enhancements (diagnostic only)
+# ------------------------------------------------------------------------------
+# bash-preexec (Bash only)
+if [[ -n "$BASH_VERSION" ]]; then
+  if [[ -f "$HOME/.bash-preexec.sh" ]]; then
+    source "$HOME/.bash-preexec.sh"
+  else
+    missing_features+=("bash-preexec")
+  fi
+fi
+
+# ble.sh (optional readline replacement)
+if [[ -f "$HOME/.local/share/blesh/ble.sh" ]]; then
+  source "$HOME/.local/share/blesh/ble.sh"
+else
+  missing_features+=("ble.sh (optional)")
+fi
+
+# ------------------------------------------------------------------------------
+# Diagnostics (printed once, non-fatal)
+# ------------------------------------------------------------------------------
+if [[ ${#missing_features[@]} -gt 0 ]]; then
+  echo
+  echo "⚠️  Shell: optional features missing:"
+  for f in "${missing_features[@]}"; do
+    echo "   - $f"
+    case "$f" in
+      wal)
+        echo "     install with:"
+        echo "       pip install pywal"
+        echo "       # or via your distro package manager"
+        ;;
+      zoxide)
+        echo "     install with:"
+        echo "       cargo install zoxide"
+        echo "       # or via your package manager"
+        ;;
+      bash-preexec)
+        echo "     install with:"
+        echo "       git clone https://github.com/rcaloras/bash-preexec \\"
+        echo "         \$HOME/.bash-preexec"
+        ;;
+      ble.sh*)
+        echo "     install with:"
+        echo "       git clone https://github.com/akinomyoga/ble.sh \\"
+        echo "         \$HOME/.local/share/blesh"
+        ;;
+    esac
+  done
+  echo
+fi
+

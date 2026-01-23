@@ -1,23 +1,44 @@
-# Profile file. Runs on launch
-# if no .bash_profile exists
+# ~/.profile
+# Portable login environment (X11 + Wayland)
+export PROFILE_LOADED=1
 
-export EDITOR="nvim"
-export TERMINAL="gnome-terminal"
-export TRUEBROWSER="firefox"
+##########
+# Locale #
+##########
+export LANG=fr_FR.UTF-8
+export LC_ALL=fr_FR.UTF-8
 
+####################
+# Preferred tools  #
+####################
 
-#if running bash
-if [ -n "$BASH_VERSION" ]; then
-	# include .bashrc if it exists
-	[[ -f ~/.bashrc ]] && . ~/.bashrc
-fi
+# Browser preference order
+export BROWSER=zen-browser
+export BROWSER_FALLBACKS="firefox firefox-esr chromium"
 
-# set PATH so it includes user's private bin if it exists
-[[ -d "$HOME/bin" ]] && $PATH="HOME/bin:$PATH"
+# File managers
+export FILE_MANAGER=pcmanfm
+export FILE_MANAGER_FALLBACKS="nautilus dolphin"
+export CLI_FILE_MANAGER=yazi
 
-# set PATH so it includes user's private bin if it exists
-[[ -d "$HOME/.local/bin" ]] && $PATH="$HOME/.local/bin:$PATH" 
+# Editors
+export EDITOR=nvim
+export VISUAL=nvim
+export EDITOR_FALLBACKS="vim vi"
 
-if [ -e /home/ludji/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ludji/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-. "$HOME/.cargo/env"
-. "/home/ludji/.deno/env"
+# Terminal emulators
+export TERMINAL=kitty
+export TERMINAL_FALLBACKS="alacritty gnome-terminal xterm"
+
+# Shell preference (informational)
+export PREFERRED_SHELL=zsh
+export SHELL_FALLBACKS="bash sh"
+
+####################
+# Session metadata #
+####################
+
+# These are hints, not enforcement
+export SESSION_LANGUAGE=fr
+export SESSION_KEYBOARD=fr
+
