@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# Define MAC addresses
+LOGI="D4:6F:5F:F7:83:95"       # MX Keys Mini
+MAJOR="1C:6E:4C:A7:0D:9D"      # MAJOR IV
+
+# Map names to MACs
+get_mac() {
+    case "$1" in
+        logi) echo "$LOGI" ;;
+        major) echo "$MAJOR" ;;
+        *) echo "" ;;
+    esac
+}
+
+# Show usage
+usage() {
+    echo "Usage: bt <command> [device]"
+    echo "Commands:"
+    echo "  list paired         List all paired devices"
+    echo "  list connected      List currently connected devices"
+    echo "  pair <device>       Pair a device (major/logi)"
+    echo "  connect <device>    Connect a device (major/logi)"
+    echo "  disconnect <device> Disconnect a device (major/logi)"
+    exit 1
+}
+
+# Ensure at least one argument
+[ $# -ge 1 ] || usage
+
+COMMAND="$1"
+TARGET="$2"
+
+case "$COMMAND" in
+    list)
+        case "$TARGET" in
+            paired)
+                bluetoothctl devices Paired
+                ;;
+            connected)
+                # List only connected devices
+								bluetoothctl devices Connected
+                ;;
+            *)
+                usage
+                ;;
+        esac
+        ;;
+    pair)
+        MAC=$(get_mac "$TARGET")
+        [ -n "$MAC" ] || usage
+        echo -e "pair $MAC\nexit" | bluetoothctl
+        ;;
+    connect)
+        MAC=$(get_mac "$TARGET")
+        [ -n "$MAC" ] || usage
+        echo -e "connect $MAC\nexit" | bluetoothctl
+        ;;
+    disconnect)
+        MAC=$(get_mac "$TARGET")
+        [ -n "$MAC" ] || usage
+        echo -e "disconnect $MAC\nexit" | bluetoothctl
+        ;;
+    *)
+        usage
+        ;;
+esac
+

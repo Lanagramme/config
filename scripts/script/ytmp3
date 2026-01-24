@@ -1,0 +1,7 @@
+#!/bin/bash
+# Ensure the target directory exists
+mkdir -p ~/Musique
+
+# Download the audio as mp3 to ~/Musique
+youtube-dl -x --audio-format mp3 -o "~/Musique/%(title)s.%(ext)s" "$1"
+
