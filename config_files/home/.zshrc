@@ -64,7 +64,7 @@ if [[ -x "$HOME/scripts/shell_tools_tracker.sh" && $- == *i* ]]; then
 fi
 
 # ------------------------------------------------------------------------------
-# Completion system
+# Completion settings
 # ------------------------------------------------------------------------------
 zmodload zsh/complist
 

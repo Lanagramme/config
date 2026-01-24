@@ -117,15 +117,15 @@ alias ref='source ${ZDOTDIR:-$HOME}/.zshrc'
 # ls / coreutils
 # ==============================================================================
 if command -v eza >/dev/null 2>&1; then
-    alias l='eza -la --header --icons'
+    alias l='eza -la --header --icons --git'
     alias ls='eza'
 elif command -v exa >/dev/null 2>&1; then
-    alias l='exa -la --header --icons'
-    alias ls='exa'
+    alias l='exa -la --header --icons --git'
 else
     alias l='ls -la --color=auto'
     alias ls='ls --color=auto'
 fi
+
 
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
@@ -136,3 +136,4 @@ alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias zzz="echo test"
