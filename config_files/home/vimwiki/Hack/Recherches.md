@@ -17,12 +17,10 @@
 	* Dunst
 	* Halcyon
 	* i3-dmenu-desktop
-	* j4-dmenu-desktop
 	* NerdFontSite
 
 ## Hacking
 	* /usr/lib/gdm-x-session --register-session --run-script awesome
-	* $ w
   * https://n8n.io/
   * Bitwarden
 

@@ -12,6 +12,7 @@
 [The City](./worldbuilding/thecity.md)
 [The incident](./worldbuilding/theincident.md)
 [[Assisted]]
+[[The Evernigts]]
 
 ## Characters
 [Introducing](Introducing)
