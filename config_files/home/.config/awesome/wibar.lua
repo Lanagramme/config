@@ -19,7 +19,7 @@ end
 
 local function system_tray(s)
 	local tray = wibox.widget.systray()
-	tray:set_screen(s)
+	-- tray:set_screen(s)
 	tray:set_horizontal(false)
 	tray:set_base_size(20)
 	return wibox.widget({
@@ -303,7 +303,8 @@ awful.screen.connect_for_each_screen(function(s)
 				nil,
 				{
 					layout = wibox.layout.fixed.vertical,
-					system_tray(s),
+					-- Only show systray on screen 1
+					(s.index == 1 and system_tray(s) or nil),
 					clock,
 					layout(s),
 				},

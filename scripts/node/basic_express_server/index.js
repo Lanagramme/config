@@ -3,12 +3,12 @@ require("dotenv").config()
 const express = require("express")
 const http = require("http")
 const cors = require("cors")
+const path = require('path')
 
 const app = express()
 const server = http.createServer(app)
 
-const data = require('./data/data.json')
-const file = require( "./modules/file.js" )
+// const file = require( "./modules/file.js" )
 
 app.use(cors({
 	origin: '*',
@@ -16,16 +16,14 @@ app.use(cors({
 	methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH', 'OPTIONS']
 }))
 
-//app.get('/', (req,res) => {
-//	res.sendFile(path.join(__dirname, './public/index.html'))
-//})
-
-app.use('/', express.static(path.join(__dirname, './public')))
-
-app.listen(port, ()=>{
-	console.log(`port ${port} is open`)
+app.get('/', (req, res) => {
+	res.sendFile(path.join(__dirname, './public/index.html'))
 })
 
-server.listen(port, ()=> console.log("Listening on ", process.env.PORT))
+app.get("/:dir/:file", (req, res) => {
+	res.sendFile(path.join(__dirname, './public/'+req.params.dir+"/"+req.params.file))
+})
+
+server.listen(process.env.PORT, ()=> console.log("Listening on ", process.env.PORT))
 
 
