@@ -21,6 +21,7 @@ fi
 typeset -U path PATH
 path=(
   /usr/local/bin
+  $HOME/.cargo/bin
   $HOME/.local/bin
   $HOME/script
   $path
@@ -121,3 +122,10 @@ source $ZSH/oh-my-zsh.sh
 # ------------------------------------------------------------------------------
 [[ -o interactive && -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
+
+# bun completions
+[ -s "/home/christen/.bun/_bun" ] && source "/home/christen/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

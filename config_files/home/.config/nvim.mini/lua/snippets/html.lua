@@ -1,0 +1,37 @@
+-- local ls = require("luasnip")
+-- local s = ls.snippet
+-- local i = ls.insert_node
+-- local t = ls.text_node
+--
+-- return {
+--   -- Basic HTML boilerplate
+--   s("html5", {
+--     t({
+--       "<!DOCTYPE html>",
+--       "<html lang=\"en\">",
+--       "<head>",
+--       "  <meta charset=\"UTF-8\">",
+--       "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+--       "  <title>",
+--     }),
+--     i(1, "Document"),
+--     t({
+--       "</title>",
+--       "</head>",
+--       "<body>",
+--       "  ",
+--     }),
+--     i(2),
+--     t({
+--       "",
+--       "</body>",
+--       "</html>",
+--     }),
+--   }),
+--
+--   -- div with class
+--   s("divc", {
+--     t("<div class=\""), i(1), t("\">"), i(2), t("</div>"),
+--   }),
+-- }
+--

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "test",
+    "completed": true
+  },
+  {
+    "id": 2,
+    "title": "upload file to server",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "title": "make bed",
+    "completed": true
+  },
+  {
+    "id": 4,
+    "title": "make breakfast",
+    "completed": true
+  },
+  {
+    "id": 5,
+    "title": "Check skincare products",
+    "completed": false
+  },
+  {
+    "id": 6,
+    "title": "check meal",
+    "completed": false
+  },
+  {
+    "id": 7,
+    "title": "hack lights",
+    "completed": false
+  },
+  {
+    "id": 8,
+    "title": "finish shelves",
+    "completed": false
+  }
+]
