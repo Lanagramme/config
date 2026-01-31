@@ -8,30 +8,30 @@ How to recreate my hacking environment
 	- vimwiki*
  
 ### Comfort tools
-  * Most used
-    - bat
-    - zsh
-    - cheat.sh
-    - tldr
-    - exa
-    - yazi
-    - zoxide
-  * Nice bonus
-    - fzf
-    - htop / btop
-    - ncdu
+	* Most used
+		- bat
+ 		- zsh
+		- cheat.sh
+		- tldr
+		- exa
+		- yazi
+		- zoxide
+	* Nice bonus
+		- fzf
+		- htop / btop
+		- ncdu
   
 ### Utilities
 	- entr
 	- ntfy
 	- pywal
-  - gifpaper
+	- gifpaper
 	- ripgrep
 	- z
-  - brightnessctl
-  - acpi
-  - yt-dlp
-  - ytfzf
+	- brightnessctl
+	- acpi
+	- yt-dlp
+	- ytfzf
  
 ### Coding environment
 	- curl
@@ -42,10 +42,10 @@ How to recreate my hacking environment
 	- yarn
 
 ## GUI applications
- - plank
- - kdeconnect
+	- plank
+	- kdeconnect
 
 ### Weather tui
- - [richweather](https://github.com/Rizen54/richweather)
- - curl wttr.in/amiens,france
- - 
+	- [richweather](https://github.com/Rizen54/richweather)
+	- curl wttr.in/amiens,france
+	- 
