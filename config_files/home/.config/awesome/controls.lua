@@ -145,7 +145,7 @@ globalkeys = gears.table.join(
 
 	-- Helper scripts
 	-- -------------------------------------------------------------------------------------------------
-	awful.key({ modkey }, "w", function () awful.spawn.with_shell("python3 ~/.config/awesome/random_wallpaper.py") end,
+	awful.key({ modkey }, "w", function () awful.spawn.with_shell("python3 ~/script/random_wallpaper.py") end,
 		{description = "switch wallpaper", group = "launcher"}),
 
 	-- Rofi Menus

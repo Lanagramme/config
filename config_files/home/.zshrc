@@ -124,10 +124,18 @@ source $ZSH/oh-my-zsh.sh
 # ------------------------------------------------------------------------------
 [[ -o interactive && -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
+# ------------------------------------------------------------------------------
+# Nix profile
+# ------------------------------------------------------------------------------
+if [ -e /home/ludji/.nix-profile/etc/profile.d/nix.sh ]; then . /home/ludji/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
+# ------------------------------------------------------------------------------
 # bun completions
+# ------------------------------------------------------------------------------
 [ -s "/home/christen/.bun/_bun" ] && source "/home/christen/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
