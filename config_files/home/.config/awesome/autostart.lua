@@ -14,7 +14,7 @@ awful.spawn.once("cbatticon")
 -- awful.spawn("nm-applet")
 -- awful.spawn("cbatticon")
 
-awful.spawn("python3 " .. os.getenv("HOME") .. "/.config/awesome/random_wallpaper.py")
+awful.spawn("python3 " .. os.getenv("HOME") .. "/script/random_wallpaper.py")
 awful.spawn.with_shell("solaar --window=hide &")
 
 -- awful.spawn.with_shell("xset s 300 300 && xautolock -time 15 -locker 'systemctl suspend' -detectsleep")

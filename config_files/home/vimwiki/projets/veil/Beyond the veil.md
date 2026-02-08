@@ -13,6 +13,7 @@
 [The incident](./worldbuilding/theincident.md)
 [[Assisted]]
 [[The Evernigts]]
+[[Vertues]]
 
 ## Characters
 [Introducing](Introducing)

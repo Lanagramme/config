@@ -1,1 +1,1 @@
-pkill -KILL -u christen
+pkill -KILL -u $USER

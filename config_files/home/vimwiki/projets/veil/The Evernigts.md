@@ -16,7 +16,7 @@ unless you are a writter, crafting words every waken hour. then you'd never wann
 A panther
 A dragon
 two snake
-a ritual to seperte fire mana from pure mana
+a ritual to separate fire mana from pure mana
 a ritual to 
 
 you've halted the natural process for your own gain and nouw you're sittint on a powder keg of corruption read to burst
