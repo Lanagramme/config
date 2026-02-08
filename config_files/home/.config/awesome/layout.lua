@@ -33,23 +33,17 @@ awful.screen.connect_for_each_screen(function(s)
 	-- Each screen has its own tag table.
 	awful.tag({ "1", "2", "3", "4", "5" }, s, awful.layout.layouts[1])
 
+	s.tags[1]:view_only()
+
 	s.mylayoutbox = awful.widget.layoutbox(s)
 	s.padding = {
 		left = -10,
 	}
 	s.mylayoutbox:buttons(gears.table.join(
-		awful.button({}, 1, function()
-			awful.layout.inc(1)
-		end),
-		awful.button({}, 3, function()
-			awful.layout.inc(-1)
-		end),
-		awful.button({}, 4, function()
-			awful.layout.inc(1)
-		end),
-		awful.button({}, 5, function()
-			awful.layout.inc(-1)
-		end)
+		awful.button({}, 1, function() awful.layout.inc(1) end),
+		awful.button({}, 3, function() awful.layout.inc(-1) end),
+		awful.button({}, 4, function() awful.layout.inc(1) end),
+		awful.button({}, 5, function() awful.layout.inc(-1) end)
 	))
 end)
 -- }}}
