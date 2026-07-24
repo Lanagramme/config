@@ -1,3 +1,24 @@
 [submodule "obsidian"]
 	path = obsidian
 	url = git@github.com:Lanagramme/obsidian
+[submodule "tmux-tpm"]
+	path = config_files/home/.config/tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "tmux-sensible"]
+	path = config_files/home/.config/tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "tmux-yank"]
+	path = config_files/home/.config/tmux/plugins/tmux-yank
+	url = https://github.com/tmux-plugins/tmux-yank
+[submodule "tmux-battery"]
+	path = config_files/home/.config/tmux/plugins/tmux-battery
+	url = https://github.com/tmux-plugins/tmux-battery
+[submodule "tmux-cpu"]
+	path = config_files/home/.config/tmux/plugins/tmux-cpu
+	url = https://github.com/tmux-plugins/tmux-cpu
+[submodule "tmux-catppuccin"]
+	path = config_files/home/.config/tmux/plugins/tmux
+	url = https://github.com/catppuccin/tmux
+[submodule "vim-tmux-navigator"]
+	path = config_files/home/.config/tmux/plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
